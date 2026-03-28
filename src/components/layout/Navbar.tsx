@@ -1,5 +1,5 @@
 import { useState, useEffect } from "react";
-import { Menu, X, ChevronDown } from "lucide-react";
+import { Menu, X, ChevronDown, ChevronRight, Download } from "lucide-react";
 import clsx from "clsx";
 import { motion, AnimatePresence } from "framer-motion";
 import { Link, useLocation } from "react-router-dom";
@@ -9,6 +9,10 @@ export const Navbar = () => {
   const [isScrolled, setIsScrolled] = useState(false);
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
   const [isServicesOpen, setIsServicesOpen] = useState(false);
+  const [isBrochureOpen, setIsBrochureOpen] = useState(false);
+  const [isPilotTrainingOpen, setIsPilotTrainingOpen] = useState(false);
+  const [mobileBrochureOpen, setMobileBrochureOpen] = useState(false);
+  const [mobilePilotOpen, setMobilePilotOpen] = useState(false);
   const location = useLocation();
 
   useEffect(() => {
@@ -27,6 +31,19 @@ export const Navbar = () => {
     }
     return href;
   };
+
+  const brochureItems = [
+    {
+      name: "Pilot Training",
+      hasSub: true,
+      subItems: [
+        { name: "USA", href: "/brochures/pilot-training-usa.pdf" },
+        { name: "South Africa", href: "/brochures/pilot-training-sa.pdf" },
+        { name: "Greece", href: "/brochures/pilot-training-greece.pdf" },
+      ],
+    },
+    { name: "Other Courses", href: "/brochures/other-courses.pdf", hasSub: false },
+  ];
 
   const navLinks = [
     { name: "Home", href: "#", isRouterLink: true, path: "/" },
@@ -145,8 +162,92 @@ export const Navbar = () => {
           ))}
         </div>
 
-        {/* CTA Button */}
-        <div className="hidden lg:block">
+        {/* Download Brochure + CTA */}
+        <div className="hidden lg:flex items-center gap-4">
+          {/* Download Brochure Dropdown */}
+          <div
+            className="relative"
+            onMouseEnter={() => setIsBrochureOpen(true)}
+            onMouseLeave={() => {
+              setIsBrochureOpen(false);
+              setIsPilotTrainingOpen(false);
+            }}
+          >
+            <button className="flex items-center gap-1.5 text-xs font-bold uppercase tracking-widest text-gray-600 hover:text-primary transition-colors duration-300 border border-gray-300 hover:border-primary px-4 py-2.5 rounded-sm">
+              <Download size={13} />
+              Download Brochure
+              <ChevronDown size={13} className={clsx("transition-transform duration-200", isBrochureOpen && "rotate-180")} />
+            </button>
+
+            <AnimatePresence>
+              {isBrochureOpen && (
+                <motion.div
+                  initial={{ opacity: 0, y: 8 }}
+                  animate={{ opacity: 1, y: 0 }}
+                  exit={{ opacity: 0, y: 8 }}
+                  transition={{ duration: 0.18 }}
+                  className="absolute top-full right-0 pt-2 w-52 z-50"
+                >
+                  <div className="bg-white rounded-lg shadow-xl border border-gray-100 overflow-visible py-1.5">
+                    {brochureItems.map((item) => (
+                      <div
+                        key={item.name}
+                        className="relative"
+                        onMouseEnter={() => item.hasSub && setIsPilotTrainingOpen(true)}
+                        onMouseLeave={() => item.hasSub && setIsPilotTrainingOpen(false)}
+                      >
+                        {item.hasSub ? (
+                          <button className="w-full flex items-center justify-between px-5 py-2.5 text-[10px] font-bold uppercase tracking-widest text-gray-600 hover:text-primary hover:bg-blue-50 transition-colors">
+                            {item.name}
+                            <ChevronRight size={13} />
+                          </button>
+                        ) : (
+                          <a
+                            href={item.href}
+                            download
+                            className="flex items-center justify-between px-5 py-2.5 text-[10px] font-bold uppercase tracking-widest text-gray-600 hover:text-primary hover:bg-blue-50 transition-colors"
+                          >
+                            {item.name}
+                            <Download size={11} className="opacity-50" />
+                          </a>
+                        )}
+
+                        {/* Sub-dropdown for Pilot Training */}
+                        {item.hasSub && item.subItems && (
+                          <AnimatePresence>
+                            {isPilotTrainingOpen && (
+                              <motion.div
+                                initial={{ opacity: 0, x: -8 }}
+                                animate={{ opacity: 1, x: 0 }}
+                                exit={{ opacity: 0, x: -8 }}
+                                transition={{ duration: 0.15 }}
+                                className="absolute top-0 right-full mr-1 w-44"
+                              >
+                                <div className="bg-white rounded-lg shadow-xl border border-gray-100 overflow-hidden py-1.5">
+                                  {item.subItems.map((sub) => (
+                                    <a
+                                      key={sub.name}
+                                      href={sub.href}
+                                      download
+                                      className="flex items-center justify-between px-5 py-2.5 text-[10px] font-bold uppercase tracking-widest text-gray-600 hover:text-primary hover:bg-blue-50 transition-colors"
+                                    >
+                                      {sub.name}
+                                      <Download size={11} className="opacity-50" />
+                                    </a>
+                                  ))}
+                                </div>
+                              </motion.div>
+                            )}
+                          </AnimatePresence>
+                        )}
+                      </div>
+                    ))}
+                  </div>
+                </motion.div>
+              )}
+            </AnimatePresence>
+          </div>
+
           <Link
             to="/contact"
             className="inline-block bg-[linear-gradient(to_right,theme(colors.primary)_50%,black_50%)] bg-[length:200%_100%] bg-left hover:bg-right text-white px-8 py-3 text-xs uppercase tracking-widest font-bold transition-all duration-500 transform hover:scale-105 active:scale-95"
@@ -246,9 +347,74 @@ export const Navbar = () => {
                   )}
                 </div>
               ))}
+              {/* Mobile Download Brochure */}
+              <div className="border-t border-gray-100 pt-4">
+                <button
+                  className="w-full flex items-center justify-between py-2 text-sm font-bold uppercase tracking-widest text-gray-800 hover:text-primary transition-colors"
+                  onClick={() => setMobileBrochureOpen(!mobileBrochureOpen)}
+                >
+                  <span className="flex items-center gap-2">
+                    <Download size={14} />
+                    Download Brochure
+                  </span>
+                  <ChevronDown size={14} className={clsx("transition-transform", mobileBrochureOpen && "rotate-180")} />
+                </button>
+                {mobileBrochureOpen && (
+                  <motion.div
+                    initial={{ opacity: 0, height: 0 }}
+                    animate={{ opacity: 1, height: "auto" }}
+                    exit={{ opacity: 0, height: 0 }}
+                    className="ml-4 mt-1"
+                  >
+                    {/* Pilot Training */}
+                    <button
+                      className="w-full flex items-center justify-between px-3 py-2.5 text-xs font-bold uppercase tracking-widest text-gray-600 hover:text-primary transition-colors"
+                      onClick={() => setMobilePilotOpen(!mobilePilotOpen)}
+                    >
+                      Pilot Training
+                      <ChevronDown size={12} className={clsx("transition-transform", mobilePilotOpen && "rotate-180")} />
+                    </button>
+                    {mobilePilotOpen && (
+                      <motion.div
+                        initial={{ opacity: 0, height: 0 }}
+                        animate={{ opacity: 1, height: "auto" }}
+                        className="bg-blue-50 rounded-lg overflow-hidden ml-3"
+                      >
+                        {[
+                          { name: "USA", href: "/brochures/pilot-training-usa.pdf" },
+                          { name: "South Africa", href: "/brochures/pilot-training-sa.pdf" },
+                          { name: "Greece", href: "/brochures/pilot-training-greece.pdf" },
+                        ].map((sub) => (
+                          <a
+                            key={sub.name}
+                            href={sub.href}
+                            download
+                            className="flex items-center justify-between px-4 py-2.5 text-xs text-gray-600 border-b border-gray-100 last:border-none hover:text-primary transition-colors"
+                            onClick={() => setIsMobileMenuOpen(false)}
+                          >
+                            {sub.name}
+                            <Download size={10} className="opacity-50" />
+                          </a>
+                        ))}
+                      </motion.div>
+                    )}
+                    {/* Other Courses */}
+                    <a
+                      href="/brochures/other-courses.pdf"
+                      download
+                      className="flex items-center justify-between px-3 py-2.5 text-xs font-bold uppercase tracking-widest text-gray-600 hover:text-primary transition-colors"
+                      onClick={() => setIsMobileMenuOpen(false)}
+                    >
+                      Other Courses
+                      <Download size={11} className="opacity-50" />
+                    </a>
+                  </motion.div>
+                )}
+              </div>
+
               <Link
                 to="/contact"
-                className="bg-primary text-white px-6 py-3 text-center text-xs font-bold uppercase tracking-widest mt-4 block"
+                className="bg-primary text-white px-6 py-3 text-center text-xs font-bold uppercase tracking-widest mt-2 block"
                 onClick={() => setIsMobileMenuOpen(false)}
               >
                 Enroll Now
