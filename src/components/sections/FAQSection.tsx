@@ -1,79 +1,77 @@
 import { useState } from "react";
-import { ChevronDown, Sparkles } from "lucide-react";
+import { ChevronDown } from "lucide-react";
 import { faqs } from "../../data/content";
+import { AnimatePresence, motion } from "framer-motion";
 
 export const FAQSection = () => {
-  const [openIndex, setOpenIndex] = useState<number | null>(0);
+  const [openIndex, setOpenIndex] = useState<number>(0);
 
   return (
-    <section
-      id="faq"
-      className="py-24 px-6 bg-wedding-slate text-white relative overflow-hidden"
-    >
-      {/* Background Decorative Elements */}
-      <div className="absolute top-0 left-0 w-full h-full opacity-10 pointer-events-none">
-        <div className="absolute top-1/4 left-10 w-64 h-64 bg-primary rounded-full blur-[120px]"></div>
-        <div className="absolute bottom-1/4 right-10 w-96 h-96 bg-primary-dark rounded-full blur-[150px]"></div>
-      </div>
-
-      <div className="max-w-4xl mx-auto relative z-10">
-        <div className="text-center mb-16">
-          <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-white/5 border border-white/10 mb-6 backdrop-blur-sm">
-            <Sparkles size={14} className="text-primary" />
-            <span className="text-xs uppercase tracking-[0.3em] text-gray-300">
-              Good to Know
-            </span>
-          </div>
-          <h2 className="text-4xl md:text-6xl font-display mb-6">
-            Common <span className="text-primary italic">Questions</span>
+    <section id="faq" className="py-24 px-6 bg-white">
+      <div className="max-w-7xl mx-auto">
+        {/* Header */}
+        <div className="mb-16">
+          <span className="text-primary text-[10px] font-bold uppercase tracking-[0.3em] mb-4 block">
+            Good to Know
+          </span>
+          <h2 className="text-4xl md:text-5xl font-display text-stone-900">
+            Common{" "}
+            <span className="text-primary italic">Questions</span>
           </h2>
         </div>
-        <div className="space-y-4">
-          {faqs.map((faq, index) => (
-            <div
-              key={index}
-              className={`group transition-all duration-500 rounded-xl border ${
-                openIndex === index
-                  ? "bg-white/10 border-primary/50 shadow-2xl shadow-primary/10"
-                  : "bg-white/5 border-white/5 hover:border-white/20 hover:bg-white/8"
-              }`}
-            >
+
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-6 lg:gap-16 items-start">
+          {/* Left: question list acting as tabs */}
+          <div className="space-y-2">
+            {faqs.map((faq, index) => (
               <button
-                className="w-full text-left px-8 py-6 flex justify-between items-center focus:outline-none"
-                onClick={() => setOpenIndex(index === openIndex ? null : index)}
+                key={index}
+                onClick={() => setOpenIndex(index)}
+                className={`w-full text-left px-6 py-5 flex items-center justify-between transition-all duration-300 border ${
+                  openIndex === index
+                    ? "bg-primary text-white border-primary shadow-md"
+                    : "bg-stone-50 text-stone-700 border-transparent hover:border-gray-200 hover:bg-white"
+                }`}
               >
                 <span
-                  className={`font-display text-lg tracking-wide transition-colors duration-300 ${
-                    openIndex === index ? "text-primary" : "text-white/90"
+                  className={`font-display text-base leading-snug ${
+                    openIndex === index ? "text-white" : "text-stone-800"
                   }`}
                 >
                   {faq.question}
                 </span>
-                <span
-                  className={`flex items-center justify-center w-8 h-8 rounded-full border transition-all duration-300 ${
+                <ChevronDown
+                  size={16}
+                  className={`flex-shrink-0 ml-4 transition-transform duration-300 ${
                     openIndex === index
-                      ? "bg-primary border-primary text-white rotate-180"
-                      : "border-white/20 text-white/50 group-hover:border-white/50 group-hover:text-white"
+                      ? "rotate-180 text-white"
+                      : "text-stone-400"
                   }`}
-                >
-                  <ChevronDown size={16} />
-                </span>
+                />
               </button>
-              <div
-                className={`overflow-hidden transition-all duration-500 ease-in-out ${
-                  openIndex === index
-                    ? "max-h-[1000px] opacity-100"
-                    : "max-h-0 opacity-0"
-                }`}
+            ))}
+          </div>
+
+          {/* Right: active answer panel */}
+          <div className="sticky top-8">
+            <AnimatePresence mode="wait">
+              <motion.div
+                key={openIndex}
+                initial={{ opacity: 0, y: 12 }}
+                animate={{ opacity: 1, y: 0 }}
+                exit={{ opacity: 0, y: -12 }}
+                transition={{ duration: 0.3 }}
+                className="bg-stone-50 p-8 border-l-4 border-primary"
               >
-                <div className="px-8 pb-8 pt-0">
-                  <p className="text-gray-300 leading-relaxed text-base border-t border-white/10 pt-6">
-                    {faq.answer}
-                  </p>
-                </div>
-              </div>
-            </div>
-          ))}
+                <h3 className="font-display text-xl text-stone-900 mb-5">
+                  {faqs[openIndex].question}
+                </h3>
+                <p className="text-gray-600 leading-relaxed text-base">
+                  {faqs[openIndex].answer}
+                </p>
+              </motion.div>
+            </AnimatePresence>
+          </div>
         </div>
       </div>
     </section>

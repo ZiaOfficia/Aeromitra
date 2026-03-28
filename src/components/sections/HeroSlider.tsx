@@ -1,6 +1,5 @@
 import { useState, useEffect } from "react";
 import { motion, AnimatePresence } from "framer-motion";
-import { ChevronLeft, ChevronRight } from "lucide-react";
 import { Button } from "../common/Button";
 import { heroSlides } from "../../data/content";
 import { useNavigate } from "react-router-dom";
@@ -22,60 +21,57 @@ export const HeroSlider = () => {
 
   const prevSlide = () => {
     setCurrentIndex(
-      (prev) => (prev - 1 + heroSlides.length) % heroSlides.length,
+      (prev) => (prev - 1 + heroSlides.length) % heroSlides.length
     );
   };
 
   return (
     <div className="relative h-screen w-full overflow-hidden">
+      {/* Background images */}
       <AnimatePresence initial={false} mode="wait">
         <motion.div
           key={currentIndex}
-          initial={{ opacity: 0, scale: 1.1 }}
+          initial={{ opacity: 0, scale: 1.06 }}
           animate={{ opacity: 1, scale: 1 }}
           exit={{ opacity: 0 }}
-          transition={{ duration: 1 }}
+          transition={{ duration: 1.2 }}
           className="absolute inset-0"
         >
           <div
             className="absolute inset-0 bg-cover bg-center"
-            style={{
-              backgroundImage: `url(${heroSlides[currentIndex].image})`,
-            }}
+            style={{ backgroundImage: `url(${heroSlides[currentIndex].image})` }}
           />
-          <div className="absolute inset-0 bg-black/40 luxury-gradient" />
+          <div className="absolute inset-0 bg-gradient-to-r from-stone-950/80 via-stone-950/40 to-transparent" />
         </motion.div>
       </AnimatePresence>
 
-      <div className="absolute inset-0 flex flex-col justify-center items-center text-center text-white p-6 z-10">
+      {/* Content — left-aligned */}
+      <div className="absolute inset-0 flex flex-col justify-end pb-24 md:justify-center px-8 md:px-16 lg:px-24 z-10">
         <motion.div
           key={`text-${currentIndex}`}
-          initial={{ opacity: 0, y: 30 }}
+          initial={{ opacity: 0, y: 40 }}
           animate={{ opacity: 1, y: 0 }}
-          transition={{ delay: 0.5, duration: 0.8 }}
+          transition={{ delay: 0.4, duration: 0.9 }}
+          className="max-w-2xl"
         >
-          <span className="block text-sm sm:text-base uppercase tracking-[0.4em] mb-4">
-            {/* {heroSlides[currentIndex].title} */}
+          <span className="block text-primary text-[10px] font-bold uppercase tracking-[0.4em] mb-5">
+            Aeromitra
           </span>
-          <h1 className="text-4xl md:text-6xl lg:text-7xl font-display leading-tight mb-8 max-w-5xl">
+          <h1 className="text-4xl md:text-6xl lg:text-7xl font-display leading-tight text-white mb-10">
             {heroSlides[currentIndex].subtitle}
           </h1>
-          <div className="flex gap-4 justify-center">
+          <div className="flex gap-4 flex-wrap">
             <Button
               variant="outline"
               size="lg"
-              onClick={() =>
-                navigate("/portfolio")
-              }
+              onClick={() => navigate("/portfolio")}
             >
               View Portfolio
             </Button>
             <Button
               variant="primary"
               size="lg"
-              onClick={() =>
-                navigate("/contact")
-              }
+              onClick={() => navigate("/contact")}
             >
               Book Now
             </Button>
@@ -83,32 +79,46 @@ export const HeroSlider = () => {
         </motion.div>
       </div>
 
-      <div className="absolute bottom-10 left-0 right-0 flex justify-center gap-2 z-20">
-        {heroSlides.map((_, index) => (
-          <button
-            key={index}
-            onClick={() => setCurrentIndex(index)}
-            className={`w-2 h-2 rounded-full transition-all duration-300 ${
-              index === currentIndex
-                ? "bg-primary w-8"
-                : "bg-white/50 hover:bg-white"
-            }`}
-          />
-        ))}
+      {/* Bottom bar: slide counter + dots */}
+      <div className="absolute bottom-8 left-8 md:left-16 lg:left-24 z-20 flex items-center gap-6">
+        {/* Slide counter */}
+        <span className="font-display text-white/50 text-sm tabular-nums">
+          <span className="text-white text-lg">
+            {String(currentIndex + 1).padStart(2, "0")}
+          </span>
+          {" "}/ {String(heroSlides.length).padStart(2, "0")}
+        </span>
+
+        {/* Dot indicators */}
+        <div className="flex gap-2">
+          {heroSlides.map((_, index) => (
+            <button
+              key={index}
+              onClick={() => setCurrentIndex(index)}
+              className={`transition-all duration-300 rounded-full ${
+                index === currentIndex
+                  ? "bg-primary w-8 h-2"
+                  : "bg-white/40 hover:bg-white/70 w-2 h-2"
+              }`}
+            />
+          ))}
+        </div>
       </div>
 
+      {/* Arrow controls */}
       <button
         onClick={prevSlide}
-        className="absolute left-4 top-1/2 -translate-y-1/2 bg-black/20 hover:bg-black/40 text-white p-2 rounded-full backdrop-blur-sm transition-all z-20 hidden md:block"
+        className="absolute right-16 bottom-6 md:bottom-auto md:top-1/2 md:-translate-y-1/2 bg-white/10 hover:bg-white/20 text-white p-3 backdrop-blur-sm transition-all z-20 hidden md:flex items-center justify-center border border-white/20"
+        aria-label="Previous slide"
       >
-        <ChevronLeft size={32} />
+        &#8592;
       </button>
-
       <button
         onClick={nextSlide}
-        className="absolute right-4 top-1/2 -translate-y-1/2 bg-black/20 hover:bg-black/40 text-white p-2 rounded-full backdrop-blur-sm transition-all z-20 hidden md:block"
+        className="absolute right-6 bottom-6 md:bottom-auto md:top-1/2 md:-translate-y-1/2 md:translate-x-[4.5rem] bg-white/10 hover:bg-primary text-white p-3 backdrop-blur-sm transition-all z-20 hidden md:flex items-center justify-center border border-white/20"
+        aria-label="Next slide"
       >
-        <ChevronRight size={32} />
+        &#8594;
       </button>
     </div>
   );

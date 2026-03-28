@@ -4,22 +4,14 @@ import { X } from "lucide-react";
 import { useState } from "react";
 import { Link } from "react-router-dom";
 
-
 const galleryImages = [
   "/images/gallery/dsc382098743.webp",
-
   "/images/gallery/dsc18469449.webp",
-
   "/images/gallery/aeromitra-gallery-1.webp",
-
   "/images/gallery/dsc8720274.webp",
-
   "/images/gallery/dsc08933.webp",
-
   "/images/gallery/dsc00360.webp",
-
   "/images/gallery/dsc01084.webp",
-
   "/images/gallery/dsc00073.webp",
 ];
 
@@ -27,14 +19,12 @@ const containerVariants: Variants = {
   hidden: { opacity: 0 },
   visible: {
     opacity: 1,
-    transition: {
-      staggerChildren: 0.1,
-    },
+    transition: { staggerChildren: 0.08 },
   },
 };
 
 const itemVariants: Variants = {
-  hidden: { opacity: 0, scale: 0.8 },
+  hidden: { opacity: 0, scale: 0.95 },
   visible: {
     opacity: 1,
     scale: 1,
@@ -48,49 +38,133 @@ export const GallerySection = () => {
   return (
     <motion.section
       id="gallery"
-      className="py-24 px-6 bg-stone-50 text-center"
+      className="py-24 px-6 bg-white"
       initial="hidden"
       whileInView="visible"
       viewport={{ once: true, margin: "-100px" }}
       variants={containerVariants}
     >
       <div className="max-w-7xl mx-auto">
-        <motion.span
-          variants={{
-            hidden: { opacity: 0, y: 20 },
-            visible: { opacity: 1, y: 0 },
-          }}
-          className="text-primary text-xs font-bold uppercase tracking-widest"
-        >
-          Our Work
-        </motion.span>
-        <motion.h2
-          variants={{
-            hidden: { opacity: 0, y: 20 },
-            visible: { opacity: 1, y: 0 },
-          }}
-          className="text-3xl md:text-5xl font-display mb-12 mt-2 uppercase tracking-widest"
-        >
-          Visual Inspiration
-        </motion.h2>
-        <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
-          {galleryImages.map((src, index) => (
-            <motion.div
-              key={index}
-              layoutId={`gallery-image-${index}`}
+        {/* Header */}
+        <div className="flex flex-col md:flex-row md:items-end md:justify-between mb-12">
+          <div>
+            <motion.span
               variants={itemVariants}
-              className="overflow-hidden h-64 group relative cursor-pointer"
-              onClick={() => setSelectedImage(src)}
+              className="text-primary text-[10px] font-bold uppercase tracking-widest mb-3 block"
             >
-              <img loading="lazy" decoding="async"
-                src={src}
-                alt={`Gallery ${index + 1}`}
-                className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
-              />
-              <div className="absolute inset-0 bg-black/0 group-hover:bg-black/20 transition-colors pointer-events-none" />
-            </motion.div>
-          ))}
+              Our Work
+            </motion.span>
+            <motion.h2
+              variants={itemVariants}
+              className="text-4xl md:text-5xl font-display text-stone-900 uppercase tracking-wide"
+            >
+              Visual Inspiration
+            </motion.h2>
+          </div>
+          <motion.div variants={itemVariants} className="mt-6 md:mt-0">
+            <Link to="/gallery">
+              <Button variant="primary">View All Projects</Button>
+            </Link>
+          </motion.div>
         </div>
+
+        {/* Mixed-size masonry grid */}
+        <div className="grid grid-cols-2 md:grid-cols-4 gap-3 auto-rows-[200px]">
+          {/* [0] spans 2 cols + 2 rows — large featured */}
+          <motion.div
+            variants={itemVariants}
+            className="col-span-2 row-span-2 overflow-hidden group relative cursor-pointer"
+            onClick={() => setSelectedImage(galleryImages[0])}
+          >
+            <img
+              loading="lazy"
+              decoding="async"
+              src={galleryImages[0]}
+              alt="Gallery 1"
+              className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
+            />
+            <div className="absolute inset-0 bg-black/0 group-hover:bg-black/20 transition-colors pointer-events-none" />
+          </motion.div>
+
+          {/* [1] normal */}
+          <motion.div
+            variants={itemVariants}
+            className="col-span-1 row-span-1 overflow-hidden group relative cursor-pointer"
+            onClick={() => setSelectedImage(galleryImages[1])}
+          >
+            <img loading="lazy" decoding="async" src={galleryImages[1]} alt="Gallery 2"
+              className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" />
+            <div className="absolute inset-0 bg-black/0 group-hover:bg-black/20 transition-colors pointer-events-none" />
+          </motion.div>
+
+          {/* [2] normal */}
+          <motion.div
+            variants={itemVariants}
+            className="col-span-1 row-span-1 overflow-hidden group relative cursor-pointer"
+            onClick={() => setSelectedImage(galleryImages[2])}
+          >
+            <img loading="lazy" decoding="async" src={galleryImages[2]} alt="Gallery 3"
+              className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" />
+            <div className="absolute inset-0 bg-black/0 group-hover:bg-black/20 transition-colors pointer-events-none" />
+          </motion.div>
+
+          {/* [3] spans 2 cols */}
+          <motion.div
+            variants={itemVariants}
+            className="col-span-2 row-span-1 overflow-hidden group relative cursor-pointer"
+            onClick={() => setSelectedImage(galleryImages[3])}
+          >
+            <img loading="lazy" decoding="async" src={galleryImages[3]} alt="Gallery 4"
+              className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" />
+            <div className="absolute inset-0 bg-black/0 group-hover:bg-black/20 transition-colors pointer-events-none" />
+          </motion.div>
+
+          {/* [4] normal */}
+          <motion.div
+            variants={itemVariants}
+            className="col-span-1 row-span-1 overflow-hidden group relative cursor-pointer"
+            onClick={() => setSelectedImage(galleryImages[4])}
+          >
+            <img loading="lazy" decoding="async" src={galleryImages[4]} alt="Gallery 5"
+              className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" />
+            <div className="absolute inset-0 bg-black/0 group-hover:bg-black/20 transition-colors pointer-events-none" />
+          </motion.div>
+
+          {/* [5] normal */}
+          <motion.div
+            variants={itemVariants}
+            className="col-span-1 row-span-1 overflow-hidden group relative cursor-pointer"
+            onClick={() => setSelectedImage(galleryImages[5])}
+          >
+            <img loading="lazy" decoding="async" src={galleryImages[5]} alt="Gallery 6"
+              className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" />
+            <div className="absolute inset-0 bg-black/0 group-hover:bg-black/20 transition-colors pointer-events-none" />
+          </motion.div>
+
+          {/* [6] normal */}
+          <motion.div
+            variants={itemVariants}
+            className="col-span-1 row-span-1 overflow-hidden group relative cursor-pointer"
+            onClick={() => setSelectedImage(galleryImages[6])}
+          >
+            <img loading="lazy" decoding="async" src={galleryImages[6]} alt="Gallery 7"
+              className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" />
+            <div className="absolute inset-0 bg-black/0 group-hover:bg-black/20 transition-colors pointer-events-none" />
+          </motion.div>
+
+          {/* [7] normal */}
+          <motion.div
+            variants={itemVariants}
+            className="col-span-1 row-span-1 overflow-hidden group relative cursor-pointer"
+            onClick={() => setSelectedImage(galleryImages[7])}
+          >
+            <img loading="lazy" decoding="async" src={galleryImages[7]} alt="Gallery 8"
+              className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" />
+            <div className="absolute inset-0 bg-black/0 group-hover:bg-black/20 transition-colors pointer-events-none" />
+          </motion.div>
+        </div>
+
+        {/* Lightbox */}
         <AnimatePresence>
           {selectedImage && (
             <motion.div
@@ -116,19 +190,11 @@ export const GallerySection = () => {
                 src={selectedImage}
                 alt="Full screen"
                 className="max-w-full max-h-[90vh] object-contain rounded-sm"
-                onClick={(e) => e.stopPropagation()} // Prevent closing when clicking the image
+                onClick={(e) => e.stopPropagation()}
               />
             </motion.div>
           )}
         </AnimatePresence>
-        <motion.div
-          variants={{ hidden: { opacity: 0 }, visible: { opacity: 1 } }}
-          className="mt-12"
-        >
-          <Link to="/gallery">
-            <Button variant="primary">View All Projects</Button>
-          </Link>
-        </motion.div>
       </div>
     </motion.section>
   );

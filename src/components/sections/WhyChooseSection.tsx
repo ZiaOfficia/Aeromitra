@@ -1,90 +1,75 @@
 import { whyChooseContent } from "../../data/content";
-import { motion, type Variants } from "framer-motion";
-
-const containerVariants: Variants = {
-  hidden: { opacity: 0 },
-  visible: {
-    opacity: 1,
-    transition: {
-      staggerChildren: 0.3,
-    },
-  },
-};
-
-const itemVariants: Variants = {
-  hidden: { opacity: 0, x: -30 },
-  visible: {
-    opacity: 1,
-    x: 0,
-    transition: { duration: 0.8, ease: "easeOut" },
-  },
-};
+import { motion } from "framer-motion";
 
 export const WhyChooseSection = () => {
   return (
-    <motion.section
-      initial="hidden"
-      whileInView="visible"
-      viewport={{ once: true, margin: "-100px" }}
-      variants={containerVariants}
-      className="py-24 bg-texture-gold text-white relative overflow-hidden"
-    >
+    <section className="py-24 bg-stone-50 overflow-hidden">
       <div className="max-w-7xl mx-auto px-6">
-        <motion.h2
-          variants={{
-            hidden: { opacity: 0, y: -20 },
-            visible: { opacity: 1, y: 0, transition: { duration: 0.6 } },
-          }}
-          className="text-4xl md:text-5xl font-display mb-12 text-center"
-        >
-          {whyChooseContent.heading}
-        </motion.h2>
+        <div className="grid grid-cols-1 lg:grid-cols-3 gap-16 items-start">
+          {/* Left heading column */}
+          <div className="lg:col-span-1">
+            <motion.span
+              initial={{ opacity: 0, y: 10 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true }}
+              transition={{ duration: 0.5 }}
+              className="text-primary text-[10px] font-bold uppercase tracking-[0.3em] mb-6 block"
+            >
+              Why Choose Us
+            </motion.span>
+            <motion.h2
+              initial={{ opacity: 0, y: 10 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true }}
+              transition={{ duration: 0.5, delay: 0.1 }}
+              className="text-4xl md:text-5xl font-display text-stone-900 mb-8 leading-tight"
+            >
+              {whyChooseContent.heading}
+            </motion.h2>
+            <motion.p
+              initial={{ opacity: 0, y: 10 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true }}
+              transition={{ duration: 0.5, delay: 0.15 }}
+              className="text-gray-600 leading-relaxed mb-8"
+            >
+              {whyChooseContent.description}
+            </motion.p>
+            <motion.div
+              initial={{ opacity: 0, y: 10 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true }}
+              transition={{ duration: 0.5, delay: 0.2 }}
+              className="p-6 border-l-2 border-primary bg-primary/5"
+            >
+              <p className="text-sm text-gray-700 italic leading-relaxed">
+                {whyChooseContent.footer}
+              </p>
+            </motion.div>
+          </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-16">
-          <motion.div variants={itemVariants} className="space-y-6">
-            <h3 className="text-xl font-bold uppercase tracking-widest border-b border-white/20 pb-4">
-              Our Promise
-            </h3>
-            <ul className="space-y-4">
-              <li className="flex items-start">
-                <span className="material-icons-outlined mr-3 text-white/80">
-                  check_circle
-                </span>
-                <span>{whyChooseContent.description}</span>
-              </li>
-              <li className="flex items-start">
-                <span className="material-icons-outlined mr-3 text-white/80">
-                  check_circle
-                </span>
-                <span>{whyChooseContent.footer}</span>
-              </li>
-            </ul>
-          </motion.div>
-
-          <motion.div
-            variants={{
-              hidden: { opacity: 0, x: 30 },
-              visible: {
-                opacity: 1,
-                x: 0,
-                transition: { duration: 0.8, ease: "easeOut" },
-              },
-            }}
-          >
-            <h3 className="text-xl font-bold uppercase tracking-widest border-b border-white/20 pb-4 mb-6">
-              Key Highlights
-            </h3>
-            <ul className="space-y-4 text-sm md:text-base opacity-90">
-              {whyChooseContent.points.map((item, index) => (
-                <li key={index} className="flex items-start">
-                  <span className="block min-w-2 w-2 h-2 rounded-full bg-white mt-2 mr-4"></span>
-                  {item}
-                </li>
+          {/* Right: numbered feature cards */}
+          <div className="lg:col-span-2">
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+              {whyChooseContent.points.map((point, index) => (
+                <motion.div
+                  key={index}
+                  initial={{ opacity: 0, y: 20 }}
+                  whileInView={{ opacity: 1, y: 0 }}
+                  viewport={{ once: true }}
+                  transition={{ duration: 0.5, delay: index * 0.06 }}
+                  className="bg-white p-7 border border-gray-100 hover:border-primary/30 hover:shadow-sm transition-all group"
+                >
+                  <span className="block font-display text-3xl text-primary/15 mb-4 group-hover:text-primary/35 transition-colors">
+                    {String(index + 1).padStart(2, "0")}
+                  </span>
+                  <p className="text-gray-600 text-sm leading-relaxed">{point}</p>
+                </motion.div>
               ))}
-            </ul>
-          </motion.div>
+            </div>
+          </div>
         </div>
       </div>
-    </motion.section>
+    </section>
   );
 };
