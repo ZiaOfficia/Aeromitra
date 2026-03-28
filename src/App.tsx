@@ -1,5 +1,6 @@
 import { BrowserRouter, Routes, Route, Outlet } from "react-router-dom";
 import { Layout } from "./components/layout/Layout";
+import { EnrollPopup } from "./components/common/EnrollPopup";
 import { HomePage } from "./pages/HomePage";
 import { AboutPage } from "./pages/AboutPage";
 import { FAQPage } from "./pages/FAQPage";
@@ -20,6 +21,7 @@ function App() {
   return (
     <BrowserRouter>
       <ScrollToTop />
+      <EnrollPopup />
       <Routes>
         {/* Public Routes wrapped in Layout */}
         <Route

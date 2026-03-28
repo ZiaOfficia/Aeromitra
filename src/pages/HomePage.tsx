@@ -22,8 +22,8 @@ export const HomePage = () => {
   return (
     <>
       <SEO
-        title="Luxury Wedding Decor & Design NY & NJ"
-        description="Premier wedding decor and event design in New York and New Jersey. We specialize in custom mandaps, floral arrangements, and luxury event styling."
+        title="Aeromitra Aviation Academy — Pilot Training"
+        description="Premier pilot training and aviation courses. We specialize in CPL, PPL, Type Rating, and DGCA ground classes for aspiring aviators worldwide."
       />
       <LeftFixedEnquiryPanel />
       <HeroSlider />

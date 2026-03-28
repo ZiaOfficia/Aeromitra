@@ -3,11 +3,11 @@ import { motion } from "framer-motion";
 
 export const StatsSection = () => {
   const stats = [
-    { icon: Star, value: "10+", label: "Years of Experience" },
-    { icon: Crown, value: "500+", label: "Luxury Weddings" },
-    { icon: Palette, value: "Custom", label: "Design & Build" },
-    { icon: Gem, value: "Premium", label: "White-Glove Execution" },
-    { icon: Landmark, value: "Trusted", label: "By Luxury Venues" },
+    { icon: Star, value: "400+", label: "Years Experience" },
+    { icon: Crown, value: "10+", label: "Simulators" },
+    { icon: Palette, value: "6+", label: "Aircraft" },
+    { icon: Gem, value: "32+", label: "Countries" },
+    { icon: Landmark, value: "1000+", label: "Students Trained" },
   ];
 
   return (

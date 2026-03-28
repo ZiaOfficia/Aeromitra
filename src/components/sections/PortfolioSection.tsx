@@ -47,7 +47,7 @@ export const PortfolioSection = () => {
           </div>
           <Link to="/portfolio" className="mt-6 md:mt-0">
             <Button className="bg-transparent border border-gray-300 text-gray-700 hover:bg-primary hover:border-primary hover:text-white transition-all px-6 py-3">
-              View All Weddings &rarr;
+              View All Success Stories &rarr;
             </Button>
           </Link>
         </motion.div>

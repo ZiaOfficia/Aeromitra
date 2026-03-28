@@ -12,7 +12,7 @@ interface SEOProps {
 
 export const SEO = ({
   title,
-  description = "Luxury wedding decor and event design in New York & New Jersey. Aeromitra specializes in custom mandaps, floral arrangements, and premium event styling.",
+  description = "Premier pilot training and aviation courses at Aeromitra Aviation Academy. Specializing in CPL, PPL, Type Rating, and DGCA ground classes for aspiring aviators worldwide.",
   keywords,
   name = "Aeromitra Aviation Academy",
   type = "website",

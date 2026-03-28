@@ -28,7 +28,7 @@ export const FAQPage = () => {
     <div className="bg-stone-950 min-h-screen text-stone-200">
       <SEO
         title="Frequently Asked Questions"
-        description="Find answers to common questions about Aeromitra wedding decor services, pricing, and our design process."
+        description="Find answers to common questions about Aeromitra Aviation Academy pilot training programs, pricing, and enrollment process."
       />
       {/* Hero Section */}
       <section className="relative h-[90vh] flex items-center justify-center overflow-hidden bg-stone-900 text-white">
@@ -59,8 +59,8 @@ export const FAQPage = () => {
               <span className="text-white/50 italic font-serif">Questions</span>
             </h1>
             <p className="text-lg md:text-xl text-gray-300 font-light max-w-2xl mx-auto">
-              Everything you need to know about our services, process, and how
-              we bring your dream wedding to life.
+              Everything you need to know about our training programs, process, and how
+              we help you achieve your aviation career goals.
             </p>
           </motion.div>
         </div>

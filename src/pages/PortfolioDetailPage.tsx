@@ -23,8 +23,8 @@ export const PortfolioDetailPage = () => {
   return (
     <div className="bg-stone-50 min-h-screen">
       <SEO
-        title={`${portfolio.title} - Real Wedding Gallery`}
-        description={`Explore the ${portfolio.title} wedding at ${portfolio.location}, designed by Aeromitra.`}
+        title={`${portfolio.title} - Real Success Gallery`}
+        description={`Explore the ${portfolio.title} success story at ${portfolio.location}, achieved through Aeromitra Aviation Academy.`}
         image={portfolio.heroImage}
       />
       {/* 1. Hero Section */}
@@ -161,7 +161,7 @@ export const PortfolioDetailPage = () => {
         <div className="max-w-7xl mx-auto">
           <div className="flex items-center justify-between mb-12">
             <h3 className="text-2xl font-display text-gray-900">
-              More Real Weddings
+              More Real Success
             </h3>
             <Link
               to="/gallery"

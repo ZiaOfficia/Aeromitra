@@ -54,15 +54,15 @@ export const ServicesGrid = () => {
               variants={itemVariants}
               className="text-4xl md:text-5xl font-display text-gray-900"
             >
-              Our Signature Wedding Decor Services
+              Our Signature Aviation Training Programs
             </motion.h2>
           </div>
           <motion.p
             variants={itemVariants}
             className="md:max-w-sm text-gray-500 text-sm leading-relaxed"
           >
-            We provide complete wedding décor and design services for ceremonies,
-            receptions, and multi-day wedding celebrations.
+            We provide complete pilot training and aviation courses for students
+            at every stage of their flying career.
           </motion.p>
         </div>
 

@@ -105,8 +105,8 @@ export const AboutPage = () => {
   return (
     <div className="bg-stone-50 min-h-screen">
       <SEO
-        title="About Us - Luxury Wedding Planners"
-        description="Learn about Aeromitra, the premier luxury wedding decor and design company serving New York and New Jersey."
+        title="About Us - Aeromitra Aviation Academy"
+        description="Learn about Aeromitra Aviation Academy, the premier pilot training institution helping students achieve their aviation career dreams."
       />
       {/* Hero Section */}
       <section className="relative h-[85vh] flex items-center justify-center overflow-hidden">
@@ -261,14 +261,14 @@ export const AboutPage = () => {
               Personalized Service
             </h4>
             <h2 className="text-4xl md:text-5xl font-display text-stone-900 mb-8">
-              Dream Wedding Event Consultation
+              Free Aviation Career Consultation
             </h2>
             <p className="text-gray-600 text-lg leading-relaxed mb-8 font-light">
               At Aeromitra, we’re ready to embark on your journey toward
-              creating the wedding event of your dreams. Let’s connect and
-              discuss how we can bring your vision to life! Our Wedding
-              Decoration team is dedicated to crafting unforgettable
-              experiences.
+              achieving your aviation career goals. Let’s connect and
+              discuss how we can help you take flight! Our training
+              team is dedicated to crafting unforgettable
+              learning experiences.
             </p>
             <a
               href="/contact"

@@ -30,8 +30,8 @@ export const PortfolioListingPage = () => {
   return (
     <div className="bg-white min-h-screen pt-[60px] md:pt-[50px]">
       <SEO
-        title="Our Portfolio - Real Weddings"
-        description="View our portfolio of real weddings and events designed by Aeromitra in New York and New Jersey."
+        title="Our Portfolio - Real Success Stories"
+        description="View our portfolio of real student success stories and training milestones at Aeromitra Aviation Academy."
       />
       {/* Header */}
       <section className="bg-stone-900 text-white py-60 px-6 text-center relative overflow-hidden">
@@ -52,7 +52,7 @@ export const PortfolioListingPage = () => {
             animate={{ opacity: 1, y: 0 }}
             className="text-5xl md:text-7xl font-display mb-6"
           >
-            Real Weddings
+            Real Success
           </motion.h1>
           <motion.p
             initial={{ opacity: 0, y: 20 }}
@@ -60,7 +60,7 @@ export const PortfolioListingPage = () => {
             transition={{ delay: 0.2 }}
             className="text-xl font-light text-stone-300"
           >
-            A collection of our most cherished celebrations.
+            A collection of our most inspiring student success stories.
           </motion.p>
         </div>
       </section>

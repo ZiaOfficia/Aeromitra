@@ -8,22 +8,22 @@ export const TestimonialsSection = () => {
     {
       image: "/images/portfolio/whatsapp-image-2023-09-27-at-12.17.56.webp",
       quote:
-        "If you're fortunate enough to have Aeromitra as your event decor specialist, consider yourselves truly blessed. We highly endorse their services!",
-      author: "Adrian & Kyle",
+        "If you're fortunate enough to train with Aeromitra Aviation Academy, consider yourself truly blessed. The instructors are world-class and the training experience is second to none. Highly recommend!",
+      author: "Adrian — CPL Graduate",
       link: "#",
     },
     {
       image: "/images/portfolio/kiranfritdjof-weddingphotos-1135.webp",
       quote:
-        "Choosing Aeromitra for our wedding decor was one of the best decisions we made. Their attention to detail and creative flair transformed our wedding venue in New York into a dream come true. Highly recommended!",
-      author: "Devan & Ashish",
+        "Choosing Aeromitra for my pilot training was one of the best decisions I ever made. Their attention to detail and structured curriculum transformed my skills and gave me the confidence to pursue a professional flying career.",
+      author: "Devan — PPL Student",
       link: "#",
     },
     {
       image: "/images/portfolio/dsc00122.webp",
       quote:
-        "Aeromitra Aviation Academy exceeded all our expectations and brought our vision to life in the most spectacular way. From the initial consultation to the final touches in our wedding, Aeromitra team's professionalism and expertise shone through. We couldn't be happier with the results!",
-      author: "Judi & Chris",
+        "Aeromitra Aviation Academy exceeded all my expectations. From the initial counselling session to the final flight test, the team's professionalism and expertise shone through every step. I couldn't be happier with the results!",
+      author: "Judi — Type Rating Graduate",
       link: "#",
     },
   ];
@@ -62,7 +62,7 @@ export const TestimonialsSection = () => {
             viewport={{ once: true }}
             className="text-primary text-[10px] font-bold uppercase tracking-[0.35em] mb-6 block"
           >
-            Client Stories
+            Student Stories
           </motion.span>
           <motion.h2
             initial={{ opacity: 0, y: 10 }}

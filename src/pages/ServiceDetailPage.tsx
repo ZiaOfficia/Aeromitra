@@ -91,7 +91,7 @@ export const ServiceDetailPage = () => {
   return (
     <div className="bg-white">
       <SEO
-        title={`${service.title} - Wedding Services`}
+        title={`${service.title} - Aviation Training`}
         description={service.intro.description[0]}
         image={service.heroImage}
       />
@@ -240,15 +240,15 @@ export const ServiceDetailPage = () => {
         </div>
       </section>
 
-      {/* Real Weddings Gallery - Moved after Overview */}
+      {/* Real Success Gallery - Moved after Overview */}
       <section className="py-12 px-6 bg-stone-50">
         <div className="max-w-7xl mx-auto">
           <div className="text-center mb-12">
             <h2 className="text-3xl md:text-4xl font-display text-gray-900 mb-3">
-              Real Weddings Gallery
+              Real Success Gallery
             </h2>
             <p className="text-gray-500 font-light">
-              Moments we've had the honor of creating.
+              Milestones we've had the honor of being part of.
             </p>
           </div>
           <ServiceGalleryGrid images={service.portfolioImages} />
@@ -456,11 +456,11 @@ export const ServiceDetailPage = () => {
                 Transparent & Custom
               </h3>
               <p className="text-gray-600 font-light leading-relaxed">
-                We believe that every wedding is unique, and so are the
+                We believe that every student's journey is unique, and so are the
                 requirements. Instead of rigid packages, we build a custom
-                proposal tailored to your specific needs, venue scale, and
-                floral preferences. This ensures you only invest in what truly
-                matters to your vision.
+                training plan tailored to your specific goals, experience level, and
+                career aspirations. This ensures you only invest in what truly
+                matters to your aviation journey.
               </p>
             </div>
             <div className="bg-white p-8 rounded-xl shadow-md border border-stone-100">

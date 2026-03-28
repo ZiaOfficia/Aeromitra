@@ -172,15 +172,15 @@ export const ServicesPage = () => {
   return (
     <div className="pt-[60px] md:pt-[50px]">
       <SEO
-        title="Our Services - Wedding Decor & Design"
-        description="Explore our comprehensive wedding services including floral design, mandaps, event planning, and custom styling."
+        title="Our Services - Aviation Training Programs"
+        description="Explore our comprehensive aviation training programs including CPL, PPL, Type Rating, DGCA ground classes, and cabin crew training."
       />
       {/* Hero Section */}
       <section className="relative h-[60vh] md:h-[70vh] flex items-center justify-center overflow-hidden">
         <div className="absolute inset-0">
           <img loading="lazy" decoding="async"
             src={getOptimizedImage("/images/gallery/dsc00073-2.webp", 1920)}
-            alt="Luxury Wedding Setting"
+            alt="Aviation Training at Aeromitra"
             className="w-full h-full object-cover"
           />
           <div className="absolute inset-0 bg-black/40" />
@@ -199,7 +199,7 @@ export const ServicesPage = () => {
             transition={{ delay: 0.2 }}
             className="text-4xl md:text-6xl lg:text-7xl font-display mb-6"
           >
-            DISCOVER OUR WEDDING DECORATION SERVICES IN NYC & NJ
+            DISCOVER OUR AVIATION TRAINING PROGRAMS
           </motion.h1>
           <motion.p
             initial={{ opacity: 0, y: 20 }}
@@ -207,8 +207,7 @@ export const ServicesPage = () => {
             transition={{ delay: 0.4 }}
             className="text-lg md:text-xl text-white/90 font-light max-w-2xl mx-auto leading-relaxed"
           >
-            Delve into our Decor Offerings & Elevate your Wedding Events to New
-            Heights.
+            Explore our Training Programs & Elevate your Aviation Career to New Heights.
           </motion.p>
         </div>
       </section>
@@ -220,9 +219,9 @@ export const ServicesPage = () => {
             Tailored to Perfection
           </h2>
           <p className="text-gray-600 leading-relaxed mb-12">
-            Aeromitra offers a wide range of services to cater to your event
-            decor needs. Whether you’re planning a wedding, corporate event, or
-            private celebration, our team is here to bring your vision to life.
+            Aeromitra offers a wide range of training programs to cater to every
+            aspiring aviator’s needs. Whether you’re starting from scratch or advancing
+            your license, our team is here to help you achieve your goals.
           </p>
           <div className="w-24 h-px bg-primary mx-auto" />
         </div>
@@ -303,13 +302,13 @@ export const ServicesPage = () => {
           <div className="text-center mb-20">
             <h2 className="text-4xl md:text-6xl font-display mb-6">FAQs?</h2>
             <p className="text-gray-500  text-xl font-bold">
-              Wedding Event Decor Related Questions
+              Aviation Training Related Questions
             </p>
             <p className="text-gray-500 font-light text-sm">
-              We’re here to address all your wedding event decor inquiries and
-              turn your vision into a stunning reality! Let’s connect and
-              explore how Aeromitra can transform your special occasion into an
-              unforgettable experience.
+              We’re here to address all your aviation training inquiries and
+              turn your dream of flying into reality! Let’s connect and
+              explore how Aeromitra can launch your aviation career into an
+              unforgettable journey.
             </p>
           </div>
 

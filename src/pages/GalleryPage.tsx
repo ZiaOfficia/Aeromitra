@@ -104,8 +104,8 @@ export const GalleryPage = () => {
   return (
     <div className="pt-[60px] md:pt-[50px] bg-white min-h-screen">
       <SEO
-        title="Our Gallery - Wedding Decor Inspiration"
-        description="Browse our portfolio of stunning wedding decor, including mandaps, reception stages, and floral arrangements in NY & NJ."
+        title="Our Gallery - Aviation Training Highlights"
+        description="Browse our gallery of flight training, simulator sessions, aircraft, and student success moments at Aeromitra Aviation Academy."
       />
       {/* Hero Section */}
       {/* ------------------- IMAGE GALLERY SECTION ------------------- */}
@@ -213,7 +213,7 @@ export const GalleryPage = () => {
             Video Gallery
           </h2>
           <p className="mt-4 text-xl font-light text-stone-200 max-w-2xl mx-auto px-6">
-            Relive the movement, sound, and emotion of every celebration.
+            Relive the movement, skill, and emotion of every training milestone.
           </p>
         </motion.div>
       </section>
@@ -272,8 +272,8 @@ export const GalleryPage = () => {
                     {item.title || `Cinematic Event ${index + 1}`}
                   </h3>
                   <p className="text-gray-500 text-sm leading-relaxed max-w-2xl">
-                    Experience the atmosphere, joy, and unforgettable moments
-                    captured in this beautiful celebration.
+                    Experience the atmosphere, determination, and unforgettable moments
+                    captured in this aviation training journey.
                   </p>
                 </div>
               </motion.div>
