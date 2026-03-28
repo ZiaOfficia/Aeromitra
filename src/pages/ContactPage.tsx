@@ -237,6 +237,89 @@ export const ContactPage = () => {
         </motion.div>
       </section>
 
+      {/* Campus Locations */}
+      <section className="py-16 px-6 bg-stone-50 border-t border-gray-100">
+        <div className="max-w-7xl mx-auto">
+          <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            className="mb-12"
+          >
+            <span className="text-primary text-[10px] font-bold uppercase tracking-[0.35em] mb-3 block">
+              Our Campuses
+            </span>
+            <h2 className="text-3xl md:text-4xl font-display text-stone-900">
+              Find Us Near You
+            </h2>
+          </motion.div>
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4">
+            {[
+              {
+                label: "Delhi — Head Office",
+                name: "Aero Mitra Aviation Pvt. Ltd.",
+                address: "4th floor Phoolwari Building, 1, Block B 7, Arjun Nagar, Safdarjung Enclave, New Delhi 110029",
+                phone: "+91 9999228597",
+                email: "info@aeromitra.com",
+              },
+              {
+                label: "Delhi — Secondary",
+                name: "Aero Mitra Aviation Pvt. Ltd.",
+                address: "F-624, 2nd floor, near Anytime Fitness, Ramphal Chowk Rd, Block-H, Palam Village, New Delhi 110045",
+                phone: "+91 9999228597",
+                email: "info@aeromitra.com",
+              },
+              {
+                label: "Lucknow Campus",
+                name: "Aero Mitra Aviation Pvt. Ltd.",
+                address: "Kapoorthala, Aliganj, Lucknow",
+                phone: "+91 9999228599",
+                email: "info@aeromitra.com",
+              },
+              {
+                label: "USA Campus",
+                name: "Kingsky Flight Academy Pvt. Ltd.",
+                address: "3131 Flightline Dr. – Suite 304, Lakeland, FL 33811",
+                phone: "+1 (954) 643-3459",
+                email: "info@aeromitra.com",
+              },
+            ].map((campus, i) => (
+              <motion.div
+                key={i}
+                initial={{ opacity: 0, y: 20 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                viewport={{ once: true }}
+                transition={{ delay: i * 0.08 }}
+                className="bg-white p-6 border border-gray-100 hover:border-primary/30 hover:shadow-sm transition-all"
+              >
+                <span className="text-[9px] uppercase tracking-widest text-primary font-bold mb-3 block">
+                  {campus.label}
+                </span>
+                <p className="font-display text-stone-900 text-base mb-3">{campus.name}</p>
+                <div className="space-y-2 text-sm text-gray-500">
+                  <div className="flex items-start gap-2">
+                    <MapPin size={13} className="text-primary mt-0.5 flex-shrink-0" />
+                    <span className="leading-snug">{campus.address}</span>
+                  </div>
+                  <div className="flex items-center gap-2">
+                    <Phone size={13} className="text-primary flex-shrink-0" />
+                    <a href={`tel:${campus.phone.replace(/\s/g, "")}`} className="hover:text-primary transition-colors">
+                      {campus.phone}
+                    </a>
+                  </div>
+                  <div className="flex items-center gap-2">
+                    <Mail size={13} className="text-primary flex-shrink-0" />
+                    <a href={`mailto:${campus.email}`} className="hover:text-primary transition-colors">
+                      {campus.email}
+                    </a>
+                  </div>
+                </div>
+              </motion.div>
+            ))}
+          </div>
+        </div>
+      </section>
+
       {/* Map Section — Delhi */}
       <section className="h-[65vh] max-w-7xl mx-auto mb-12 rounded-2xl bg-stone-100 relative group overflow-hidden shadow-xl">
         <iframe

@@ -11,6 +11,8 @@ import { PortfolioDetailPage } from "./pages/PortfolioDetailPage";
 import { PortfolioListingPage } from "./pages/PortfolioListingPage";
 import { PrivacyPolicyPage } from "./pages/PrivacyPolicyPage";
 import { TermsOfServicePage } from "./pages/TermsOfServicePage";
+import { TuitionFinancingPage } from "./pages/TuitionFinancingPage";
+import { AccommodationsPage } from "./pages/AccommodationsPage";
 import ScrollToTop from "./components/common/ScrollToTop";
 import ThankYouPage from "./pages/ThankYouPage";
 
@@ -36,6 +38,8 @@ function App() {
           <Route path="/gallery" element={<GalleryPage />} />
           <Route path="/portfolio/:id" element={<PortfolioDetailPage />} />
           <Route path="/portfolio" element={<PortfolioListingPage />} />
+          <Route path="/tuition-financing" element={<TuitionFinancingPage />} />
+          <Route path="/accommodations" element={<AccommodationsPage />} />
           <Route path="/privacy-policy" element={<PrivacyPolicyPage />} />
           <Route path="/terms-of-service" element={<TermsOfServicePage />} />
           <Route path="/thank-you" element={<ThankYouPage />} />

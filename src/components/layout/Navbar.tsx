@@ -38,9 +38,10 @@ export const Navbar = () => {
       path: "/services",
       hasDropdown: true,
     },
-    { name: "Admission", href: "/contact", isRouterLink: true, path: "/contact" },
     { name: "Gallery", href: "/gallery", isRouterLink: true, path: "/gallery" },
-    { name: "FAQ", href: "/faq", isRouterLink: true, path: "/faq" },
+    { name: "Tuition Financing", href: "/tuition-financing", isRouterLink: true, path: "/tuition-financing" },
+    { name: "Accommodations", href: "/accommodations", isRouterLink: true, path: "/accommodations" },
+    { name: "Contact Us", href: "/contact", isRouterLink: true, path: "/contact" },
   ];
 
   return (
