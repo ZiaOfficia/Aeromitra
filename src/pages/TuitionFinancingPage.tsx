@@ -1,3 +1,4 @@
+import { getImageUrl } from "../utils/imageUtils";
 import { motion } from "framer-motion";
 import { Sparkles, Landmark, ArrowRight, Phone } from "lucide-react";
 import { SEO } from "../components/common/SEO";
@@ -38,7 +39,7 @@ export const TuitionFinancingPage = () => {
           <img
             loading="lazy"
             decoding="async"
-            src="/images/home/hero-cpl.webp"
+            src={getImageUrl("DGCA-Ground-School-in-Vishakhapatnam.jpg")}
             alt="Tuition Financing"
             className="w-full h-full object-cover opacity-40"
           />
@@ -174,7 +175,7 @@ export const TuitionFinancingPage = () => {
           <img
             loading="lazy"
             decoding="async"
-            src="/images/home/hero-cpl.webp"
+            src={getImageUrl("DGCA-Pariksha-1024x733.jpeg")}
             alt=""
             className="w-full h-full object-cover"
           />

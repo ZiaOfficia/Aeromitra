@@ -1,14 +1,15 @@
+import { getImageUrl } from "../../utils/imageUtils";
 import { motion } from "framer-motion";
 import { Instagram, Heart, MessageCircle } from "lucide-react";
 import { getOptimizedImage } from "../../utils/imageUtils";
 
 const posts = [
-  { id: 1, image: "/images/misc/screenshot-2026-02-07-171357.webp", likes: 245, comments: 12 },
-  { id: 2, image: "/images/misc/screenshot-2026-02-07-171204.webp", likes: 189, comments: 8 },
-  { id: 3, image: "/images/misc/screenshot-2026-02-07-171508.webp", likes: 312, comments: 24 },
-  { id: 4, image: "/images/misc/screenshot-2026-02-07-171258.webp", likes: 156, comments: 5 },
-  { id: 5, image: "/images/misc/screenshot-2026-02-07-171320.webp", likes: 278, comments: 18 },
-  { id: 6, image: "/images/misc/screenshot-2026-02-07-171436.webp", likes: 198, comments: 9 },
+  { id: 1, image: getImageUrl("3.png"), likes: 245, comments: 12 },
+  { id: 2, image: getImageUrl("4.png"), likes: 189, comments: 8 },
+  { id: 3, image: getImageUrl("5.png"), likes: 312, comments: 24 },
+  { id: 4, image: getImageUrl("6.png"), likes: 156, comments: 5 },
+  { id: 5, image: getImageUrl("7.png"), likes: 278, comments: 18 },
+  { id: 6, image: getImageUrl("8.png"), likes: 198, comments: 9 },
 ];
 
 export const InstagramFeed = () => {

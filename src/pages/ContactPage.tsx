@@ -1,3 +1,4 @@
+import { getImageUrl } from "../utils/imageUtils";
 import { useState } from "react";
 import { motion } from "framer-motion";
 import { MapPin, Mail, Phone, Clock, Sparkles, ArrowRight } from "lucide-react";
@@ -52,7 +53,7 @@ export const ContactPage = () => {
           <img
             loading="lazy"
             decoding="async"
-            src="/images/home/hero-cpl.webp"
+            src={getImageUrl("aircraft-rest-hangar-lined-up-like-steel-birds-scaled.webp")}
             alt="Contact Aeromitra"
             className="w-full h-full object-cover"
           />

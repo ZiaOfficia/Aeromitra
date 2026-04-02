@@ -1,3 +1,4 @@
+import { getImageUrl } from "../utils/imageUtils";
 import { motion, type Variants } from "framer-motion";
 import { Link } from "react-router-dom";
 import { portfolioData } from "../data/portfolioData";
@@ -38,7 +39,7 @@ export const PortfolioListingPage = () => {
         <div className="absolute inset-0 opacity-30">
           <img loading="lazy" decoding="async"
             src={getOptimizedImage(
-              "/images/portfolio/ak-196-2.webp",
+              getImageUrl("DGCA-CPL-Ground-Classes-in-Delhi.jpeg"),
               1920,
             )}
             alt="Portfolio Header"

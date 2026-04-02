@@ -1,3 +1,4 @@
+import { getImageUrl } from "../../utils/imageUtils";
 import { useState, useEffect } from "react";
 import { Menu, X, ChevronDown, ChevronRight, Download } from "lucide-react";
 import clsx from "clsx";
@@ -84,7 +85,7 @@ export const Navbar = () => {
             <img
               loading="lazy"
               decoding="async"
-              src="/images/logos/aeromitra-logo.webp"
+              src={getImageUrl("1-rgj9tqq8waovyiqjjek83t782m790eaecn0qz1k1e8.png")}
               alt="Aeromitra Aviation Academy Logo"
               className="h-12 w-auto object-contain"
             />

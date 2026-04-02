@@ -1,65 +1,66 @@
+import { getImageUrl } from "../../utils/imageUtils";
 import { motion } from "framer-motion";
 
 const items = [
   {
     type: "link" as const,
     href: "https://www.maharaniweddings.com/2025-04-15/16630-hartford-ct-indian-wedding-by-juniper-domantay?fbclid=PAY2xjawJre85leHRuA2FlbQIxMQABp0DZ6VuDwJI8ulfXC6hmCpEyA6lycLDJEtklxSls-mr0qe2L5xnAjDQvyj3O_aem_XMyyfUDnYZjHn39PUVibmw",
-    src: "/images/general/maharani.webp",
+    src: getImageUrl("24-05-13-AF_EDUCATION-1024x683.jpg"),
     alt: "Maharani Weddings",
     className: "h-16 w-auto object-contain",
   },
   {
     type: "link" as const,
     href: "https://wezoree.com/real-weddings/urban-euphoria-adriana-kyle-s-magical-moments-at-ravel-hotel-1701964352/",
-    src: "/images/logos/logo_wezoree_black-01.webp",
+    src: getImageUrl("24-05-13-AF_EDUCATION-18-rgj9tqqbc04x9hnkilintkauvlsshuws1lhi1p17l8.jpg"),
     alt: "Wezoree",
     className: "h-10 w-auto object-contain brightness-0 invert",
   },
   {
     type: "img" as const,
-    src: "/images/general/358054850_1645118269287715_7591891286819020443_n.webp",
+    src: getImageUrl("24-05-13-AF_EDUCATION-20-300x200.jpg"),
     alt: "Vogue Weddings",
     className:
       "h-20 w-auto object-contain grayscale hover:grayscale-0 transition-all duration-500 rounded-sm opacity-70 hover:opacity-100",
   },
   {
     type: "img" as const,
-    src: "/images/general/326374167_520572563502506_3682989526405299889_n.webp",
+    src: getImageUrl("24-05-13-AF_EDUCATION-23-1.jpg"),
     alt: "Elle Weddings",
     className:
       "h-20 w-auto object-contain grayscale hover:grayscale-0 transition-all duration-500 rounded-sm opacity-70 hover:opacity-100",
   },
   {
     type: "img" as const,
-    src: "/images/general/212027854_503914070828276_8392782795759379749_n.webp",
+    src: getImageUrl("24-05-13-AF_EDUCATION-23-1024x683.jpg"),
     alt: "Brides",
     className:
       "h-20 w-auto object-contain grayscale hover:grayscale-0 transition-all duration-500 rounded-sm opacity-70 hover:opacity-100",
   },
   {
     type: "img" as const,
-    src: "/images/general/568631337_18538482400017750_8428615054160921167_n.webp",
+    src: getImageUrl("24-05-13-AF_EDUCATION-23.jpg"),
     alt: "Carats & Cakes",
     className:
       "h-20 w-auto object-contain grayscale hover:grayscale-0 transition-all duration-500 rounded-sm opacity-70 hover:opacity-100",
   },
   {
     type: "img" as const,
-    src: "/images/general/screenshot-2026-02-10-205318.webp",
+    src: getImageUrl("24-05-13-AF_EDUCATION-25-1.jpg"),
     alt: "The Luxury Bride Magazine",
     className:
       "h-24 w-auto object-contain grayscale hover:grayscale-0 transition-all duration-500 opacity-70 hover:opacity-100",
   },
   {
     type: "img" as const,
-    src: "/images/general/497509931_18507082408031379_9071343399086700481_n.webp",
+    src: getImageUrl("24-05-13-AF_EDUCATION-26-1-300x200.jpg"),
     alt: "Modern Luxury Weddings",
     className:
       "h-20 w-auto object-contain grayscale hover:grayscale-0 transition-all duration-500 rounded-sm opacity-70 hover:opacity-100",
   },
   {
     type: "img" as const,
-    src: "/images/general/munaluchi_horizontal_black-web.webp",
+    src: getImageUrl("24-05-13-AF_EDUCATION-26.jpg"),
     alt: "Munaluchi Bride",
     className:
       "h-12 w-auto object-contain brightness-0 invert opacity-70 hover:opacity-100 transition-all duration-500",

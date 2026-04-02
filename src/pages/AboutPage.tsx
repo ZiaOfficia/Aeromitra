@@ -1,3 +1,4 @@
+import { getImageUrl } from "../utils/imageUtils";
 import { useState, useEffect } from "react";
 import { SEO } from "../components/common/SEO";
 import { motion, AnimatePresence, type Variants } from "framer-motion";
@@ -31,10 +32,10 @@ const containerVariants: Variants = {
 };
 
 const heroImages = [
-  "/images/gallery/dsc09950.webp",
-  "/images/home/382098743.webp",
-  "/images/home/95261302-1.webp",
-  "/images/home/05028235-1.webp",
+  getImageUrl("Affordable-Flight-Schools-1024x733.jpeg"),
+  getImageUrl("Affordable-Flight-Schools.jpeg"),
+  getImageUrl("air-traffic-300x240.jpg"),
+  getImageUrl("aircraft-rest-hangar-lined-up-like-steel-birds-1024x574.webp"),
 ];
 
 export const AboutPage = () => {
@@ -161,7 +162,7 @@ export const AboutPage = () => {
             <img loading="lazy" decoding="async"
               alt="About Aeromitra"
               className="w-full h-100 object-cover grayscale-20"
-              src="/images/general/raza-weding-decor-specialist-1-1.webp"
+              src={getImageUrl("Adventure-Flight-Education-Bangalore.jpeg")}
             />
           </div>
 
@@ -225,7 +226,7 @@ export const AboutPage = () => {
             <img loading="lazy" decoding="async"
               alt="About Aeromitra"
               className="w-full h-full object-cover grayscale-20 opacity-90"
-              src="/images/general/raza-weding-decor-specialist-1.webp"
+              src={getImageUrl("aerial-view-doctor-writing-patient-daily-report-checklist-1024x733.webp")}
             />
           </motion.div>
         </div>
@@ -243,7 +244,7 @@ export const AboutPage = () => {
             className="w-full lg:w-2/3 h-[500px] lg:h-full relative z-0"
           >
             <img loading="lazy" decoding="async"
-              src="/images/gallery/dsc00038-2.webp"
+              src={getImageUrl("aerial-view-doctor-writing-patient-daily-report-checklist-scaled.webp")}
               alt="Consultation"
               className="w-full h-full object-cover shadow-2xl grayscale-20"
             />
@@ -301,7 +302,7 @@ export const AboutPage = () => {
               className="mb-8 relative"
             >
               <img loading="lazy" decoding="async"
-                src="/images/general/farhan-wedding-carpenter-specialist.webp"
+                src={getImageUrl("Aero-Mitra-Aviation-1.png")}
                 alt="Farhan"
                 className="w-full h-full object-cover filter transition-all duration-1000 ease-out"
               />
@@ -337,7 +338,7 @@ export const AboutPage = () => {
               className="mb-8 relative"
             >
               <img loading="lazy" decoding="async"
-                src="/images/general/karla-lead-florist.webp"
+                src={getImageUrl("Aero-Mitra-Aviation-2.png")}
                 alt="Karla"
                 className="w-full h-full object-cover filter transition-all duration-1000 ease-out"
               />

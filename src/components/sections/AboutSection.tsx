@@ -1,3 +1,4 @@
+import { getImageUrl } from "../../utils/imageUtils";
 import { aboutContent } from "../../data/content";
 import { motion } from "framer-motion";
 
@@ -18,7 +19,7 @@ export const AboutSection = () => {
             decoding="async"
             alt="About Aeromitra"
             className="w-full h-full object-cover absolute inset-0"
-            src="/images/general/raza-weding-decor-specialist-1.webp"
+            src={getImageUrl("1.png")}
           />
           <div className="absolute inset-0 bg-stone-950/15" />
         </motion.div>

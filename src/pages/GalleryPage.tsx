@@ -1,3 +1,4 @@
+import { getImageUrl } from "../utils/imageUtils";
 import { useState } from "react";
 import { SEO } from "../components/common/SEO";
 import { motion, AnimatePresence } from "framer-motion";
@@ -10,21 +11,21 @@ const videoGallery = [
     id: "PXJWdgfigUg",
     title: "Adriana & Kyle's Ceremony & Reception Décor",
     thumbnail:
-      "/images/portfolio/ak-196-1.webp",
+      getImageUrl("airplane-1-300x200.jpg"),
     videoLength: "1:05",
   },
   {
     id: "ALCysyBUBbg",
     title: "Elegance Unveiled: A Glimpse into Our Dazzling Decor ",
     thumbnail:
-      "/images/gallery/dsc00021-1.webp",
+      getImageUrl("Akash-nim.jpg"),
     videoLength: "1:04",
   },
   {
     id: "VvkpCzqlJxI",
     title: "Nadia Mahadeo Reception Stage",
     thumbnail:
-      "/images/gallery/dsc00215-1.webp",
+      getImageUrl("Alan-patric.jpeg"),
     videoLength: "0:19",
   }, // YouTube Dev placeholder
    // Psy placeholder
@@ -32,69 +33,69 @@ const videoGallery = [
     id: "gfJpcRz8xpo",
     title: "Great Gatsby Theme Before And After",
     thumbnail:
-      "/images/home/dsc01139.webp",
+      getImageUrl("Aviation-Role-Models-Learn-from-Experienced-Pilots.webp"),
     videoLength: "0:30",
   },
   {
     id: "5HgrU-RK2Ec",
     title: "Judi & Chris Video Review",
     thumbnail:
-      "/images/home/dsc3w0a8577.webp",
+      getImageUrl("best-aviation-academy-in-Delhi-1024x733.jpeg"),
     videoLength: "0:33",
   },
 ];
 
 // Reuse generic gallery images
 const imageGallery = [
-  "/images/gallery/dsc05988-2.webp",
+  getImageUrl("best-aviation-academy-in-Delhi.jpeg"),
 
-  "/images/gallery/dsc08933-2.webp",
+  getImageUrl("Best-CPL-Institute-in-Surat-1024x683.jpg"),
 
-  "/images/gallery/dsc09950-2.webp",
+  getImageUrl("Best-CPL-Institute-in-Surat.jpg"),
 
-  "/images/gallery/dsc00360-2.webp",
+  getImageUrl("Best-DGCA-Ground-School-in-Vadodara-1024x733.jpg"),
 
-  "/images/gallery/dsc01108-1.webp",
+  getImageUrl("Best-DGCA-Ground-School-in-Vadodara.jpg"),
 
-  "/images/gallery/dsc00038-3.webp",
+  getImageUrl("best-flight-academies-in-India-1024x733.jpeg"),
 
-  "/images/gallery/dsc09473.webp",
+  getImageUrl("best-flight-academies-in-India.jpeg"),
 
-  "/images/gallery/dsc09916.webp",
+  getImageUrl("best-flight-schools-in-florida-8-rgj9tqq2t0rad3a5swwu2itf9rlazi6zj5kq8zowa8.jpg"),
 
-  "/images/gallery/dsc08998-2.webp",
+  getImageUrl("Best-Pilot-School-in-India-1024x733.jpeg"),
 
-  "/images/gallery/dsc00379-1.webp",
+  getImageUrl("Best-Pilot-School-in-India.jpeg"),
 
-  "/images/gallery/dsc08934-1.webp",
+  getImageUrl("best-pilot-training-institute-in-India-1024x733.jpeg"),
 
-  "/images/gallery/dsc00095.webp",
+  getImageUrl("Best-Pilot-Training-Institute-in-India-1024x733.jpg"),
 
-  "/images/gallery/dsc01084-2.webp",
+  getImageUrl("best-pilot-training-institute-in-India.jpeg"),
 
-  "/images/gallery/dsc00215-2.webp",
+  getImageUrl("Best-Pilot-Training-Institute-in-India.jpg"),
 
-  "/images/gallery/dsc00073-1.webp",
+  getImageUrl("care-1.png"),
 
-  "/images/gallery/dsc00021-2.webp",
+  getImageUrl("Cheapest-Flight-School-1024x733.jpg"),
 
-  "/images/home/382098743-2.webp",
+  getImageUrl("Cheapest-Flight-School.jpg"),
 
-  "/images/home/dsc00620.webp",
+  getImageUrl("Cheapest-Place-to-Get-a-Private-Pilot-License-1024x733.jpeg"),
 
-  "/images/home/dsc09019.webp",
+  getImageUrl("Cheapest-Place-to-Get-a-Private-Pilot-License.jpeg"),
 
-  "/images/home/dsc00335-1.webp",
+  getImageUrl("Common-mistakes-student-pilots-do-and-how-to-avoid-them-2-300x200.webp"),
 
-  "/images/home/2366abf6-75ec-4ed4-9837-cb9ee6146cd9.webp",
+  getImageUrl("Common-mistakes-student-pilots-do-and-how-to-avoid-them-3-300x200.jpg"),
 
-  "/images/home/627932fd-b02f-44d5-b215-de33d1df4fc5.webp",
+  getImageUrl("Common-mistakes-student-pilots-do-and-how-to-avoid-them-300x200.webp"),
 
-  "/images/home/copy-of-copy-of-dsc00606.webp",
+  getImageUrl("contented-pilot-looking-forward-to-the-upcoming-flight-768x512-1-rgj9tqq2t0rad3a5swwu2itf9rlazi6zj5kq8zowa8.jpg"),
 
-  "/images/home/copy-of-ak-202.webp",
+  getImageUrl("cpl-banner-9-300x129.jpg"),
 
-  "/images/home/dsc3w0a8577.webp",
+  getImageUrl("DGCA-CPL-Ground-Classes-in-Delhi-1024x733.jpeg"),
 ];
 
 export const GalleryPage = () => {
@@ -114,7 +115,7 @@ export const GalleryPage = () => {
       <section className="relative h-[90vh] flex items-center justify-center overflow-hidden bg-stone-900 group">
         <div className="absolute inset-0 opacity-60 group-hover:opacity-50 transition-opacity duration-700">
           <img loading="lazy" decoding="async"
-            src="/images/home/dsc00620-1.webp"
+            src={getImageUrl("aircrew-member-using-control-panel-command-dashboard-navigation-fly-ariplane-cockpit-female-airliner-flying-plane-cabin-with-power-engine-switch-lever-close-up-300x200.jpg")}
             alt="Image Gallery Header"
             className="w-full h-full object-cover scale-105 group-hover:scale-100 transition-transform duration-1000"
           />

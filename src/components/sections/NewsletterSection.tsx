@@ -1,3 +1,4 @@
+import { getImageUrl } from "../../utils/imageUtils";
 
 
 const NewsletterSection = () => {
@@ -6,7 +7,7 @@ const NewsletterSection = () => {
         {/* Background Image */}
         <div className="absolute inset-0 z-0">
           <img loading="lazy" decoding="async"
-            src="/images/general/wedding-newsletter-signup-980x825.webp"
+            src={getImageUrl("9.png")}
             alt="Newsletter BG"
             className="w-full h-full object-cover"
           />

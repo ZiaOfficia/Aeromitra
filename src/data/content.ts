@@ -1,43 +1,45 @@
+import { getImageUrl } from "../utils/imageUtils";
+
 export const heroSlides = [
   {
     title: "Commercial Pilot Training",
     subtitle: "Your Dream of Flying Starts Here — Join India's Top Aviation Academy",
-    image: "/images/home/hero-cpl.webp",
+    image: getImageUrl("flyafe-min.png"),
   },
   {
     title: "Private Pilot License",
     subtitle: "Take the Controls — Get Your PPL with Expert Instructors",
-    image: "/images/home/hero-ppl.webp",
+    image: getImageUrl("aircraft-rest-hangar-lined-up-like-steel-birds-scaled.webp"),
   },
   {
     title: "DGCA Ground Classes",
     subtitle: "Crack Your DGCA Exams with Our Specialized Ground Training",
-    image: "/images/home/hero-dgca.webp",
+    image: getImageUrl("Aero-Mitra-Aviation-1.png"),
   },
   {
     title: "Student Pilot License",
     subtitle: "Begin Your Aviation Journey — Enroll in Our SPL Program",
-    image: "/images/home/hero-spl.webp",
+    image: getImageUrl("student-1-1.jpg"),
   },
   {
     title: "Type Rating",
     subtitle: "Advance Your Career with Certified Type Rating Courses",
-    image: "/images/home/hero-type-rating.webp",
+    image: getImageUrl("mission-1.png"),
   },
   {
     title: "Flight Dispatcher",
     subtitle: "Train to Be the Backbone of Every Successful Flight",
-    image: "/images/home/hero-dispatcher.webp",
+    image: getImageUrl("air-traffic-300x240.jpg"),
   },
   {
     title: "Cabin Crew Training",
     subtitle: "Step Into the World of Aviation with Professional Cabin Crew Training",
-    image: "/images/home/hero-cabin-crew.webp",
+    image: getImageUrl("medium-shot-stewardess-holding-globe-1-300x200.webp"),
   },
   {
     title: "Tuition Financing",
     subtitle: "Flexible Financing Options to Make Your Pilot Dream Affordable",
-    image: "/images/home/hero-financing.webp",
+    image: getImageUrl("excellence.png"),
   },
 ];
 
@@ -137,21 +139,21 @@ export const blogPosts = [
     category: "Career Guide",
     excerpt:
       "A step-by-step guide to obtaining your CPL in India — from SPL to DGCA exams and beyond...",
-    image: "/images/home/hero-cpl.webp",
+    image: getImageUrl("flyafe-min.png"),
   },
   {
     title: "DGCA Exam Preparation Tips",
     category: "Exam Prep",
     excerpt:
       "Top strategies to crack DGCA ground school exams on your first attempt...",
-    image: "/images/home/hero-dgca.webp",
+    image: getImageUrl("Aero-Mitra-Aviation-1.png"),
   },
   {
     title: "PPL vs CPL: Which is Right for You?",
     category: "Training",
     excerpt:
       "Understanding the difference between Private and Commercial Pilot License programs in India...",
-    image: "/images/home/hero-ppl.webp",
+    image: getImageUrl("aircraft-rest-hangar-lined-up-like-steel-birds-scaled.webp"),
   },
 ];
 
@@ -210,42 +212,42 @@ export const shortVideos = [
     id: 1,
     title: "",
     videoUrl: "/images/videos/aeromitra-reel-1.mp4",
-    thumbnail: "/images/gallery/training-1.webp",
+    thumbnail: getImageUrl("1.png"),
   },
   {
     id: 2,
     title: "",
     videoUrl: "/images/videos/aeromitra-reel-2.mp4",
-    thumbnail: "/images/gallery/training-2.webp",
+    thumbnail: getImageUrl("2.png"),
   },
   {
     id: 3,
     title: "",
     videoUrl: "/images/videos/aeromitra-reel-3.mp4",
-    thumbnail: "/images/gallery/training-3.webp",
+    thumbnail: getImageUrl("3.png"),
   },
   {
     id: 4,
     title: "",
     videoUrl: "/images/videos/aeromitra-reel-4.mp4",
-    thumbnail: "/images/gallery/training-4.webp",
+    thumbnail: getImageUrl("4.png"),
   },
   {
     id: 5,
     title: "",
     videoUrl: "/images/videos/aeromitra-reel-5.mp4",
-    thumbnail: "/images/home/hero-cpl.webp",
+    thumbnail: getImageUrl("flyafe-min.png"),
   },
   {
     id: 6,
     title: "",
     videoUrl: "/images/videos/aeromitra-reel-6.mp4",
-    thumbnail: "/images/home/hero-ppl.webp",
+    thumbnail: getImageUrl("aircraft-rest-hangar-lined-up-like-steel-birds-scaled.webp"),
   },
   {
     id: 7,
     title: "",
     videoUrl: "/images/videos/aeromitra-reel-7.mp4",
-    thumbnail: "/images/home/hero-dgca.webp",
+    thumbnail: getImageUrl("Aero-Mitra-Aviation-1.png"),
   },
 ];

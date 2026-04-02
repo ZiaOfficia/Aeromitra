@@ -1,3 +1,4 @@
+import { getImageUrl } from "../utils/imageUtils";
 import { useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import { ChevronDown, Sparkles, MessageCircle, ArrowRight } from "lucide-react";
@@ -35,7 +36,7 @@ export const FAQPage = () => {
         <div className="absolute inset-0 opacity-40">
           {/* Using a high-quality abstract or relevant background image */}
           <img loading="lazy" decoding="async"
-            src="/images/home/382098743-1.webp"
+            src={getImageUrl("aircrew-member-using-control-panel-command-dashboard-navigation-fly-ariplane-cockpit-female-airliner-flying-plane-cabin-with-power-engine-switch-lever-close-up-1-1024x683.jpg")}
             alt="FAQ Background"
             className="w-full h-full object-cover border-b-6 border-primary"
           />

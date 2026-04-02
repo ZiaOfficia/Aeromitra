@@ -1,3 +1,4 @@
+import { getImageUrl } from "../utils/imageUtils";
 import { AnimatePresence, motion } from "framer-motion";
 import { Link } from "react-router-dom";
 import {
@@ -63,7 +64,7 @@ export const ServicesPage = () => {
         "Enchanting Reception Centerpieces",
         "Unique Floral Installations",
       ],
-      image: "/images/general/play-with-white-pink-bookeventz.webp",
+      image: getImageUrl("DGCA-CPL-Ground-Classes-in-Patna-1024x733.jpeg"),
     },
     {
       id: "ceiling-design",
@@ -77,7 +78,7 @@ export const ServicesPage = () => {
         "Lighting EnhancementsCustom Installations",
         "Custom Installations",
       ],
-      image: "/images/home/382098743.webp",
+      image: getImageUrl("DGCA-CPL-Ground-Classes-in-Patna.jpeg"),
     },
     {
       id: "centerpiece-design",
@@ -91,7 +92,7 @@ export const ServicesPage = () => {
         "Modern and Minimalist Designs",
         "Seasonal & Thematic Centerpieces",
       ],
-      image: "/images/general/noivaansiosa.webp",
+      image: getImageUrl("DGCA-Ground-School-in-Bhubaneswar-1024x733.jpg"),
     },
     {
       id: "vinyl-floor-wrap",
@@ -105,7 +106,7 @@ export const ServicesPage = () => {
         "Seamless Installation",
         "Personalized Vinyl Floor Wrap",
       ],
-      image: "/images/general/il_1588xn.3666063238_qsa7.webp",
+      image: getImageUrl("DGCA-Ground-School-in-Bhubaneswar.jpg"),
     },
     {
       id: "ceremony-decor",
@@ -119,7 +120,7 @@ export const ServicesPage = () => {
         "Rustic Wedding Themes",
         "Cultural & Traditional Designs",
       ],
-      image: "/images/portfolio/dsc02592.webp",
+      image: getImageUrl("DGCA-Ground-School-in-Ranchi-1024x733.jpg"),
     },
     {
       id: "draping-services",
@@ -133,7 +134,7 @@ export const ServicesPage = () => {
         "Wedding Reception Draping",
         "Custom Aisle and Ceremony Draping",
       ],
-      image: "/images/general/4da02ecaa4ae7e295ff13ff1900ba116.webp",
+      image: getImageUrl("DGCA-Ground-School-in-Ranchi.jpg"),
     },
     {
       id: "mandap-design",
@@ -147,7 +148,7 @@ export const ServicesPage = () => {
         "Luxury Destination Wedding Mandaps",
         // "Opulent & Emotional Décor",
       ],
-      image: "/images/portfolio/dsc03995.webp",
+      image: getImageUrl("DGCA-Ground-School-in-Thiruvananthapuram-1024x733.jpg"),
     },
     {
       id: "stage-design",
@@ -161,7 +162,7 @@ export const ServicesPage = () => {
         "Personalized Themes & Customized Touches",
         // "Opulent & Emotional Décor",
       ],
-      image: "/images/home/395791049.webp",
+      image: getImageUrl("DGCA-Ground-School-in-Thiruvananthapuram.jpg"),
     },
   ];
 
@@ -179,7 +180,7 @@ export const ServicesPage = () => {
       <section className="relative h-[60vh] md:h-[70vh] flex items-center justify-center overflow-hidden">
         <div className="absolute inset-0">
           <img loading="lazy" decoding="async"
-            src={getOptimizedImage("/images/gallery/dsc00073-2.webp", 1920)}
+            src={getOptimizedImage(getImageUrl("DGCA-Ground-School-in-Vishakhapatnam-1024x733.jpg"), 1920)}
             alt="Aviation Training at Aeromitra"
             className="w-full h-full object-cover"
           />

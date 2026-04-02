@@ -1,3 +1,4 @@
+import { getImageUrl } from "../../utils/imageUtils";
 import { AnimatePresence, motion } from "framer-motion";
 import { useState, useEffect } from "react";
 
@@ -6,21 +7,21 @@ export const TestimonialsSection = () => {
 
   const slides = [
     {
-      image: "/images/portfolio/whatsapp-image-2023-09-27-at-12.17.56.webp",
+      image: getImageUrl("Abrar-sharief.jpg"),
       quote:
         "If you're fortunate enough to train with Aeromitra Aviation Academy, consider yourself truly blessed. The instructors are world-class and the training experience is second to none. Highly recommend!",
       author: "Adrian — CPL Graduate",
       link: "#",
     },
     {
-      image: "/images/portfolio/kiranfritdjof-weddingphotos-1135.webp",
+      image: getImageUrl("admissions.jpg"),
       quote:
         "Choosing Aeromitra for my pilot training was one of the best decisions I ever made. Their attention to detail and structured curriculum transformed my skills and gave me the confidence to pursue a professional flying career.",
       author: "Devan — PPL Student",
       link: "#",
     },
     {
-      image: "/images/portfolio/dsc00122.webp",
+      image: getImageUrl("Adventure-Flight-Education-Bangalore-1024x733.jpeg"),
       quote:
         "Aeromitra Aviation Academy exceeded all my expectations. From the initial counselling session to the final flight test, the team's professionalism and expertise shone through every step. I couldn't be happier with the results!",
       author: "Judi — Type Rating Graduate",

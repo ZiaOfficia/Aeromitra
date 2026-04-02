@@ -1,3 +1,4 @@
+import { getImageUrl } from "../utils/imageUtils";
 import { motion } from "framer-motion";
 import { Sparkles, Home, Phone, ArrowRight, Building2 } from "lucide-react";
 import { SEO } from "../components/common/SEO";
@@ -28,7 +29,7 @@ export const AccommodationsPage = () => {
           <img
             loading="lazy"
             decoding="async"
-            src="/images/gallery/dsc08933.webp"
+            src={getImageUrl("aircraft-rest-hangar-lined-up-like-steel-birds-300x168.webp")}
             alt="Accommodations"
             className="w-full h-full object-cover opacity-40"
           />

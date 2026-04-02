@@ -1,3 +1,5 @@
+import { getImageUrl } from "../utils/imageUtils";
+
 export interface BlogPost {
   id: string;
   slug: string;
@@ -48,7 +50,7 @@ export const blogPosts: BlogPost[] = [
       <p>After getting your CPL, most airlines require a Type Rating on the specific aircraft they operate before hiring you.</p>
       <p>At Aeromitra Aviation Academy, we guide you through every step of this journey with experienced instructors, DGCA-aligned training, and dedicated placement support.</p>
     `,
-    image: "/images/home/hero-cpl.webp",
+    image: getImageUrl("flyafe-min.png"),
     date: "Mar 10, 2026",
     author: "AMA Team",
     category: "Career Guide",
@@ -72,7 +74,7 @@ export const blogPosts: BlogPost[] = [
       <h3>5. Join a Structured Ground School</h3>
       <p>Enrolling in a dedicated ground school like Aeromitra ensures you cover the entire syllabus systematically with expert guidance.</p>
     `,
-    image: "/images/home/hero-dgca.webp",
+    image: getImageUrl("Aero-Mitra-Aviation-1.png"),
     date: "Feb 20, 2026",
     author: "AMA Faculty",
     category: "Exam Prep",
@@ -93,7 +95,7 @@ export const blogPosts: BlogPost[] = [
       <p>If your goal is to work for an airline or earn income from flying, the CPL is the path. If you want to fly for personal enjoyment or explore aviation before committing to a full CPL, start with a PPL.</p>
       <p>At Aeromitra, we help you map out the right training path based on your career goals and budget.</p>
     `,
-    image: "/images/home/hero-ppl.webp",
+    image: getImageUrl("aircraft-rest-hangar-lined-up-like-steel-birds-scaled.webp"),
     date: "Jan 15, 2026",
     author: "AMA Team",
     category: "Training",
@@ -106,7 +108,7 @@ export const blogPosts: BlogPost[] = [
       "Everything you need to know about becoming a cabin crew member for Indian airlines.",
     content:
       "<p>A cabin crew career offers an exciting life of travel, adventure, and professional service. Learn what airlines look for, how to prepare, and how Aeromitra's cabin crew training program can launch your aviation career.</p>",
-    image: "/images/home/hero-cabin-crew.webp",
+    image: getImageUrl("medium-shot-stewardess-holding-globe-1-300x200.webp"),
     date: "Dec 10, 2025",
     author: "AMA Team",
     category: "Career Guide",
@@ -119,7 +121,7 @@ export const blogPosts: BlogPost[] = [
       "An in-depth look at what flight dispatchers do and how they contribute to safe, efficient airline operations.",
     content:
       "<p>Flight dispatchers are the unsung heroes of aviation. They work alongside pilots to plan flights, monitor weather, manage fuel, and ensure every flight operates safely and efficiently. Discover this rewarding career path at Aeromitra.</p>",
-    image: "/images/home/hero-dispatcher.webp",
+    image: getImageUrl("air-traffic-300x240.jpg"),
     date: "Nov 20, 2025",
     author: "AMA Team",
     category: "Career Guide",
@@ -132,7 +134,7 @@ export const blogPosts: BlogPost[] = [
       "A complete guide to Class 1 and Class 2 DGCA Medical Certificates required for pilot training in India.",
     content:
       "<p>One of the first steps in your aviation journey is obtaining the correct DGCA Medical Certificate. Class 1 is required for CPL holders, while Class 2 is needed for PPL and SPL. Learn about requirements, process, and what to expect from your medical examination.</p>",
-    image: "/images/home/hero-spl.webp",
+    image: getImageUrl("student-1-1.jpg"),
     date: "Oct 5, 2025",
     author: "AMA Team",
     category: "Training",
@@ -145,7 +147,7 @@ export const blogPosts: BlogPost[] = [
       "Why getting a Type Rating after your CPL is a critical step toward securing an airline job in India.",
     content:
       "<p>Most airlines in India require pilots to hold a Type Rating on the specific aircraft they operate. A Type Rating demonstrates that you are qualified to fly a particular aircraft and significantly improves your employability. Learn about popular Type Ratings and how AMA prepares you for them.</p>",
-    image: "/images/home/hero-type-rating.webp",
+    image: getImageUrl("mission-1.png"),
     date: "Sep 15, 2025",
     author: "AMA Faculty",
     category: "Career Guide",
@@ -158,7 +160,7 @@ export const blogPosts: BlogPost[] = [
       "Exploring education loans, EMI plans, and scholarships to make aviation training affordable.",
     content:
       "<p>Pilot training in India is a significant investment, but there are multiple financing options available. From aviation-specific education loans offered by nationalized banks to AMA's own installment plans, we break down every option to help you fund your dream career in the skies.</p>",
-    image: "/images/home/hero-financing.webp",
+    image: getImageUrl("excellence.png"),
     date: "Aug 22, 2025",
     author: "AMA Team",
     category: "Finance",
@@ -171,7 +173,7 @@ export const blogPosts: BlogPost[] = [
       "Why now is the best time to start a pilot career as India's aviation sector soars.",
     content:
       "<p>India is one of the world's fastest-growing aviation markets. With hundreds of new aircraft on order by Indian airlines, the demand for qualified pilots, cabin crew, and aviation professionals has never been higher. Discover the opportunities that await you in India's booming sky.</p>",
-    image: "/images/home/hero-cpl.webp",
+    image: getImageUrl("flyafe-min.png"),
     date: "Jul 10, 2025",
     author: "AMA Team",
     category: "Industry",
@@ -184,7 +186,7 @@ export const blogPosts: BlogPost[] = [
       "AMA students share their first solo flight experiences — the thrill, the nerves, and the unforgettable moment.",
     content:
       "<p>There is nothing quite like your first solo flight. No instructor beside you, just you and the aircraft. Our AMA students share their memories of this milestone moment that every pilot remembers for life.</p>",
-    image: "/images/gallery/training-1.webp",
+    image: getImageUrl("1.png"),
     date: "Jun 5, 2025",
     author: "AMA Students",
     category: "Student Stories",

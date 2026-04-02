@@ -1,12 +1,13 @@
+import { getImageUrl } from "../../utils/imageUtils";
 import { motion } from "framer-motion";
 
 const logos = [
-  { src: "/images/misc/frame-300x150.webp", alt: "Client 1", className: "h-10 md:h-14 w-auto object-contain" },
-  { src: "/images/misc/frame2-300x150.webp", alt: "Client 2", className: "h-10 md:h-14 w-auto object-contain" },
-  { src: "/images/misc/frame3-300x150.webp", alt: "Client 3", className: "h-10 md:h-16 w-auto object-contain" },
-  { src: "/images/misc/frame4-300x150.webp", alt: "Client 4", className: "h-10 md:h-16 w-auto object-contain" },
-  { src: "/images/misc/frame5-300x150.webp", alt: "Client 5", className: "h-10 md:h-16 w-auto object-contain" },
-  { src: "/images/misc/frame6-300x150.webp", alt: "Client 6", className: "h-10 md:h-16 w-auto object-contain" },
+  { src: getImageUrl("10-min-1.png"), alt: "Client 1", className: "h-10 md:h-14 w-auto object-contain" },
+  { src: getImageUrl("10.png"), alt: "Client 2", className: "h-10 md:h-14 w-auto object-contain" },
+  { src: getImageUrl("2.png"), alt: "Client 3", className: "h-10 md:h-16 w-auto object-contain" },
+  { src: getImageUrl("23-04-18-KSKY_MANOJKUMAR-103-rgj9tqq40vjfqsrr1sfrx1qs46ku0bf447ezdwwmsk.jpg"), alt: "Client 4", className: "h-10 md:h-16 w-auto object-contain" },
+  { src: getImageUrl("23-04-18-KSKY_MANOJKUMAR_EDIT-18.jpg"), alt: "Client 5", className: "h-10 md:h-16 w-auto object-contain" },
+  { src: getImageUrl("24-05-13-AF_EDUCATION-1.jpg"), alt: "Client 6", className: "h-10 md:h-16 w-auto object-contain" },
 ];
 
 export const ClientsStrip = () => {

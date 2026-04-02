@@ -1,3 +1,4 @@
+import { getImageUrl } from "../../utils/imageUtils";
 import { Button } from "../common/Button";
 import { motion, type Variants, AnimatePresence } from "framer-motion";
 import { X } from "lucide-react";
@@ -5,14 +6,14 @@ import { useState } from "react";
 import { Link } from "react-router-dom";
 
 const galleryImages = [
-  "/images/gallery/dsc382098743.webp",
-  "/images/gallery/dsc18469449.webp",
-  "/images/gallery/aeromitra-gallery-1.webp",
-  "/images/gallery/dsc8720274.webp",
-  "/images/gallery/dsc08933.webp",
-  "/images/gallery/dsc00360.webp",
-  "/images/gallery/dsc01084.webp",
-  "/images/gallery/dsc00073.webp",
+  getImageUrl("24-05-13-AF_EDUCATION-27.jpg"),
+  getImageUrl("24-05-13-AF_EDUCATION-28-1.jpg"),
+  getImageUrl("24-05-13-AF_EDUCATION-30.jpg"),
+  getImageUrl("24-05-13-AF_EDUCATION-32-1.jpg"),
+  getImageUrl("24-05-13-AF_EDUCATION-4-1024x683.jpg"),
+  getImageUrl("24-05-13-AF_EDUCATION-4-300x200.jpg"),
+  getImageUrl("24-05-13-AF_EDUCATION-4.jpg"),
+  getImageUrl("24-05-13-AF_EDUCATION.jpg"),
 ];
 
 const containerVariants: Variants = {
