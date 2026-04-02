@@ -23,7 +23,7 @@ dist-ssr
 *.sln
 *.sw?
 
-public/images
+
 
 # Zip files and env
 *.zip
