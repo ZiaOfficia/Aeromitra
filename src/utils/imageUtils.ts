@@ -27,7 +27,7 @@ export const getOptimizedImage = (url: string, width: number = 800) => {
 
 export const getImageUrl = (imageName: string) => {
   // Use environment variable for base URL, otherwise default to local 'aeromitra' folder
-  const baseUrl = import.meta.env.VITE_IMAGE_BASE_URL|| './images/aeromitra';
+  const baseUrl = import.meta.env.VITE_IMAGE_BASE_URL|| '../../public/images/aeromitra';
   
   // Clean up slashes
   const cleanImageName = imageName.startsWith('/') ? imageName.substring(1) : imageName;
