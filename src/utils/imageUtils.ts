@@ -26,12 +26,13 @@ export const getOptimizedImage = (url: string, width: number = 800) => {
 };
 
 export const getImageUrl = (imageName: string) => {
-  // Use environment variable for base URL, otherwise default to local 'aeromitra' folder
-  const baseUrl = import.meta.env.VITE_IMAGE_BASE_URL|| '../../public/images/aeromitra';
-  
+  // Images are served directly from the public/images/aeromitra folder.
+  // In Vite, the public/ directory is served at the root (/), so the
+  // correct absolute path is /images/aeromitra — no backend needed.
+  const baseUrl = '/images/aeromitra';
+
   // Clean up slashes
   const cleanImageName = imageName.startsWith('/') ? imageName.substring(1) : imageName;
-  const cleanBaseUrl = baseUrl.endsWith('/') ? baseUrl.substring(0, baseUrl.length - 1) : baseUrl;
-  
-  return `${cleanBaseUrl}/${cleanImageName}`;
+
+  return `${baseUrl}/${cleanImageName}`;
 };

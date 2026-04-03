@@ -1,5 +1,3 @@
-// Configuration for API endpoints
-// In production (VITE_API_BASE_URL set), use that.
-// In development, default to localhost:5000.
-export const API_BASE_URL =
-  import.meta.env.VITE_API_BASE_URL ?? "http://localhost:5000";
+// This project is frontend-only.
+// Enquiry forms submit directly to Google Sheets via VITE_GOOGLE_SHEET_URL.
+// No backend API is used.
