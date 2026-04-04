@@ -70,8 +70,8 @@ export const Navbar = () => {
       className={clsx(
         "sticky top-0 z-50 transition-all duration-300",
         isScrolled
-          ? "bg-white/95 backdrop-blur-md border-b border-gray-100 py-4 shadow-sm"
-          : "bg-transparent py-6",
+          ? "bg-[#0a1628]/95 backdrop-blur-md border-b border-white/10 py-3 shadow-lg"
+          : "bg-[#0a1628] py-3",
       )}
     >
       <div className="max-w-7xl mx-auto px-6 flex justify-between items-center">
@@ -85,15 +85,15 @@ export const Navbar = () => {
             <img
               loading="lazy"
               decoding="async"
-              src={getImageUrl("1-rgj9tqq8waovyiqjjek83t782m790eaecn0qz1k1e8.png")}
+              src={getImageUrl("aeromitra_logo_transparent.png")}
               alt="Aeromitra Aviation Academy Logo"
-              className="h-12 w-auto object-contain"
+              className="h-32 w-auto object-contain drop-shadow-[0_4px_12px_rgba(0,0,0,0.95)]"
             />
           </Link>
         </motion.div>
 
         {/* Desktop Menu */}
-        <div className="hidden lg:flex items-center space-x-10 text-xs font-bold uppercase tracking-widest text-gray-600">
+        <div className="hidden lg:flex items-center space-x-10 text-xs font-bold uppercase tracking-widest text-white/80">
           {navLinks.map((link) => (
             <div
               key={link.name}
@@ -174,7 +174,7 @@ export const Navbar = () => {
               setIsPilotTrainingOpen(false);
             }}
           >
-            <button className="flex items-center gap-1.5 text-xs font-bold uppercase tracking-widest text-gray-600 hover:text-primary transition-colors duration-300 border border-gray-300 hover:border-primary px-4 py-2.5 rounded-sm">
+            <button className="flex items-center gap-1.5 text-xs font-bold uppercase tracking-widest text-white/80 hover:text-white transition-colors duration-300 border border-white/30 hover:border-white px-4 py-2.5 rounded-sm">
               <Download size={13} />
               Download Brochure
               <ChevronDown size={13} className={clsx("transition-transform duration-200", isBrochureOpen && "rotate-180")} />
@@ -259,7 +259,7 @@ export const Navbar = () => {
 
         {/* Mobile Menu Button */}
         <button
-          className="lg:hidden text-gray-900"
+          className="lg:hidden text-white"
           onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
         >
           {isMobileMenuOpen ? <X /> : <Menu />}

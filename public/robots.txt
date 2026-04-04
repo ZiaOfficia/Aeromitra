@@ -35,4 +35,4 @@ Allow: /
 User-agent: Applebot-Extended
 Allow: /
 
-Sitemap: https://elegantize.com/sitemap.xml
+Sitemap: https://aeromitra.com/sitemap.xml

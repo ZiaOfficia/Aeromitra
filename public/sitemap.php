@@ -1,12 +1,11 @@
 <?php
 // Transparent sitemap proxy — fetches live data from backend (Render)
-// Served at elegantize.com/sitemap.xml via .htaccess rewrite (no redirect)
-$backendUrl = 'https://elegantize-zl57.onrender.com/sitemap.xml';
+$backendUrl = 'https://aeromitra.com/sitemap.xml';
 
 $context = stream_context_create([
     'http' => [
         'timeout' => 15,
-        'header' => 'User-Agent: ElegantizeSitemapProxy/1.0',
+        'header' => 'User-Agent: AeromitraSitemapProxy/1.0',
     ],
 ]);
 

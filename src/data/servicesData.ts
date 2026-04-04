@@ -34,7 +34,7 @@ export const servicesData: ServiceData[] = [
   {
     id: "commercial-pilot-license",
     title: "Commercial Pilot License (CPL)",
-    heroImage: getImageUrl("1-rgj9tqq8waovyiqjjek83t782m790eaecn0qz1k1e8.png"),
+    heroImage: getImageUrl("aeromitra logo transparent.png"),
     heroTitle: "COMMERCIAL PILOT LICENSE TRAINING IN DELHI, INDIA",
     intro: {
       heading: "BECOME A COMMERCIAL PILOT WITH AEROMITRA",
