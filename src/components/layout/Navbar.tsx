@@ -70,8 +70,8 @@ export const Navbar = () => {
       className={clsx(
         "sticky top-0 z-50 transition-all duration-300",
         isScrolled
-          ? "bg-[#0a1628]/95 backdrop-blur-md border-b border-white/10 py-1 lg:py-3 shadow-lg"
-          : "bg-[#0a1628] py-1 lg:py-3",
+          ? "bg-[#060c1a]/96 backdrop-blur-md border-b border-[#c4a44a]/30 py-1.5 lg:py-2.5 shadow-[0_4px_24px_rgba(0,0,0,0.5)]"
+          : "bg-gradient-to-r from-[#060c1a] via-[#0a1628] to-[#060c1a] border-b border-[#c4a44a]/20 py-1.5 lg:py-2.5",
       )}
     >
       <div className="max-w-7xl mx-auto px-4 lg:px-6 flex justify-between items-center">
@@ -87,13 +87,13 @@ export const Navbar = () => {
               decoding="async"
               src={getImageUrl("aeromitra_logo_transparent.png")}
               alt="Aeromitra Aviation Academy Logo"
-              className="h-12 sm:h-14 lg:h-32 w-auto object-contain drop-shadow-[0_4px_12px_rgba(0,0,0,0.95)]"
+              className="h-10 sm:h-11 lg:h-16 w-auto object-contain drop-shadow-[0_4px_12px_rgba(0,0,0,0.95)]"
             />
           </Link>
         </motion.div>
 
         {/* Desktop Menu */}
-        <div className="hidden lg:flex items-center space-x-10 text-xs font-bold uppercase tracking-widest text-white/80">
+        <div className="hidden lg:flex items-center space-x-10 text-xs font-bold uppercase tracking-widest text-white/75">
           {navLinks.map((link) => (
             <div
               key={link.name}
@@ -174,7 +174,7 @@ export const Navbar = () => {
               setIsPilotTrainingOpen(false);
             }}
           >
-            <button className="flex items-center gap-1.5 text-xs font-bold uppercase tracking-widest text-white/80 hover:text-white transition-colors duration-300 border border-white/30 hover:border-white px-4 py-2.5 rounded-sm">
+            <button className="flex items-center gap-1.5 text-xs font-bold uppercase tracking-widest text-white/75 hover:text-[#c4a44a] transition-colors duration-300 border border-white/20 hover:border-[#c4a44a]/60 px-4 py-2 rounded-sm">
               <Download size={13} />
               Download Brochure
               <ChevronDown size={13} className={clsx("transition-transform duration-200", isBrochureOpen && "rotate-180")} />
@@ -274,16 +274,16 @@ export const Navbar = () => {
             animate={{ opacity: 1, height: "100vh" }}
             exit={{ opacity: 0, height: 0 }}
             transition={{ duration: 0.3 }}
-            className="lg:hidden absolute top-full left-0 w-full bg-white border-b border-gray-100 overflow-y-auto shadow-lg"
+            className="lg:hidden absolute top-full left-0 w-full bg-[#070e1c] border-b border-[#c4a44a]/20 overflow-y-auto shadow-[0_8px_32px_rgba(0,0,0,0.6)]"
             style={{ maxHeight: "calc(100vh - 56px)" }}
           >
-            <div className="flex flex-col space-y-4 p-6 text-sm font-medium uppercase tracking-widest text-gray-800 pb-20">
+            <div className="flex flex-col space-y-4 p-6 text-sm font-medium uppercase tracking-widest text-white/80 pb-20">
               {navLinks.map((link, i) => (
                 <div key={link.name}>
                   {link.isRouterLink ? (
                     <Link
                       to={link.path!}
-                      className="hover:text-primary transition-colors flex justify-between items-center py-2"
+                      className="hover:text-[#c4a44a] transition-colors flex justify-between items-center py-2 border-b border-white/5"
                       onClick={() =>
                         !link.hasDropdown && setIsMobileMenuOpen(false)
                       }
@@ -313,7 +313,7 @@ export const Navbar = () => {
                   ) : (
                     <a
                       href={getLinkPath(link.href)}
-                      className="hover:text-primary transition-colors block py-2"
+                      className="hover:text-[#c4a44a] transition-colors block py-2 border-b border-white/5"
                       onClick={() => setIsMobileMenuOpen(false)}
                     >
                       <motion.span
@@ -332,13 +332,13 @@ export const Navbar = () => {
                       initial={{ opacity: 0, height: 0 }}
                       animate={{ opacity: 1, height: "auto" }}
                       exit={{ opacity: 0, height: 0 }}
-                      className="bg-blue-50 rounded-lg overflow-hidden ml-4 mt-2"
+                      className="bg-white/5 rounded-lg overflow-hidden ml-4 mt-2 border border-white/10"
                     >
                       {servicesData.map((service) => (
                         <Link
                           key={service.id}
                           to={`/services/${service.id}`}
-                          className="block px-4 py-3 text-xs text-gray-600 border-b border-gray-100 last:border-none"
+                          className="block px-4 py-3 text-xs text-white/70 border-b border-white/5 last:border-none hover:text-[#c4a44a] transition-colors"
                           onClick={() => setIsMobileMenuOpen(false)}
                         >
                           {service.title}
@@ -349,9 +349,9 @@ export const Navbar = () => {
                 </div>
               ))}
               {/* Mobile Download Brochure */}
-              <div className="border-t border-gray-100 pt-4">
+              <div className="border-t border-white/10 pt-4">
                 <button
-                  className="w-full flex items-center justify-between py-2 text-sm font-bold uppercase tracking-widest text-gray-800 hover:text-primary transition-colors"
+                  className="w-full flex items-center justify-between py-2 text-sm font-bold uppercase tracking-widest text-white/80 hover:text-[#c4a44a] transition-colors"
                   onClick={() => setMobileBrochureOpen(!mobileBrochureOpen)}
                 >
                   <span className="flex items-center gap-2">
@@ -369,7 +369,7 @@ export const Navbar = () => {
                   >
                     {/* Pilot Training */}
                     <button
-                      className="w-full flex items-center justify-between px-3 py-2.5 text-xs font-bold uppercase tracking-widest text-gray-600 hover:text-primary transition-colors"
+                      className="w-full flex items-center justify-between px-3 py-2.5 text-xs font-bold uppercase tracking-widest text-white/70 hover:text-[#c4a44a] transition-colors"
                       onClick={() => setMobilePilotOpen(!mobilePilotOpen)}
                     >
                       Pilot Training
@@ -379,7 +379,7 @@ export const Navbar = () => {
                       <motion.div
                         initial={{ opacity: 0, height: 0 }}
                         animate={{ opacity: 1, height: "auto" }}
-                        className="bg-blue-50 rounded-lg overflow-hidden ml-3"
+                        className="bg-white/5 rounded-lg overflow-hidden ml-3 border border-white/10"
                       >
                         {[
                           { name: "USA", href: "/brochures/pilot-training-usa.pdf" },
@@ -390,7 +390,7 @@ export const Navbar = () => {
                             key={sub.name}
                             href={sub.href}
                             download
-                            className="flex items-center justify-between px-4 py-2.5 text-xs text-gray-600 border-b border-gray-100 last:border-none hover:text-primary transition-colors"
+                            className="flex items-center justify-between px-4 py-2.5 text-xs text-white/70 border-b border-white/5 last:border-none hover:text-[#c4a44a] transition-colors"
                             onClick={() => setIsMobileMenuOpen(false)}
                           >
                             {sub.name}
@@ -403,7 +403,7 @@ export const Navbar = () => {
                     <a
                       href="/brochures/other-courses.pdf"
                       download
-                      className="flex items-center justify-between px-3 py-2.5 text-xs font-bold uppercase tracking-widest text-gray-600 hover:text-primary transition-colors"
+                      className="flex items-center justify-between px-3 py-2.5 text-xs font-bold uppercase tracking-widest text-white/70 hover:text-[#c4a44a] transition-colors"
                       onClick={() => setIsMobileMenuOpen(false)}
                     >
                       Other Courses
