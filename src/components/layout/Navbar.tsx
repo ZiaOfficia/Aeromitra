@@ -70,11 +70,11 @@ export const Navbar = () => {
       className={clsx(
         "sticky top-0 z-50 transition-all duration-300",
         isScrolled
-          ? "bg-[#0a1628]/95 backdrop-blur-md border-b border-white/10 py-3 shadow-lg"
-          : "bg-[#0a1628] py-3",
+          ? "bg-[#0a1628]/95 backdrop-blur-md border-b border-white/10 py-1 lg:py-3 shadow-lg"
+          : "bg-[#0a1628] py-1 lg:py-3",
       )}
     >
-      <div className="max-w-7xl mx-auto px-6 flex justify-between items-center">
+      <div className="max-w-7xl mx-auto px-4 lg:px-6 flex justify-between items-center">
         {/* Logo */}
         <motion.div
           className="flex items-center"
@@ -87,7 +87,7 @@ export const Navbar = () => {
               decoding="async"
               src={getImageUrl("aeromitra_logo_transparent.png")}
               alt="Aeromitra Aviation Academy Logo"
-              className="h-32 w-auto object-contain drop-shadow-[0_4px_12px_rgba(0,0,0,0.95)]"
+              className="h-12 sm:h-14 lg:h-32 w-auto object-contain drop-shadow-[0_4px_12px_rgba(0,0,0,0.95)]"
             />
           </Link>
         </motion.div>
@@ -259,10 +259,10 @@ export const Navbar = () => {
 
         {/* Mobile Menu Button */}
         <button
-          className="lg:hidden text-white"
+          className="lg:hidden text-white p-1"
           onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
         >
-          {isMobileMenuOpen ? <X /> : <Menu />}
+          {isMobileMenuOpen ? <X size={22} /> : <Menu size={22} />}
         </button>
       </div>
 
@@ -275,7 +275,7 @@ export const Navbar = () => {
             exit={{ opacity: 0, height: 0 }}
             transition={{ duration: 0.3 }}
             className="lg:hidden absolute top-full left-0 w-full bg-white border-b border-gray-100 overflow-y-auto shadow-lg"
-            style={{ maxHeight: "calc(100vh - 80px)" }}
+            style={{ maxHeight: "calc(100vh - 56px)" }}
           >
             <div className="flex flex-col space-y-4 p-6 text-sm font-medium uppercase tracking-widest text-gray-800 pb-20">
               {navLinks.map((link, i) => (
