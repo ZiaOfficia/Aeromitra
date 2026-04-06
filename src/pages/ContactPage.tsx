@@ -257,32 +257,40 @@ export const ContactPage = () => {
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4">
             {[
               {
+                label: "Lucknow — Primary Campus",
+                name: "Aero Mitra Aviation Pvt. Ltd.",
+                address: "34 A, 2nd Floor, Ramanand Trade Centre, Above Woodland Showroom, Kapurthala, Aliganj, Lucknow 226024",
+                phone: "+91 9005527666",
+                phone2: "+91 9076524305",
+                email: "info@aeromitraa.com",
+                primary: true,
+              },
+              {
                 label: "Delhi — Head Office",
                 name: "Aero Mitra Aviation Pvt. Ltd.",
                 address: "4th floor Phoolwari Building, 1, Block B 7, Arjun Nagar, Safdarjung Enclave, New Delhi 110029",
-                phone: "+91 9005527666",
+                phone: "+91 9999228597",
+                phone2: null,
                 email: "info@aeromitraa.com",
+                primary: false,
               },
               {
                 label: "Delhi — Secondary",
                 name: "Aero Mitra Aviation Pvt. Ltd.",
                 address: "F-624, 2nd floor, near Anytime Fitness, Ramphal Chowk Rd, Block-H, Palam Village, New Delhi 110045",
-                phone: "+91 9005527666",
+                phone: "+91 9999228597",
+                phone2: null,
                 email: "info@aeromitraa.com",
-              },
-              {
-                label: "Lucknow Campus",
-                name: "Aero Mitra Aviation Pvt. Ltd.",
-                address: "34 A, 2nd Floor, Ramanand Trade Centre, Above Woodland Showroom, Kapurthala, Aliganj, Lucknow 226024",
-                phone: "+91 9005527666",
-                email: "info@aeromitraa.com",
+                primary: false,
               },
               {
                 label: "USA Campus",
                 name: "Kingsky Flight Academy Pvt. Ltd.",
                 address: "3131 Flightline Dr. – Suite 304, Lakeland, FL 33811",
                 phone: "+1 (954) 643-3459",
+                phone2: null,
                 email: "info@aeromitraa.com",
+                primary: false,
               },
             ].map((campus, i) => (
               <motion.div
@@ -291,26 +299,45 @@ export const ContactPage = () => {
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true }}
                 transition={{ delay: i * 0.08 }}
-                className="bg-white p-6 border border-gray-100 hover:border-primary/30 hover:shadow-sm transition-all"
+                className={`p-6 border transition-all ${
+                  campus.primary
+                    ? "bg-primary border-primary text-white shadow-lg shadow-primary/20 hover:shadow-xl hover:shadow-primary/30"
+                    : "bg-white border-gray-100 hover:border-primary/30 hover:shadow-sm"
+                }`}
               >
-                <span className="text-[9px] uppercase tracking-widest text-primary font-bold mb-3 block">
-                  {campus.label}
-                </span>
-                <p className="font-display text-stone-900 text-base mb-3">{campus.name}</p>
-                <div className="space-y-2 text-sm text-gray-500">
+                <div className="flex items-center gap-2 mb-3">
+                  <span className={`text-[9px] uppercase tracking-widest font-bold ${campus.primary ? "text-white/80" : "text-primary"}`}>
+                    {campus.label}
+                  </span>
+                  {campus.primary && (
+                    <span className="text-[8px] uppercase tracking-widest font-bold bg-white text-primary px-2 py-0.5 rounded-full">
+                      Main
+                    </span>
+                  )}
+                </div>
+                <p className={`font-display text-base mb-3 ${campus.primary ? "text-white" : "text-stone-900"}`}>{campus.name}</p>
+                <div className="space-y-2 text-sm">
                   <div className="flex items-start gap-2">
-                    <MapPin size={13} className="text-primary mt-0.5 flex-shrink-0" />
-                    <span className="leading-snug">{campus.address}</span>
+                    <MapPin size={13} className={`mt-0.5 flex-shrink-0 ${campus.primary ? "text-white/70" : "text-primary"}`} />
+                    <span className={`leading-snug ${campus.primary ? "text-white/90" : "text-gray-500"}`}>{campus.address}</span>
                   </div>
                   <div className="flex items-center gap-2">
-                    <Phone size={13} className="text-primary flex-shrink-0" />
-                    <a href={`tel:${campus.phone.replace(/\s/g, "")}`} className="hover:text-primary transition-colors">
+                    <Phone size={13} className={`flex-shrink-0 ${campus.primary ? "text-white/70" : "text-primary"}`} />
+                    <a href={`tel:${campus.phone.replace(/[\s()+-]/g, "")}`} className={`transition-colors ${campus.primary ? "text-white hover:text-white/80" : "text-gray-500 hover:text-primary"}`}>
                       {campus.phone}
                     </a>
                   </div>
+                  {campus.phone2 && (
+                    <div className="flex items-center gap-2">
+                      <Phone size={13} className="text-white/70 flex-shrink-0" />
+                      <a href={`tel:${campus.phone2.replace(/[\s()+-]/g, "")}`} className="text-white hover:text-white/80 transition-colors">
+                        {campus.phone2}
+                      </a>
+                    </div>
+                  )}
                   <div className="flex items-center gap-2">
-                    <Mail size={13} className="text-primary flex-shrink-0" />
-                    <a href={`mailto:${campus.email}`} className="hover:text-primary transition-colors">
+                    <Mail size={13} className={`flex-shrink-0 ${campus.primary ? "text-white/70" : "text-primary"}`} />
+                    <a href={`mailto:${campus.email}`} className={`transition-colors ${campus.primary ? "text-white hover:text-white/80" : "text-gray-500 hover:text-primary"}`}>
                       {campus.email}
                     </a>
                   </div>
@@ -321,7 +348,7 @@ export const ContactPage = () => {
         </div>
       </section>
 
-      {/* Map Section — Delhi */}
+      {/* Map Section — Lucknow */}
       <section className="h-[65vh] max-w-7xl mx-auto mb-12 rounded-2xl bg-stone-100 relative group overflow-hidden shadow-xl">
         <iframe
           width="100%"
@@ -330,8 +357,8 @@ export const ContactPage = () => {
           loading="lazy"
           allowFullScreen
           className="transition-all duration-1000 ease-in-out scale-100 group-hover:scale-105"
-          src="https://maps.google.com/maps?q=Delhi,India&t=&z=12&ie=UTF8&iwloc=&output=embed"
-          title="Aeromitra Aviation Academy — Delhi"
+          src="https://maps.google.com/maps?q=Ramanand+Trade+Centre,+Kapurthala,+Aliganj,+Lucknow,+Uttar+Pradesh+226024&t=&z=15&ie=UTF8&iwloc=&output=embed"
+          title="Aeromitra Aviation Academy — Lucknow"
         />
         <div className="absolute top-0 left-0 w-full h-32 bg-gradient-to-b from-stone-50 to-transparent pointer-events-none" />
 
@@ -343,7 +370,7 @@ export const ContactPage = () => {
           className="absolute bottom-8 left-6 md:bottom-12 md:left-12 bg-white/90 backdrop-blur-md p-8 shadow-2xl border-l-4 border-primary max-w-sm"
         >
           <h3 className="text-2xl font-display text-stone-900 mb-2">
-            Visit Aeromitra
+            Visit Aeromitra — Lucknow
           </h3>
           <p className="text-gray-500 text-sm uppercase tracking-widest mb-6 border-b border-gray-200 pb-4">
             Mon – Sat: 9:30 AM – 6:30 PM
@@ -367,7 +394,7 @@ export const ContactPage = () => {
             </div>
           </div>
           <a
-            href="https://www.google.com/maps/search/?api=1&query=Delhi,India"
+            href="https://www.google.com/maps/search/?api=1&query=Ramanand+Trade+Centre,+Kapurthala,+Aliganj,+Lucknow+226024"
             target="_blank"
             rel="noopener noreferrer"
             className="inline-flex items-center gap-2 text-xs font-bold uppercase tracking-widest text-primary hover:text-stone-900 transition-colors group/link"

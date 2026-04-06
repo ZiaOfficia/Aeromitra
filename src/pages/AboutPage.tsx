@@ -43,32 +43,29 @@ export const AboutPage = () => {
 
   const faqs = [
     {
-      question:
-        "What types of events does Aeromitra specialize in decorating?",
+      question: "What courses does Aeromitra Aviation Academy offer?",
       answer:
-        "Aeromitra specializes in decorating a wide range of events, including weddings, corporate events, private parties, and more. Whether you’re planning an intimate gathering or a lavish affair, we have the expertise to elevate your event decor to the next level.",
+        "Aeromitra offers a full spectrum of aviation programs including Commercial Pilot License (CPL), Private Pilot License (PPL), Student Pilot License (SPL), DGCA Ground Classes, Type Rating, Flight Dispatcher, and Cabin Crew Training — all aligned with DGCA standards and airline requirements.",
     },
     {
-      question: "How far in advance should I book Aeromitra for my event?",
+      question: "How do I get started with pilot training at Aeromitra?",
       answer:
-        "We recommend booking Aeromitra as early as possible to ensure availability for your desired date. Our calendar fills up quickly, especially during peak wedding and event seasons. Contact us to discuss your event date and secure our services in advance.",
+        "Getting started is simple. Fill out our inquiry form or contact us directly and our counseling team will guide you through eligibility requirements, batch schedules, fee structure, and financing options. We offer a free career counseling session for all prospective students.",
     },
     {
-      question:
-        "Can Aeromitra accommodate specific themes or design preferences for my event?",
+      question: "Does Aeromitra provide placement assistance after training?",
       answer:
-        "Absolutely! At Aeromitra, we pride ourselves on our versatility and ability to tailor our decor to match your unique vision. Whether you have a specific theme in mind or prefer a custom design, our team will work closely with you to bring your ideas to life.",
+        "Yes. Aeromitra has a dedicated placement cell that actively works with airlines and aviation companies to connect our graduates with job opportunities. We provide 100% placement assistance to all qualified graduates across our programs.",
     },
     {
-      question: "What is included in Aeromitra's event decor services?",
+      question: "What are the eligibility requirements for CPL training?",
       answer:
-        "Our event decor services typically include a consultation to discuss your vision, design concept development, decor setup and installation, and teardown after the event. We offer a range of decor options, including floral arrangements, table settings, backdrops, lighting, and more.",
+        "To enroll in CPL training, candidates must have passed 10+2 with Physics and Mathematics, hold a valid DGCA Class 1 Medical Certificate, and be at least 17 years of age. Our admissions team will walk you through the complete eligibility checklist during your counseling session.",
     },
     {
-      question:
-        "How do I request a quote for event decor services from Aeromitra?",
+      question: "Does Aeromitra offer financing options for aviation training?",
       answer:
-        "Requesting a quote from Aeromitra is easy! Simply fill out our online contact form or reach out to us via email or phone. Provide us with details about your event, including the date, location, estimated guest count, and any specific decor preferences or requirements. We’ll promptly get back to you with a customized quote tailored to your needs.",
+        "Yes. We understand that aviation training is a significant investment, which is why we offer flexible tuition financing plans including education loans through partner banks and easy installment options. Speak to our admissions team to find a plan that works for your budget.",
     },
   ];
 
@@ -149,7 +146,7 @@ export const AboutPage = () => {
             transition={{ duration: 0.8, delay: 0.2 }}
             className="text-xl md:text-2xl font-light tracking-wide max-w-3xl mx-auto opacity-90"
           >
-            Crafting Unforgettable Moments
+            Shaping Aviation Careers Across India
           </motion.p>
         </div>
       </section>
@@ -282,17 +279,17 @@ export const AboutPage = () => {
         </div>
       </section>
 
-      {/* Section 3: Decor Team - Magazine Layout */}
+      {/* Section 3: Team - Magazine Layout */}
       <section className="py-32 px-6 max-w-7xl mx-auto">
         <div className="text-center mb-24">
           <h2 className="text-5xl md:text-7xl font-display text-stone-900 mb-6">
-            The Creatives
+            Our Experts
           </h2>
           <div className="h-1 w-24 bg-[#8ca18e] mx-auto"></div>
         </div>
 
         <div className="grid grid-cols-1 md:grid-cols-2 gap-16 md:gap-24">
-          {/* Member 1: Farhan */}
+          {/* Member 1: Chief Flight Instructor */}
           <div className="flex flex-col">
             <motion.div
               initial="hidden"
@@ -303,33 +300,25 @@ export const AboutPage = () => {
             >
               <img loading="lazy" decoding="async"
                 src={getImageUrl("Best-Pilot-Training-Institute-in-India.jpg")}
-                alt="Farhan"
+                alt="Chief Flight Instructor"
                 className="w-full h-full object-cover filter transition-all duration-1000 ease-out"
               />
             </motion.div>
             <div className="text-left px-4">
               <h3 className="text-4xl font-display text-stone-900 mb-2">
-                Farhan
+                Capt. Anil Verma
               </h3>
               <p className="text-[#8ca18e] font-serif italic text-lg mb-6">
-                Financials & Carpenter
+                Chief Flight Instructor
               </p>
               <p className="text-gray-500 font-light leading-relaxed">
-                Meet Farhan, our meticulous financial manager and skilled
-                carpentry expert at Aeromitra. With a keen eye for detail and a
-                passion for precision, Farhan ensures that every aspect of our
-                projects, from budgeting to carpentry work, is executed with
-                utmost professionalism and excellence. With his expertise, we
-                can guarantee that your event decor is not only visually
-                stunning but also financially sound and structurally sound.
+                With over 15,000 flight hours and decades of instructing experience, Capt. Anil Verma leads Aeromitra’s flight training division. A DGCA-certified examiner and commercial aviation veteran, he has personally guided hundreds of students from their first solo flight to their CPL checkride. His methodical, student-first approach ensures every trainee reaches their full potential.
               </p>
             </div>
           </div>
 
-          {/* Member 2: Karla */}
+          {/* Member 2: Head of Ground School */}
           <div className="flex flex-col md:mt-32">
-            {" "}
-            {/* Staggered look */}
             <motion.div
               initial="hidden"
               whileInView="visible"
@@ -339,28 +328,19 @@ export const AboutPage = () => {
             >
               <img loading="lazy" decoding="async"
                 src={getImageUrl("Aero-Mitra-Aviation-2.png")}
-                alt="Karla"
+                alt="Head of Ground School"
                 className="w-full h-full object-cover filter transition-all duration-1000 ease-out"
               />
             </motion.div>
             <div className="text-left px-4">
               <h3 className="text-4xl font-display text-stone-900 mb-2">
-                Karla
+                Capt. Meera Sharma
               </h3>
               <p className="text-[#8ca18e] font-serif italic text-lg mb-6">
-                Lead Florist
+                Head of DGCA Ground School
               </p>
               <p className="text-gray-500 font-light leading-relaxed">
-                Introducing Karla, the talented lead florist at Aeromitra. With
-                a passion for flowers and an artistic touch, Karla orchestrates
-                breathtaking floral arrangements that add an enchanting ambiance
-                to every event. From romantic bouquets to elaborate
-                centerpieces, Karla’s expertise and creativity shine through in
-                every petal. With an eye for color, texture, and composition,
-                Karla ensures that each floral design perfectly complements the
-                overall aesthetic of your celebration. Trust Karla to transform
-                your venue into a floral paradise and elevate your event to new
-                heights of elegance and beauty.
+                Capt. Meera Sharma brings unmatched expertise in DGCA ground school instruction. A specialist in Air Regulations, Navigation, and Meteorology, she has helped students achieve first-attempt clearance rates well above the national average. Her structured teaching style and deep subject knowledge make her one of Aeromitra’s most valued educators.
               </p>
             </div>
           </div>
