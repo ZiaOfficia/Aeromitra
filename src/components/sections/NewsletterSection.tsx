@@ -22,8 +22,8 @@ const NewsletterSection = () => {
             Join Our Newsletter
           </h2>
           <p className="text-lg font-light opacity-90 mb-10">
-            Get exclusive access to our latest design concepts, wedding trends,
-            and insider tips.
+            Get exclusive updates on aviation training programs, DGCA exam tips,
+            and career opportunities in the aviation industry.
           </p>
 
           <form className="flex flex-col md:flex-row gap-4">

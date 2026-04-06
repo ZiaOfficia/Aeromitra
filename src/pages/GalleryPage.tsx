@@ -8,37 +8,36 @@ import { ContactSection } from "../components/sections/ContactSection";
 // Mock Data for YouTube Videos (replace with real IDs if available)
 const videoGallery = [
   {
-    id: "PXJWdgfigUg",
-    title: "Adriana & Kyle's Ceremony & Reception Décor",
+    id: "xOnAX9pZTo8",
+    title: "How to Prepare & Pass Your CPL Checkride",
     thumbnail:
       getImageUrl("airplane-1-300x200.jpg"),
     videoLength: "1:05",
   },
   {
-    id: "ALCysyBUBbg",
-    title: "Elegance Unveiled: A Glimpse into Our Dazzling Decor ",
+    id: "zBWVfz6GEgk",
+    title: "Talking to ATC — Radio Basics for Student Pilots",
     thumbnail:
       getImageUrl("Akash-nim.jpg"),
     videoLength: "1:04",
   },
   {
-    id: "VvkpCzqlJxI",
-    title: "Nadia Mahadeo Reception Stage",
+    id: "jgOf14RpA0M",
+    title: "DGCA Ground School — Weather Theory Explained",
     thumbnail:
       getImageUrl("Alan-patric.jpeg"),
     videoLength: "0:19",
-  }, // YouTube Dev placeholder
-   // Psy placeholder
+  },
   {
-    id: "gfJpcRz8xpo",
-    title: "Great Gatsby Theme Before And After",
+    id: "oD3YPdOH5Xo",
+    title: "Multi-Engine Training — Ground School Overview",
     thumbnail:
       getImageUrl("Aviation-Role-Models-Learn-from-Experienced-Pilots.webp"),
     videoLength: "0:30",
   },
   {
-    id: "5HgrU-RK2Ec",
-    title: "Judi & Chris Video Review",
+    id: "UITURVxnqn0",
+    title: "Mock Check Ride — Pilot Exam Preparation",
     thumbnail:
       getImageUrl("best-aviation-academy-in-Delhi-1024x733.jpeg"),
     videoLength: "0:33",

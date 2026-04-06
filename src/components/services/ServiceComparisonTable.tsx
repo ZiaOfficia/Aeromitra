@@ -31,7 +31,7 @@ export const ServiceComparisonTable = ({
           <span className="text-primary">Aeromitra</span> Aviation Academy
         </div>
         <div className="p-4 md:p-6 font-medium text-sm md:text-base text-center text-stone-400">
-          Typical Decorators
+          Other Institutes
         </div>
       </div>
 

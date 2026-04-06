@@ -20,10 +20,10 @@ export const PrivacyPolicyPage = () => {
 
         <div className="prose prose-stone max-w-none text-stone-600">
           <p className="mb-6">
-            At Aeromitra, we value your privacy and are committed to protecting
+            At Aeromitra Aviation Academy, we value your privacy and are committed to protecting
             your personal information. This Privacy Policy outlines how we
             collect, use, and safeguard your data when you visit our website or
-            use our wedding decoration services. By using our website, you agree
+            enroll in our aviation training programs. By using our website, you agree
             to the terms outlined below.
           </p>
 
@@ -31,10 +31,10 @@ export const PrivacyPolicyPage = () => {
             Who We Are
           </h2>
           <p className="mb-6">
-            Aeromitra provides wedding decoration services across New York and
-            New Jersey. Our goal is to create a personalized, memorable event
-            experience for your special day. Our website address is:
-            [https://aeromitra.com].
+            Aeromitra Aviation Academy provides professional aviation training across India,
+            including pilot training, DGCA ground classes, cabin crew training, and flight dispatcher
+            courses. Our goal is to help every student achieve a successful aviation career.
+            Our website address is: aeromitraa.com.
           </p>
 
           <h2 className="text-2xl font-serif text-stone-900 mt-8 mb-4">
@@ -191,10 +191,10 @@ export const PrivacyPolicyPage = () => {
               <strong>Email:</strong> info@aeromitraa.com
             </p>
             <p className="mb-1">
-              <strong>Phone:</strong> +1 (347) 686-4562
+              <strong>Phone:</strong> +91 9005527666 / +91 9076524305
             </p>
             <p>
-              <strong>Address:</strong> 8 Di Tomas Ct, Copiague, NY, 11726
+              <strong>Address:</strong> 34 A, 2nd Floor, Ramanand Trade Centre, Above Woodland Showroom, Kapurthala, Aliganj, Lucknow 226024
             </p>
           </div>
           <p className="mt-6 italic">

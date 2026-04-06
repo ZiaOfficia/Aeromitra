@@ -31,7 +31,7 @@ const SECTIONS = [
   { id: "styles", label: "Styles" },
   { id: "process", label: "Process" },
   { id: "why-us", label: "Why Choose Us" },
-  { id: "testimonials", label: "Love Stories" },
+  { id: "testimonials", label: "Student Stories" },
   { id: "pricing", label: "Pricing Approach" },
   { id: "faq", label: "FAQs" },
   { id: "enquiry", label: "Inquiry" },
@@ -367,7 +367,7 @@ export const ServiceDetailPage = () => {
         </div>
       </section>
 
-      {/* Real Weddings / Why Aeromitra / Testimonials */}
+      {/* Why Aeromitra / Testimonials */}
       <section
         id="why-us"
         ref={(el) => {
@@ -420,7 +420,7 @@ export const ServiceDetailPage = () => {
           <div className="max-w-7xl mx-auto mb-20">
             <div className="text-center mb-12">
               <h2 className="text-3xl md:text-4xl font-display text-gray-900 mb-3">
-                Love Stories
+                Student Success Stories
               </h2>
               <div className="w-16 h-px bg-primary mx-auto" />
             </div>
@@ -469,10 +469,10 @@ export const ServiceDetailPage = () => {
               </h3>
               <ul className="space-y-2">
                 {[
-                  "Detailed Design Consultation",
-                  "Premium Material Sourcing",
-                  "Full-Day Installation Team",
-                  "Breakdown & Cleanup",
+                  "Expert Faculty & Flight Instructors",
+                  "DGCA-Aligned Study Materials",
+                  "Simulator & Practical Training",
+                  "Placement Assistance & Career Support",
                 ].map((item, i) => (
                   <li
                     key={i}
@@ -497,11 +497,11 @@ export const ServiceDetailPage = () => {
         <FAQSection />
       </div>
 
-      {/* You May Also Love */}
+      {/* Explore More Programs */}
       <section className="py-20 px-6 bg-stone-50">
         <div className="max-w-7xl mx-auto">
           <h3 className="text-2xl md:text-3xl font-display text-gray-900 mb-8 text-center">
-            You May Also Love
+            Explore More Programs
           </h3>
           <div className="grid grid-cols-2 md:grid-cols-4 gap-6">
             {relatedServices.map((s) => (
@@ -543,10 +543,10 @@ export const ServiceDetailPage = () => {
             viewport={{ once: true }}
           >
             <h2 className="text-3xl md:text-5xl font-display mb-4">
-              Your event deserves more than decoration.
+              Your aviation career starts with the right training.
             </h2>
             <p className="text-xl text-primary font-display italic">
-              It deserves design.
+              Enroll today and take off with Aeromitra.
             </p>
           </motion.div>
         </div>

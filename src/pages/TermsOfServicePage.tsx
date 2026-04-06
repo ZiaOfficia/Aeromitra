@@ -18,243 +18,178 @@ export const TermsOfServicePage = () => {
           Effective Date: October 2024
         </p>
 
-        <div className="prose prose-stone max-w-none text-stone-600">
-          <p className="mb-6">
-            Welcome to Aeromitra! These Terms of Service (“Terms”) govern your
-            access to and use of our wedding decoration services, as well as the
-            website aeromitra.com. By using our services or visiting our
+        <div className=”prose prose-stone max-w-none text-stone-600”>
+          <p className=”mb-6”>
+            Welcome to Aeromitra Aviation Academy! These Terms of Service (“Terms”) govern your
+            access to and use of our aviation training services, as well as the
+            website aeromitraa.com. By using our services or visiting our
             website, you agree to these Terms. Please read them carefully. If
             you do not agree with any part of these Terms, please refrain from
             using our services or website.
           </p>
 
-          <h2 className="text-2xl font-serif text-stone-900 mt-8 mb-4">
+          <h2 className=”text-2xl font-serif text-stone-900 mt-8 mb-4”>
             Acceptance of Terms
           </h2>
-          <p className="mb-6">
-            By accessing or using aeromitra.com or utilizing our wedding
-            decoration services, you agree to these Terms, along with our
-            Privacy Policy and Cookie Policy. These Terms apply to all users,
-            clients, and visitors who access or use our website and services.
+          <p className=”mb-6”>
+            By accessing or using aeromitraa.com or enrolling in our aviation
+            training programs, you agree to these Terms, along with our
+            Privacy Policy. These Terms apply to all users, students, and
+            visitors who access or use our website and services.
           </p>
 
-          <h2 className="text-2xl font-serif text-stone-900 mt-8 mb-4">
+          <h2 className=”text-2xl font-serif text-stone-900 mt-8 mb-4”>
             Services Overview
           </h2>
-          <p className="mb-6">
-            Aeromitra specializes in wedding decoration services. Our offerings
-            include, but are not limited to, consultation, event coordination,
-            venue decoration, floral arrangements, lighting, and related
-            services. Specific details of the services provided will be outlined
-            in your contract or agreement with us.
+          <p className=”mb-6”>
+            Aeromitra Aviation Academy specializes in professional aviation training. Our offerings
+            include, but are not limited to, Commercial Pilot License (CPL), Private Pilot License (PPL),
+            Student Pilot License (SPL), DGCA Ground Classes, Type Rating, Flight Dispatcher training,
+            Cabin Crew Training, and Tuition Financing. Specific details of each program will be outlined
+            during your enrollment consultation.
           </p>
 
-          <h2 className="text-2xl font-serif text-stone-900 mt-8 mb-4">
-            Service Customization
-          </h2>
-          <p className="mb-6">
-            We aim to tailor our services to meet your preferences. However,
-            some service elements may be subject to availability, venue
-            restrictions, or other factors, which will be discussed with you
-            during the planning process.
-          </p>
-
-          <h2 className="text-2xl font-serif text-stone-900 mt-8 mb-4">
+          <h2 className=”text-2xl font-serif text-stone-900 mt-8 mb-4”>
             Eligibility
           </h2>
-          <p className="mb-6">
-            Our services are available to individuals who are at least 18 years
-            old. By using our services, you confirm that you meet this age
-            requirement and have the legal authority to enter into these Terms
-            and any related agreements.
+          <p className=”mb-6”>
+            Eligibility requirements vary by program. For pilot training programs (CPL, PPL, SPL),
+            candidates must meet DGCA medical and educational requirements. For Cabin Crew and Flight
+            Dispatcher programs, candidates must be at least 18 years of age. Our admissions team will
+            confirm all eligibility criteria during your counseling session.
           </p>
 
-          <h2 className="text-2xl font-serif text-stone-900 mt-8 mb-4">
-            Booking and Payment Terms
+          <h2 className=”text-2xl font-serif text-stone-900 mt-8 mb-4”>
+            Enrollment and Payment Terms
           </h2>
-          <p className="mb-4">
-            To secure our wedding decoration services, the following steps are
-            necessary:
+          <p className=”mb-4”>
+            To secure your enrollment in any Aeromitra training program, the following steps are
+            required:
           </p>
-          <ul className="list-disc pl-5 mb-6 space-y-2">
+          <ul className=”list-disc pl-5 mb-6 space-y-2”>
             <li>
-              <strong>Booking Confirmation:</strong> A signed contract outlining
-              the scope of services.
+              <strong>Enrollment Confirmation:</strong> A signed enrollment form outlining
+              the scope of training and fee structure.
             </li>
             <li>
-              <strong>Deposit:</strong> A non-refundable deposit may be required
-              to confirm your booking. This will be specified in your contract.
+              <strong>Admission Fee:</strong> A non-refundable admission fee is required
+              to confirm your seat. This will be specified at the time of enrollment.
             </li>
             <li>
-              <strong>Payment Schedule:</strong> Payment terms, including due
-              dates, will be detailed in your contract. Full payment is
-              typically required before the wedding day.
+              <strong>Payment Schedule:</strong> Training fees may be paid in installments
+              as agreed during enrollment. Financing options are available through our Tuition
+              Financing program.
             </li>
           </ul>
-          <p className="mb-6">
-            Failure to meet payment terms may result in the cancellation of
-            services or additional fees.
+          <p className=”mb-6”>
+            Failure to meet payment terms may result in a pause or cancellation of training services.
           </p>
 
-          <h2 className="text-2xl font-serif text-stone-900 mt-8 mb-4">
+          <h2 className=”text-2xl font-serif text-stone-900 mt-8 mb-4”>
             Cancellations and Refunds
           </h2>
-          <ul className="list-disc pl-5 mb-6 space-y-2">
+          <ul className=”list-disc pl-5 mb-6 space-y-2”>
             <li>
-              <strong>Cancellation by the Client:</strong> If you need to cancel
-              your booking, refer to the cancellation terms in your contract.
-              Deposits are typically non-refundable, and refunds for additional
-              payments may be based on a sliding scale, depending on the timing
-              of the cancellation.
+              <strong>Cancellation by the Student:</strong> If you need to withdraw from a program,
+              please refer to the cancellation and refund policy detailed in your enrollment agreement.
+              Admission fees are typically non-refundable.
             </li>
             <li>
-              <strong>Cancellation by Aeromitra:</strong> In exceptional
-              circumstances, such as unforeseen events or failure to meet
-              payment terms, we reserve the right to cancel services. In such
-              cases, we will provide a full refund of any payments made,
-              excluding non-refundable deposits.
+              <strong>Cancellation by Aeromitra:</strong> In exceptional circumstances, Aeromitra
+              reserves the right to cancel or postpone a program batch. In such cases, students will
+              be offered rescheduling or a full refund of fees paid.
             </li>
           </ul>
 
-          <h2 className="text-2xl font-serif text-stone-900 mt-8 mb-4">
-            Changes to Services
+          <h2 className=”text-2xl font-serif text-stone-900 mt-8 mb-4”>
+            Student Responsibilities
           </h2>
-          <p className="mb-6">
-            Any changes to the scope of services (e.g., decorations, venues, or
-            timelines) must be requested in writing and agreed upon by both
-            parties. Depending on the nature of the change, additional fees may
-            apply.
-          </p>
-
-          <h2 className="text-2xl font-serif text-stone-900 mt-8 mb-4">
-            Client Responsibilities
-          </h2>
-          <p className="mb-4">You agree to:</p>
-          <ul className="list-disc pl-5 mb-6 space-y-2">
+          <p className=”mb-4”>As a student, you agree to:</p>
+          <ul className=”list-disc pl-5 mb-6 space-y-2”>
             <li>
-              Provide accurate information about your wedding preferences, guest
-              list, venue, and any other relevant details.
+              Provide accurate personal and academic information during the admissions process.
             </li>
             <li>
-              Ensure that all necessary permits, licenses, and permissions for
-              the event venue are secured.
+              Maintain valid DGCA medical certification as required for your program.
             </li>
             <li>
-              Communicate promptly with Aeromitra throughout the planning
-              process to avoid delays or misunderstandings.
+              Attend scheduled classes, flight sessions, and examinations as per the program timetable.
+            </li>
+            <li>
+              Communicate promptly with Aeromitra's team regarding any changes to your schedule or circumstances.
             </li>
           </ul>
-          <p className="mb-6">
-            Failure to provide accurate or timely information may impact our
-            ability to deliver the agreed-upon services.
-          </p>
 
-          <h2 className="text-2xl font-serif text-stone-900 mt-8 mb-4">
-            Third-Party Vendors
-          </h2>
-          <p className="mb-6">
-            During the planning and execution of our services, we may
-            collaborate with or recommend third-party vendors (e.g.,
-            photographers, caterers, florists). While we work with trusted
-            partners, Aeromitra is not responsible for the actions or services
-            of these third-party vendors. Any agreements made with them are
-            separate from your contract with Aeromitra.
-          </p>
-
-          <h2 className="text-2xl font-serif text-stone-900 mt-8 mb-4">
+          <h2 className=”text-2xl font-serif text-stone-900 mt-8 mb-4”>
             Intellectual Property
           </h2>
-          <p className="mb-6">
-            All content and materials provided by Aeromitra, including website
-            content, designs, logos, and images, are the intellectual property
-            of Aeromitra or our licensors. You may not reproduce, distribute,
-            or create derivative works based on our content without our written
-            consent.
+          <p className=”mb-6”>
+            All content and materials provided by Aeromitra Aviation Academy, including study materials,
+            website content, logos, and images, are the intellectual property of Aeromitra or our licensors.
+            You may not reproduce, distribute, or create derivative works based on our content without
+            written consent.
           </p>
 
-          <h2 className="text-2xl font-serif text-stone-900 mt-8 mb-4">
+          <h2 className=”text-2xl font-serif text-stone-900 mt-8 mb-4”>
             Limitation of Liability
           </h2>
-          <p className="mb-6">
-            To the fullest extent permitted by law, Aeromitra will not be
-            liable for any indirect, incidental, or consequential damages
-            arising from the use of our services or website, including but not
-            limited to delays, cancellations, or events beyond our control.
-          </p>
-          <p className="mb-6">
-            We will make every effort to execute your wedding plan as agreed,
-            but circumstances such as weather, venue conditions, or unforeseen
-            events may affect the final outcome. While we will not be liable for
-            such circumstances, we will work diligently to provide alternative
-            solutions.
+          <p className=”mb-6”>
+            To the fullest extent permitted by law, Aeromitra will not be liable for any indirect,
+            incidental, or consequential damages arising from the use of our services or website,
+            including delays due to weather, DGCA scheduling, or other circumstances beyond our control.
+            We will work diligently to minimize disruptions and offer alternative arrangements wherever possible.
           </p>
 
-          <h2 className="text-2xl font-serif text-stone-900 mt-8 mb-4">
+          <h2 className=”text-2xl font-serif text-stone-900 mt-8 mb-4”>
             Force Majeure
           </h2>
-          <p className="mb-6">
-            Aeromitra will not be responsible for delays, cancellations, or
-            failure to perform services due to events beyond our control, such
-            as natural disasters, pandemics, strikes, or other events classified
-            as force majeure. In such cases, we will work with you to reschedule
-            or adjust services as feasible.
+          <p className=”mb-6”>
+            Aeromitra will not be responsible for delays or interruptions to training due to events
+            beyond our control, including natural disasters, regulatory changes, airspace restrictions,
+            pandemics, or other force majeure events. We will work with affected students to reschedule
+            training at the earliest opportunity.
           </p>
 
-          <h2 className="text-2xl font-serif text-stone-900 mt-8 mb-4">
-            Indemnification
-          </h2>
-          <p className="mb-6">
-            You agree to indemnify and hold Aeromitra, its officers, directors,
-            employees, and agents harmless from any claims, damages,
-            liabilities, or expenses arising from your use of our services,
-            breach of these Terms, or violation of any third-party rights.
-          </p>
-
-          <h2 className="text-2xl font-serif text-stone-900 mt-8 mb-4">
+          <h2 className=”text-2xl font-serif text-stone-900 mt-8 mb-4”>
             Dispute Resolution
           </h2>
-          <p className="mb-6">
-            In the event of a dispute arising from the use of our services or
-            website, we encourage you to contact us to seek a resolution. If a
-            resolution cannot be reached, the dispute will be governed by the
-            laws of [Insert Jurisdiction], and any legal action will be subject
-            to the courts of [Insert Jurisdiction].
+          <p className=”mb-6”>
+            In the event of a dispute, we encourage you to contact us directly to seek a resolution.
+            Unresolved disputes will be governed by the laws of India, and any legal action will be
+            subject to the jurisdiction of the courts of Lucknow, Uttar Pradesh.
           </p>
 
-          <h2 className="text-2xl font-serif text-stone-900 mt-8 mb-4">
+          <h2 className=”text-2xl font-serif text-stone-900 mt-8 mb-4”>
             Changes to Terms
           </h2>
-          <p className="mb-6">
-            We reserve the right to update or modify these Terms at any time
-            without prior notice. Any changes will be effective immediately upon
-            posting to our website. Your continued use of our services after any
-            modifications constitutes your acceptance of the updated Terms.
+          <p className=”mb-6”>
+            We reserve the right to update or modify these Terms at any time. Any changes will be
+            effective immediately upon posting to our website. Continued use of our services after
+            any modifications constitutes acceptance of the updated Terms.
           </p>
 
-          <h2 className="text-2xl font-serif text-stone-900 mt-8 mb-4">
+          <h2 className=”text-2xl font-serif text-stone-900 mt-8 mb-4”>
             Contact Us
           </h2>
-          <p className="mb-4">
-            If you have any questions or concerns about these Terms of Service
-            or our wedding decoration services, please contact us:
+          <p className=”mb-4”>
+            If you have any questions or concerns about these Terms of Service, please contact us:
           </p>
-          <div className="bg-stone-50 p-6 rounded-lg border border-stone-200">
-            <h3 className="font-serif text-lg text-stone-900 mb-2">
-              Aeromitra Support Team
+          <div className=”bg-stone-50 p-6 rounded-lg border border-stone-200”>
+            <h3 className=”font-serif text-lg text-stone-900 mb-2”>
+              Aeromitra Aviation Academy
             </h3>
-            <p className="mb-1">
+            <p className=”mb-1”>
               <strong>Email:</strong> info@aeromitraa.com
             </p>
-            <p className="mb-1">
-              <strong>Phone:</strong> +1 (347) 686-4562
+            <p className=”mb-1”>
+              <strong>Phone:</strong> +91 9005527666 / +91 9076524305
             </p>
             <p>
-              <strong>Address:</strong> 8 Di Tomas Ct, Copiague, NY, 11726
+              <strong>Address:</strong> 34 A, 2nd Floor, Ramanand Trade Centre, Above Woodland Showroom, Kapurthala, Aliganj, Lucknow 226024
             </p>
           </div>
-          <p className="mt-6 italic">
-            Thank you for choosing Aeromitra! We look forward to making your
-            wedding day a truly unforgettable experience.
+          <p className=”mt-6 italic”>
+            Thank you for choosing Aeromitra Aviation Academy. We look forward to guiding you toward a successful aviation career.
           </p>
         </div>
 

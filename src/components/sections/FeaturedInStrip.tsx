@@ -3,65 +3,63 @@ import { motion } from "framer-motion";
 
 const items = [
   {
-    type: "link" as const,
-    href: "https://www.maharaniweddings.com/2025-04-15/16630-hartford-ct-indian-wedding-by-juniper-domantay?fbclid=PAY2xjawJre85leHRuA2FlbQIxMQABp0DZ6VuDwJI8ulfXC6hmCpEyA6lycLDJEtklxSls-mr0qe2L5xnAjDQvyj3O_aem_XMyyfUDnYZjHn39PUVibmw",
+    type: "img" as const,
     src: getImageUrl("24-05-13-AF_EDUCATION-1024x683.jpg"),
-    alt: "Maharani Weddings",
-    className: "h-16 w-auto object-contain",
+    alt: "DGCA Approved",
+    className: "h-16 w-auto object-contain opacity-70 hover:opacity-100 transition-all duration-500",
   },
   {
-    type: "link" as const,
-    href: "https://wezoree.com/real-weddings/urban-euphoria-adriana-kyle-s-magical-moments-at-ravel-hotel-1701964352/",
+    type: "img" as const,
     src: getImageUrl("24-05-13-AF_EDUCATION-18-rgj9tqqbc04x9hnkilintkauvlsshuws1lhi1p17l8.jpg"),
-    alt: "Wezoree",
-    className: "h-10 w-auto object-contain brightness-0 invert",
+    alt: "Aviation India",
+    className: "h-10 w-auto object-contain brightness-0 invert opacity-70 hover:opacity-100 transition-all duration-500",
   },
   {
     type: "img" as const,
     src: getImageUrl("24-05-13-AF_EDUCATION-20-300x200.jpg"),
-    alt: "Vogue Weddings",
+    alt: "Pilot Training India",
     className:
       "h-20 w-auto object-contain grayscale hover:grayscale-0 transition-all duration-500 rounded-sm opacity-70 hover:opacity-100",
   },
   {
     type: "img" as const,
     src: getImageUrl("24-05-13-AF_EDUCATION-23-1.jpg"),
-    alt: "Elle Weddings",
+    alt: "Aviation Academy",
     className:
       "h-20 w-auto object-contain grayscale hover:grayscale-0 transition-all duration-500 rounded-sm opacity-70 hover:opacity-100",
   },
   {
     type: "img" as const,
     src: getImageUrl("24-05-13-AF_EDUCATION-23-1024x683.jpg"),
-    alt: "Brides",
+    alt: "CPL Training",
     className:
       "h-20 w-auto object-contain grayscale hover:grayscale-0 transition-all duration-500 rounded-sm opacity-70 hover:opacity-100",
   },
   {
     type: "img" as const,
     src: getImageUrl("24-05-13-AF_EDUCATION-23.jpg"),
-    alt: "Carats & Cakes",
+    alt: "Flight School India",
     className:
       "h-20 w-auto object-contain grayscale hover:grayscale-0 transition-all duration-500 rounded-sm opacity-70 hover:opacity-100",
   },
   {
     type: "img" as const,
     src: getImageUrl("24-05-13-AF_EDUCATION-25-1.jpg"),
-    alt: "The Luxury Bride Magazine",
+    alt: "Aeromitra Aviation",
     className:
       "h-24 w-auto object-contain grayscale hover:grayscale-0 transition-all duration-500 opacity-70 hover:opacity-100",
   },
   {
     type: "img" as const,
     src: getImageUrl("24-05-13-AF_EDUCATION-26-1-300x200.jpg"),
-    alt: "Modern Luxury Weddings",
+    alt: "DGCA Ground School",
     className:
       "h-20 w-auto object-contain grayscale hover:grayscale-0 transition-all duration-500 rounded-sm opacity-70 hover:opacity-100",
   },
   {
     type: "img" as const,
     src: getImageUrl("24-05-13-AF_EDUCATION-26.jpg"),
-    alt: "Munaluchi Bride",
+    alt: "Cabin Crew Training",
     className:
       "h-12 w-auto object-contain brightness-0 invert opacity-70 hover:opacity-100 transition-all duration-500",
   },
@@ -73,7 +71,7 @@ export const FeaturedInStrip = () => {
   return (
     <div className="bg-stone-950 py-14 overflow-hidden border-y border-white/5">
       <p className="text-[10px] uppercase tracking-[0.4em] text-center text-white/25 mb-10 font-bold">
-        As Featured In
+        Our Training in Action
       </p>
       <div className="relative flex overflow-hidden">
         <motion.div

@@ -22,14 +22,14 @@ const itemVariants: Variants = {
 export const ServicesGrid = () => {
   // IDs must match servicesData.ts exactly
   const SERVICE_IDS = [
-    "floral-design",
-    "ceiling-design",
-    "centerpiece-design",
-    "vinyl-floor-wrap",
-    "ceremony-decor",
-    "draping-services",
-    "mandap-design",
-    "stage-design",
+    "commercial-pilot-license",
+    "private-pilot-license",
+    "dgca-ground-classes",
+    "student-pilot-license",
+    "type-rating",
+    "flight-dispatcher",
+    "cabin-crew-training",
+    "tuition-financing",
   ];
 
   return (

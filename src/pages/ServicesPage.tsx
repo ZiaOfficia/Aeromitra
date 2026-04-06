@@ -2,15 +2,15 @@ import { getImageUrl } from "../utils/imageUtils";
 import { AnimatePresence, motion } from "framer-motion";
 import { Link } from "react-router-dom";
 import {
-  Calendar,
-  Utensils,
-  Flower2,
+  Plane,
+  PlaneTakeoff,
+  PlaneLanding,
+  BookOpen,
+  GraduationCap,
+  Radio,
+  Users,
+  CreditCard,
   ArrowRight,
-  LampCeiling,
-  LampFloor,
-  ShirtIcon,
-  Theater,
-  TheaterIcon,
   ChevronRight,
 } from "lucide-react";
 import { SEO } from "../components/common/SEO";
@@ -23,144 +23,142 @@ export const ServicesPage = () => {
 
   const faqs = [
     {
-      question:
-        "What types of events does Aeromitra specialize in decorating?",
+      question: "What courses does Aeromitra Aviation Academy offer?",
       answer:
-        "Aeromitra specializes in decorating a wide range of events, including weddings, corporate events, private parties, and more. Whether you’re planning an intimate gathering or a lavish affair, we have the expertise to elevate your event decor to the next level.",
+        "Aeromitra offers a full range of aviation programs: Commercial Pilot License (CPL), Private Pilot License (PPL), Student Pilot License (SPL), DGCA Ground Classes, Type Rating, Flight Dispatcher, Cabin Crew Training, and Tuition Financing. All programs follow DGCA guidelines and are aligned with airline industry requirements.",
     },
     {
-      question: "How far in advance should I book Aeromitra for my event?",
+      question: "What are the eligibility requirements for CPL training?",
       answer:
-        "We recommend booking Aeromitra as early as possible to ensure availability for your desired date. Our calendar fills up quickly, especially during peak wedding and event seasons. Contact us to discuss your event date and secure our services in advance.",
+        "To enroll in CPL training at Aeromitra, candidates must have passed 10+2 with Physics and Mathematics, hold a valid DGCA Class 1 Medical Certificate, and be at least 17 years of age. Our admissions team will guide you through the complete eligibility checklist during your free counseling session.",
     },
     {
-      question:
-        "Can Aeromitra accommodate specific themes or design preferences for my event?",
+      question: "How long does CPL training take at Aeromitra?",
       answer:
-        "Absolutely! At Aeromitra, we pride ourselves on our versatility and ability to tailor our decor to match your unique vision. Whether you have a specific theme in mind or prefer a custom design, our team will work closely with you to bring your ideas to life.",
+        "A full Commercial Pilot License program typically takes 18–24 months to complete, depending on weather conditions, flight slot availability, and individual progress. This includes all required flight hours, simulator sessions, and DGCA ground school examinations.",
     },
     {
-      question: "What is included in Aeromitra's event decor services?",
+      question: "Does Aeromitra provide placement assistance after training?",
       answer:
-        "Our event decor services typically include a consultation to discuss your vision, design concept development, decor setup and installation, and teardown after the event. We offer a range of decor options, including floral arrangements, table settings, backdrops, lighting, and more.",
+        "Yes. Aeromitra has a dedicated placement cell that actively works with airlines and aviation companies to connect qualified graduates with job opportunities. We provide 100% placement assistance across all our programs — CPL, Cabin Crew, Flight Dispatcher, and more.",
     },
     {
-      question:
-        "How do I request a quote for event decor services from Aeromitra?",
+      question: "Does Aeromitra offer financing options for aviation training?",
       answer:
-        "Requesting a quote from Aeromitra is easy! Simply fill out our online contact form or reach out to us via email or phone. Provide us with details about your event, including the date, location, estimated guest count, and any specific decor preferences or requirements. We’ll promptly get back to you with a customized quote tailored to your needs.",
+        "Yes. We understand aviation training is a significant investment. Aeromitra offers flexible tuition financing plans including education loans through partner banks, easy EMI installment options, and partial scholarships for deserving students. Contact our admissions team to explore the best plan for your budget.",
     },
   ];
+
   const services = [
     {
-      id: "floral-design",
-      icon: <Flower2 className="w-8 h-8 text-primary" />,
-      title: "Floral Design",
+      id: "commercial-pilot-license",
+      icon: <PlaneTakeoff className="w-8 h-8 text-primary" />,
+      title: "Commercial Pilot License (CPL)",
       description:
-        "At Aeromitra Aviation Academy, flowers aren’t just decorations—they’re storytellers. Each bloom reflects a chapter of your love story, and we take pride in crafting floral designs for wedding decoration that speak from the heart. As the best wedding floral designers in NYC, we create lush, artful arrangements inspired by nature’s timeless beauty and your unique vision. ",
+        "Aeromitra's CPL program is designed to take you from an aspiring aviator to a fully certified, airline-ready commercial pilot. Following the complete DGCA syllabus, our training covers all required flight hours, simulator sessions, and ground school examinations — with experienced instructors guiding you every step of the way.",
       features: [
-        "Custom Bouquets and Boutonnieres",
-        "Show-Stopping Ceremony Decor",
-        "Enchanting Reception Centerpieces",
-        "Unique Floral Installations",
+        "Complete DGCA-Mandated Flight Hours",
+        "Advanced Simulator Sessions",
+        "DGCA Ground School All Subjects",
+        "100% Placement Assistance",
       ],
       image: getImageUrl("DGCA-CPL-Ground-Classes-in-Patna-1024x733.jpeg"),
     },
     {
-      id: "ceiling-design",
-      icon: <LampCeiling className="w-8 h-8 text-primary" />,
-      title: "Ceiling Design",
+      id: "private-pilot-license",
+      icon: <Plane className="w-8 h-8 text-primary" />,
+      title: "Private Pilot License (PPL)",
       description:
-        "At Aeromitra Aviation Academy, we believe your love story deserves to be celebrated beneath a canopy of elegance and wonder. Our ceiling design for weddings in the United States transforms venues into magical spaces that captivate hearts and create lasting memories. Whether you envision cascading floral installations, draped fabrics, or glimmering chandeliers, our team specializes in curating wedding ceiling decor in New York and New Jersey that reflects your unique style.",
+        "The Private Pilot License is your first major milestone in aviation. Aeromitra's PPL program provides comprehensive flight training and ground school instruction, whether you are pursuing flying as a personal passion or as the first step toward a Commercial Pilot License. Our experienced instructors guide you from your first dual flight to your final skill test.",
       features: [
-        "Draping Services",
-        "Floral Ceiling Décor",
-        "Lighting EnhancementsCustom Installations",
-        "Custom Installations",
+        "Dual & Solo Flight Instruction",
+        "PPL Theory Ground Classes",
+        "Cross-Country Navigation Training",
+        "DGCA Skill Test Preparation",
       ],
       image: getImageUrl("DGCA-CPL-Ground-Classes-in-Patna-1024x733.jpeg"),
     },
     {
-      id: "centerpiece-design",
-      icon: <Utensils className="w-8 h-8 text-primary" />,
-      title: "Centerpiece Design",
+      id: "dgca-ground-classes",
+      icon: <BookOpen className="w-8 h-8 text-primary" />,
+      title: "DGCA Ground Classes",
       description:
-        "Your wedding day is a canvas, and every detail should reflect your unique love story. At Aeromitra Aviation Academy, we specialize in crafting wedding centerpiece decor in New York that captures the essence of your celebration. Whether you’re dreaming of classic elegance, rustic charm, or modern sophistication, our unique wedding centerpiece designs in the United States will bring your vision to life.",
+        "Aeromitra's DGCA Ground Classes are designed to help aspiring and licensed pilots clear their theory examinations with confidence. Our expert faculty covers all subjects in depth — Air Regulations, Navigation, Meteorology, Technical General — using exam-focused materials and mock tests aligned to the latest DGCA syllabus.",
       features: [
-        "Classic Floral Centerpieces",
-        "Rustic Elegance",
-        "Modern and Minimalist Designs",
-        "Seasonal & Thematic Centerpieces",
+        "Air Regulations & ICAO Law",
+        "Navigation & Flight Planning",
+        "Meteorology & Weather Analysis",
+        "Technical General & Specific",
       ],
       image: getImageUrl("DGCA-Ground-School-in-Bhubaneswar-1024x733.jpg"),
     },
     {
-      id: "vinyl-floor-wrap",
-      icon: <LampFloor className="w-8 h-8 text-primary" />,
-      title: "Vinyl Floor Wraps",
+      id: "student-pilot-license",
+      icon: <PlaneLanding className="w-8 h-8 text-primary" />,
+      title: "Student Pilot License (SPL)",
       description:
-        "At Aeromitra Aviation Academy, we believe every detail of your big day should reflect your unique style and love story. One of the most impactful ways to personalize your wedding venue is through wedding floor wrap decoration in New York. From elegant monograms to breathtaking designs, our vinyl floor wrap wedding services turn ordinary floors into extraordinary showcases of beauty and creativity.",
+        "The Student Pilot License is the first official DGCA license and your entry point into aviation. Aeromitra's SPL program builds a solid foundation in aviation theory, airmanship, and basic flight skills — preparing you confidently for your first solo flight and the full pilot training journey ahead.",
       features: [
-        "Custom Designs Tailored to You",
-        "High-Quality Materials",
-        "Seamless Installation",
-        "Personalized Vinyl Floor Wrap",
+        "Aviation Theory Fundamentals",
+        "Initial Dual Flight Instruction",
+        "Solo Flight Preparation",
+        "DGCA Medical & Documentation Support",
       ],
       image: getImageUrl("DGCA-Ground-School-in-Bhubaneswar-1024x733.jpg"),
     },
     {
-      id: "ceremony-decor",
-      icon: <Calendar className="w-8 h-8 text-primary" />,
-      title: "Ceremony Decor",
+      id: "type-rating",
+      icon: <GraduationCap className="w-8 h-8 text-primary" />,
+      title: "Type Rating",
       description:
-        "At Aeromitra Aviation Academy, we specialize in creating breathtaking wedding ceremony decorations in New York and New Jersey that set the stage for your “I Do” moment. Whether you envision a grand celebration or a rustic, intimate affair, our designs reflect your unique love story, ensuring your ceremony is as unforgettable as the vows you exchange.",
+        "A Type Rating qualifies a licensed commercial pilot to operate a specific aircraft type required by airlines. Aeromitra's Type Rating program prepares you with in-depth aircraft systems training, extensive simulator hours, and DGCA skill test preparation — so you can meet airline requirements and expand your career prospects.",
       features: [
-        "Personalized Aisle Designs",
-        "Showstopping Arches & Altars",
-        "Rustic Wedding Themes",
-        "Cultural & Traditional Designs",
+        "Aircraft Systems & Performance",
+        "Simulator Training (Normal & Emergency)",
+        "Line Training & OPC Preparation",
+        "DGCA Type Rating Skill Test",
       ],
       image: getImageUrl("DGCA-Ground-School-in-Ranchi.jpg"),
     },
     {
-      id: "draping-services",
-      icon: <ShirtIcon className="w-8 h-8 text-primary" />,
-      title: "Draping Services",
+      id: "flight-dispatcher",
+      icon: <Radio className="w-8 h-8 text-primary" />,
+      title: "Flight Dispatcher",
       description:
-        "At Aeromitra Aviation Academy, we specialize in crafting stunning wedding decor draping services in New York and New Jersey that add sophistication and charm to your special day. Draping décor has the power to transform any venue, creating a magical ambiance that enhances the beauty of your wedding ceremony or reception.",
+        "A Flight Dispatcher is a critical behind-the-scenes role in airline operations — responsible for flight planning, weather analysis, fuel management, and crew coordination. Aeromitra's Flight Dispatcher course provides comprehensive, industry-ready training that prepares you for certification and immediate employment in aviation operations.",
       features: [
-        "Elegant Ceiling Draping for Weddings",
-        "Romantic Backdrops and Walls",
-        "Wedding Reception Draping",
-        "Custom Aisle and Ceremony Draping",
+        "Flight Planning & Fuel Management",
+        "Aviation Meteorology",
+        "Air Regulations & NOTAM",
+        "Emergency Handling & Diversions",
       ],
       image: getImageUrl("DGCA-Ground-School-in-Ranchi.jpg"),
     },
     {
-      id: "mandap-design",
-      icon: <Theater className="w-8 h-8 text-primary" />,
-      title: "Mandap Design",
+      id: "cabin-crew-training",
+      icon: <Users className="w-8 h-8 text-primary" />,
+      title: "Cabin Crew Training",
       description:
-        "Celebrate love in style with the best mandap decoration that turns your wedding into a masterpiece. At Aeromitra, we bring together tradition and modern elegance to create breathtaking setups that reflect your story. From vibrant floral themes to grand cultural settings, our expertise in Indian wedding decoration ensures every detail feels magical. For couples in the USA, we design mandaps that are not just beautiful but unforgettable.",
+        "Aeromitra's Cabin Crew Training program prepares aspiring flight attendants with the skills, knowledge, and professional demeanor required by leading airlines. From safety procedures and emergency handling to grooming, hospitality, and communication — our program covers every aspect of a successful cabin crew career and connects graduates directly with airlines.",
       features: [
-        "Traditional Indian Mandap Designs",
-        "Modern & Contemporary Mandap Decoration",
-        "Luxury Destination Wedding Mandaps",
-        // "Opulent & Emotional Décor",
+        "Aircraft Safety & Emergency Procedures",
+        "In-Flight Service & Hospitality",
+        "Professional Grooming & Presentation",
+        "Mock Airline Interview Preparation",
       ],
       image: getImageUrl("DGCA-Ground-School-in-Thiruvananthapuram.jpg"),
     },
     {
-      id: "stage-design",
-      icon: <TheaterIcon className="w-8 h-8 text-primary" />,
-      title: "Stage Design",
+      id: "tuition-financing",
+      icon: <CreditCard className="w-8 h-8 text-primary" />,
+      title: "Tuition Financing",
       description:
-        "At Aeromitra Aviation Academy, we specialize in creating the most beautiful wedding stage decoration that reflects your style and vision. Our expert designers bring together creativity and elegance to craft stages that leave lasting impressions. From grand luxury setups to low cost wedding stage decoration options, we customize every detail to suit your budget. We focus on modern trends, personalized themes, and innovative designs that make your big day truly unforgettable. With us, your wedding stage becomes more than just décor – it becomes the centerpiece of your celebration in the USA.",
+        "Aeromitra believes financial constraints should never ground your aviation dreams. Our Tuition Financing program offers flexible EMI plans, education loan assistance through partner banks, and transparent fee structures — so you can focus entirely on your training and career without financial stress.",
       features: [
-        "Luxury Stage Designs for Unforgettable Weddings",
-        "Affordable & Stylish Stage Decoration Options",
-        "Personalized Themes & Customized Touches",
-        // "Opulent & Emotional Décor",
+        "Flexible Monthly EMI Plans",
+        "Education Loan Facilitation",
+        "Scholarship Programs for Eligible Students",
+        "Transparent, No-Hidden-Charge Fee Structure",
       ],
       image: getImageUrl("DGCA-Ground-School-in-Thiruvananthapuram.jpg"),
     },
@@ -217,12 +215,13 @@ export const ServicesPage = () => {
       <section className="py-24 px-6">
         <div className="max-w-3xl mx-auto text-center">
           <h2 className="text-3xl md:text-4xl font-display text-gray-900 mb-8">
-            Tailored to Perfection
+            Built for Every Stage of Your Aviation Career
           </h2>
           <p className="text-gray-600 leading-relaxed mb-12">
             Aeromitra offers a wide range of training programs to cater to every
-            aspiring aviator’s needs. Whether you’re starting from scratch or advancing
-            your license, our team is here to help you achieve your goals.
+            aspiring aviator's needs. Whether you're starting from scratch with an SPL
+            or advancing your career with a Type Rating, our expert team is here to
+            guide you to the cockpit and beyond.
           </p>
           <div className="w-24 h-px bg-primary mx-auto" />
         </div>
@@ -269,7 +268,7 @@ export const ServicesPage = () => {
                 </p>
                 <div className="bg-white p-8 border border-stone-100 shadow-sm relative">
                   <h4 className="font-display text-lg mb-4 text-gray-800">
-                    Services Include
+                    Program Highlights
                   </h4>
                   <ul className="grid grid-cols-1 md:grid-cols-2 gap-y-3 gap-x-6 text-left">
                     {service.features.map((feature, idx) => (
@@ -288,7 +287,7 @@ export const ServicesPage = () => {
                     to={`/services/${service.id}`}
                     className="inline-flex items-center text-primary uppercase text-xs font-bold tracking-widest hover:text-gray-900 transition-colors"
                   >
-                    {service.title} <ArrowRight className="ml-2 w-4 h-4" />
+                    Learn More <ArrowRight className="ml-2 w-4 h-4" />
                   </Link>
                 </div>
               </div>
@@ -297,19 +296,17 @@ export const ServicesPage = () => {
         </div>
       </section>
 
-      {/* CTA Section */}
+      {/* FAQ Section */}
       <section className="py-32 px-6 bg-white text-stone-800">
         <div className="max-w-4xl mx-auto">
           <div className="text-center mb-20">
-            <h2 className="text-4xl md:text-6xl font-display mb-6">FAQs?</h2>
-            <p className="text-gray-500  text-xl font-bold">
-              Aviation Training Related Questions
+            <h2 className="text-4xl md:text-6xl font-display mb-6">FAQs</h2>
+            <p className="text-gray-500 text-xl font-bold">
+              Aviation Training — Common Questions
             </p>
-            <p className="text-gray-500 font-light text-sm">
-              We’re here to address all your aviation training inquiries and
-              turn your dream of flying into reality! Let’s connect and
-              explore how Aeromitra can launch your aviation career into an
-              unforgettable journey.
+            <p className="text-gray-500 font-light text-sm mt-2">
+              We're here to answer all your aviation training questions and
+              help you take the first step toward a career in the skies.
             </p>
           </div>
 
