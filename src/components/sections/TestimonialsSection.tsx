@@ -14,7 +14,7 @@ export const TestimonialsSection = () => {
       link: "#",
     },
     {
-      image: getImageUrl("admissions.jpg"),
+      image: getImageUrl("Alan-patric.jpeg"),
       quote:
         "Choosing Aeromitra for my pilot training was one of the best decisions I ever made. Their attention to detail and structured curriculum transformed my skills and gave me the confidence to pursue a professional flying career.",
       author: "Devan — PPL Student",

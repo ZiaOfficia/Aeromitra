@@ -74,7 +74,7 @@ export const blogPosts: BlogPost[] = [
       <h3>5. Join a Structured Ground School</h3>
       <p>Enrolling in a dedicated ground school like Aeromitra ensures you cover the entire syllabus systematically with expert guidance.</p>
     `,
-    image: getImageUrl("Aero-Mitra-Aviation-1.png"),
+    image: getImageUrl("Best-Pilot-Training-Institute-in-India.jpg"),
     date: "Feb 20, 2026",
     author: "AMA Faculty",
     category: "Exam Prep",
@@ -121,7 +121,7 @@ export const blogPosts: BlogPost[] = [
       "An in-depth look at what flight dispatchers do and how they contribute to safe, efficient airline operations.",
     content:
       "<p>Flight dispatchers are the unsung heroes of aviation. They work alongside pilots to plan flights, monitor weather, manage fuel, and ensure every flight operates safely and efficiently. Discover this rewarding career path at Aeromitra.</p>",
-    image: getImageUrl("air-traffic-300x240.jpg"),
+    image: getImageUrl("aircraft-rest-hangar-lined-up-like-steel-birds-300x168.webp"),
     date: "Nov 20, 2025",
     author: "AMA Team",
     category: "Career Guide",
@@ -147,7 +147,7 @@ export const blogPosts: BlogPost[] = [
       "Why getting a Type Rating after your CPL is a critical step toward securing an airline job in India.",
     content:
       "<p>Most airlines in India require pilots to hold a Type Rating on the specific aircraft they operate. A Type Rating demonstrates that you are qualified to fly a particular aircraft and significantly improves your employability. Learn about popular Type Ratings and how AMA prepares you for them.</p>",
-    image: getImageUrl("mission-1.png"),
+    image: getImageUrl("portrait-airplane-captain-preparing-fly-aircraft-cockpit-using-control-panel-dashboard-with-switch-buttons-aviator-pilot-flying-plane-with-power-command-navigation-1024x576.jpg"),
     date: "Sep 15, 2025",
     author: "AMA Faculty",
     category: "Career Guide",
@@ -160,7 +160,7 @@ export const blogPosts: BlogPost[] = [
       "Exploring education loans, EMI plans, and scholarships to make aviation training affordable.",
     content:
       "<p>Pilot training in India is a significant investment, but there are multiple financing options available. From aviation-specific education loans offered by nationalized banks to AMA's own installment plans, we break down every option to help you fund your dream career in the skies.</p>",
-    image: getImageUrl("excellence.png"),
+    image: getImageUrl("flyafe-8-min.png"),
     date: "Aug 22, 2025",
     author: "AMA Team",
     category: "Finance",

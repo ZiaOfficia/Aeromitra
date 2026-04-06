@@ -34,7 +34,7 @@ export const servicesData: ServiceData[] = [
   {
     id: "commercial-pilot-license",
     title: "Commercial Pilot License (CPL)",
-    heroImage: getImageUrl("aeromitra logo transparent.png"),
+    heroImage: getImageUrl("aeromitra_logo_transparent.png"),
     heroTitle: "COMMERCIAL PILOT LICENSE TRAINING IN DELHI, INDIA",
     intro: {
       heading: "BECOME A COMMERCIAL PILOT WITH AEROMITRA",
@@ -502,7 +502,7 @@ export const servicesData: ServiceData[] = [
       getImageUrl("8.png"),
       getImageUrl("9.png"),
       getImageUrl("Abrar-sharief.jpg"),
-      getImageUrl("admissions.jpg"),
+      getImageUrl("Alan-patric.jpeg"),
       getImageUrl("Adventure-Flight-Education-Bangalore-1024x733.jpeg"),
     ],
   },
@@ -586,9 +586,9 @@ export const servicesData: ServiceData[] = [
       ],
     },
     portfolioImages: [
-      getImageUrl("aerial-view-doctor-writing-patient-daily-report-checklist-1024x733.webp"),
       getImageUrl("aerial-view-doctor-writing-patient-daily-report-checklist-scaled.webp"),
-      getImageUrl("Aero-Mitra-Aviation-1.png"),
+      getImageUrl("aerial-view-doctor-writing-patient-daily-report-checklist-scaled.webp"),
+      getImageUrl("Best-Pilot-Training-Institute-in-India.jpg"),
       getImageUrl("Aero-Mitra-Aviation-2.png"),
       getImageUrl("Affordable-Flight-Schools-1024x733.jpeg"),
       getImageUrl("Affordable-Flight-Schools.jpeg"),
@@ -597,7 +597,7 @@ export const servicesData: ServiceData[] = [
   {
     id: "cabin-crew-training",
     title: "Cabin Crew Training",
-    heroImage: getImageUrl("air-traffic-300x240.jpg"),
+    heroImage: getImageUrl("aircraft-rest-hangar-lined-up-like-steel-birds-300x168.webp"),
     heroTitle: "CABIN CREW TRAINING IN DELHI, INDIA",
     intro: {
       heading: "LAUNCH YOUR CABIN CREW CAREER WITH AEROMITRA",
@@ -774,8 +774,8 @@ export const servicesData: ServiceData[] = [
       getImageUrl("Alan-patric.jpeg"),
       getImageUrl("Aviation-Role-Models-Learn-from-Experienced-Pilots.webp"),
       getImageUrl("best-aviation-academy-in-Delhi-1024x733.jpeg"),
-      getImageUrl("best-aviation-academy-in-Delhi.jpeg"),
-      getImageUrl("Best-CPL-Institute-in-Surat-1024x683.jpg"),
+      getImageUrl("best-aviation-academy-in-Delhi-1024x733.jpeg"),
+      getImageUrl("Best-CPL-Institute-in-Surat.jpg"),
       getImageUrl("Best-CPL-Institute-in-Surat.jpg"),
     ],
   },

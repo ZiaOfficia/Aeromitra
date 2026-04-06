@@ -34,7 +34,7 @@ const containerVariants: Variants = {
 const heroImages = [
   getImageUrl("Affordable-Flight-Schools-1024x733.jpeg"),
   getImageUrl("Affordable-Flight-Schools.jpeg"),
-  getImageUrl("air-traffic-300x240.jpg"),
+  getImageUrl("aircraft-rest-hangar-lined-up-like-steel-birds-300x168.webp"),
   getImageUrl("aircraft-rest-hangar-lined-up-like-steel-birds-1024x574.webp"),
 ];
 
@@ -226,7 +226,7 @@ export const AboutPage = () => {
             <img loading="lazy" decoding="async"
               alt="About Aeromitra"
               className="w-full h-full object-cover grayscale-20 opacity-90"
-              src={getImageUrl("aerial-view-doctor-writing-patient-daily-report-checklist-1024x733.webp")}
+              src={getImageUrl("aerial-view-doctor-writing-patient-daily-report-checklist-scaled.webp")}
             />
           </motion.div>
         </div>
@@ -302,7 +302,7 @@ export const AboutPage = () => {
               className="mb-8 relative"
             >
               <img loading="lazy" decoding="async"
-                src={getImageUrl("Aero-Mitra-Aviation-1.png")}
+                src={getImageUrl("Best-Pilot-Training-Institute-in-India.jpg")}
                 alt="Farhan"
                 className="w-full h-full object-cover filter transition-all duration-1000 ease-out"
               />

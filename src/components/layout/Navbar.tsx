@@ -43,7 +43,7 @@ export const Navbar = () => {
         { name: "Greece", href: "/brochures/pilot-training-greece.pdf" },
       ],
     },
-    { name: "Other Courses", href: "/brochures/other-courses.pdf", hasSub: false },
+    { name: "Cabin Crew", href: "/cabin-crew.pdf", hasSub: false },
   ];
 
   const navLinks = [
@@ -401,12 +401,12 @@ export const Navbar = () => {
                     )}
                     {/* Other Courses */}
                     <a
-                      href="/brochures/other-courses.pdf"
+                      href="/cabin-crew.pdf"
                       download
                       className="flex items-center justify-between px-3 py-2.5 text-xs font-bold uppercase tracking-widest text-white/70 hover:text-[#c4a44a] transition-colors"
                       onClick={() => setIsMobileMenuOpen(false)}
                     >
-                      Other Courses
+                      Cabin Crew
                       <Download size={11} className="opacity-50" />
                     </a>
                   </motion.div>

@@ -47,9 +47,9 @@ const videoGallery = [
 
 // Reuse generic gallery images
 const imageGallery = [
-  getImageUrl("best-aviation-academy-in-Delhi.jpeg"),
+  getImageUrl("best-aviation-academy-in-Delhi-1024x733.jpeg"),
 
-  getImageUrl("Best-CPL-Institute-in-Surat-1024x683.jpg"),
+  getImageUrl("Best-CPL-Institute-in-Surat.jpg"),
 
   getImageUrl("Best-CPL-Institute-in-Surat.jpg"),
 
@@ -65,7 +65,7 @@ const imageGallery = [
 
   getImageUrl("Best-Pilot-School-in-India-1024x733.jpeg"),
 
-  getImageUrl("Best-Pilot-School-in-India.jpeg"),
+  getImageUrl("Best-Pilot-School-in-India-1024x733.jpeg"),
 
   getImageUrl("best-pilot-training-institute-in-India-1024x733.jpeg"),
 
@@ -75,7 +75,7 @@ const imageGallery = [
 
   getImageUrl("Best-Pilot-Training-Institute-in-India.jpg"),
 
-  getImageUrl("care-1.png"),
+  getImageUrl("ppl-img-e1697192272619.jpg"),
 
   getImageUrl("Cheapest-Flight-School-1024x733.jpg"),
 
@@ -93,9 +93,9 @@ const imageGallery = [
 
   getImageUrl("contented-pilot-looking-forward-to-the-upcoming-flight-768x512-1-rgj9tqq2t0rad3a5swwu2itf9rlazi6zj5kq8zowa8.jpg"),
 
-  getImageUrl("cpl-banner-9-300x129.jpg"),
+  getImageUrl("Best-CPL-Institute-in-Surat.jpg"),
 
-  getImageUrl("DGCA-CPL-Ground-Classes-in-Delhi-1024x733.jpeg"),
+  getImageUrl("DGCA-CPL-Ground-Classes-in-Delhi.jpeg"),
 ];
 
 export const GalleryPage = () => {

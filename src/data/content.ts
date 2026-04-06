@@ -4,7 +4,7 @@ export const heroSlides = [
   {
     title: "Commercial Pilot Training",
     subtitle: "Your Dream of Flying Starts Here — Join India's Top Aviation Academy",
-    image: getImageUrl("flyafe-min.png"),
+    image: getImageUrl("flyafe-3-min-1024x683.png"),
   },
   {
     title: "Private Pilot License",
@@ -14,32 +14,32 @@ export const heroSlides = [
   {
     title: "DGCA Ground Classes",
     subtitle: "Crack Your DGCA Exams with Our Specialized Ground Training",
-    image: getImageUrl("Aero-Mitra-Aviation-1.png"),
+    image: getImageUrl("Best-Pilot-Training-Institute-in-India.jpg"),
   },
   {
     title: "Student Pilot License",
     subtitle: "Begin Your Aviation Journey — Enroll in Our SPL Program",
-    image: getImageUrl("student-1-1.jpg"),
+    image: getImageUrl("flight-schools-in-florida-1.jpg"),
   },
   {
     title: "Type Rating",
     subtitle: "Advance Your Career with Certified Type Rating Courses",
-    image: getImageUrl("mission-1.png"),
+    image: getImageUrl("portrait-airplane-captain-preparing-fly-aircraft-cockpit-using-control-panel-dashboard-with-switch-buttons-aviator-pilot-flying-plane-with-power-command-navigation-1024x576.jpg"),
   },
   {
     title: "Flight Dispatcher",
     subtitle: "Train to Be the Backbone of Every Successful Flight",
-    image: getImageUrl("air-traffic-300x240.jpg"),
+    image: getImageUrl("Top-10-Flying-Schools-in-India-1-1024x733.jpeg"),
   },
   {
     title: "Cabin Crew Training",
     subtitle: "Step Into the World of Aviation with Professional Cabin Crew Training",
-    image: getImageUrl("medium-shot-stewardess-holding-globe-1-300x200.webp"),
+    image: getImageUrl("portrait-flight-attendant-with-plane-figurine-1024x685.jpg"),
   },
   {
     title: "Tuition Financing",
     subtitle: "Flexible Financing Options to Make Your Pilot Dream Affordable",
-    image: getImageUrl("excellence.png"),
+    image: getImageUrl("flyafe-8-min.png"),
   },
 ];
 
@@ -146,7 +146,7 @@ export const blogPosts = [
     category: "Exam Prep",
     excerpt:
       "Top strategies to crack DGCA ground school exams on your first attempt...",
-    image: getImageUrl("Aero-Mitra-Aviation-1.png"),
+    image: getImageUrl("Best-Pilot-Training-Institute-in-India.jpg"),
   },
   {
     title: "PPL vs CPL: Which is Right for You?",
@@ -248,6 +248,6 @@ export const shortVideos = [
     id: 7,
     title: "",
     videoUrl: "/images/videos/aeromitra-reel-7.mp4",
-    thumbnail: getImageUrl("Aero-Mitra-Aviation-1.png"),
+    thumbnail: getImageUrl("Best-Pilot-Training-Institute-in-India.jpg"),
   },
 ];

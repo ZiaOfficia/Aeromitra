@@ -78,7 +78,7 @@ export const ServicesPage = () => {
         "Lighting EnhancementsCustom Installations",
         "Custom Installations",
       ],
-      image: getImageUrl("DGCA-CPL-Ground-Classes-in-Patna.jpeg"),
+      image: getImageUrl("DGCA-CPL-Ground-Classes-in-Patna-1024x733.jpeg"),
     },
     {
       id: "centerpiece-design",
@@ -106,7 +106,7 @@ export const ServicesPage = () => {
         "Seamless Installation",
         "Personalized Vinyl Floor Wrap",
       ],
-      image: getImageUrl("DGCA-Ground-School-in-Bhubaneswar.jpg"),
+      image: getImageUrl("DGCA-Ground-School-in-Bhubaneswar-1024x733.jpg"),
     },
     {
       id: "ceremony-decor",
@@ -120,7 +120,7 @@ export const ServicesPage = () => {
         "Rustic Wedding Themes",
         "Cultural & Traditional Designs",
       ],
-      image: getImageUrl("DGCA-Ground-School-in-Ranchi-1024x733.jpg"),
+      image: getImageUrl("DGCA-Ground-School-in-Ranchi.jpg"),
     },
     {
       id: "draping-services",
@@ -148,7 +148,7 @@ export const ServicesPage = () => {
         "Luxury Destination Wedding Mandaps",
         // "Opulent & Emotional Décor",
       ],
-      image: getImageUrl("DGCA-Ground-School-in-Thiruvananthapuram-1024x733.jpg"),
+      image: getImageUrl("DGCA-Ground-School-in-Thiruvananthapuram.jpg"),
     },
     {
       id: "stage-design",
@@ -180,7 +180,7 @@ export const ServicesPage = () => {
       <section className="relative h-[60vh] md:h-[70vh] flex items-center justify-center overflow-hidden">
         <div className="absolute inset-0">
           <img loading="lazy" decoding="async"
-            src={getOptimizedImage(getImageUrl("DGCA-Ground-School-in-Vishakhapatnam-1024x733.jpg"), 1920)}
+            src={getOptimizedImage(getImageUrl("DGCA-Ground-School-in-Vishakhapatnam.jpg"), 1920)}
             alt="Aviation Training at Aeromitra"
             className="w-full h-full object-cover"
           />
