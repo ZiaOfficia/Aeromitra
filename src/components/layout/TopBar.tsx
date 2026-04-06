@@ -12,17 +12,17 @@ export const TopBar = () => {
       <div className="max-w-7xl mx-auto flex justify-between items-center text-xs tracking-widest uppercase">
         <div className="flex items-center space-x-4">
           <a
-            href="tel:+919999228597"
+            href="tel:+919005527666"
             className="flex items-center hover:text-white transition-colors"
           >
-            <Phone size={18} className="mr-1" /> +91 9999228597
+            <Phone size={18} className="mr-1" /> +91 9005527666
           </a>
           <a
-            href="mailto:admin@aeromitra.com"
+            href="mailto:info@aeromitraa.com"
             className="hidden md:flex items-center hover:text-white transition-colors"
           >
             <Mail size={18} className="mr-1" />
-            <span className="hidden md:inline">admin@aeromitra.com</span>
+            <span className="hidden md:inline">info@aeromitraa.com</span>
           </a>
         </div>
         <div className="flex items-center space-x-4">

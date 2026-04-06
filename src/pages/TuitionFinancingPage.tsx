@@ -127,11 +127,11 @@ export const TuitionFinancingPage = () => {
                   </Button>
                 </Link>
                 <a
-                  href="tel:+919999228597"
+                  href="tel:+919005527666"
                   className="inline-flex items-center gap-2 px-6 py-3 border border-gray-300 text-gray-700 text-xs font-bold uppercase tracking-widest hover:border-primary hover:text-primary transition-colors"
                 >
                   <Phone size={14} />
-                  +91 9999228597
+                  +91 9005527666
                 </a>
               </div>
             </motion.div>

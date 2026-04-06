@@ -52,7 +52,7 @@ export const ContactSection = () => {
                 <Phone size={20} />
               </span>
               <span className="text-sm uppercase tracking-widest text-gray-800">
-                +91 9999228597
+                +91 9005527666 / +91 9076524305
               </span>
             </div>
             <div className="flex items-center space-x-4">
@@ -60,7 +60,7 @@ export const ContactSection = () => {
                 <MapPin size={20} />
               </span>
               <span className="text-sm uppercase tracking-widest text-gray-800">
-                Delhi, India
+                34 A, 2nd Floor, Ramanand Trade Centre, Above Woodland Showroom, Kapurthala, Aliganj, Lucknow 226024
               </span>
             </div>
             <div className="flex items-center space-x-4">
@@ -68,7 +68,7 @@ export const ContactSection = () => {
                 <Mail size={20} />
               </span>
               <span className="text-sm uppercase tracking-widest text-gray-800">
-                admin@aeromitra.com
+                info@aeromitraa.com
               </span>
             </div>
             <div className="flex items-center space-x-4">

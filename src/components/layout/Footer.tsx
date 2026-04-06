@@ -156,15 +156,19 @@ export const Footer = () => {
             <ul className="text-xs space-y-4 uppercase tracking-widest text-gray-400 mt-6">
               <li className="hover:text-primary transition-colors flex items-center gap-2">
                 <Phone size={14} />
-                <a href="tel:+919999228597">+91 9999228597</a>
+                <a href="tel:+919005527666">+91 9005527666</a>
+              </li>
+              <li className="hover:text-primary transition-colors flex items-center gap-2">
+                <Phone size={14} />
+                <a href="tel:+919076524305">+91 9076524305</a>
               </li>
               <li className="hover:text-primary transition-colors flex items-center gap-2">
                 <MapPin size={14} className="shrink-0" />
-                <span>Delhi, India</span>
+                <span>34 A, 2nd Floor, Ramanand Trade Centre, Aliganj, Lucknow 226024</span>
               </li>
               <li className="hover:text-primary transition-colors flex items-center gap-2">
                 <Mail size={14} />
-                <a href="mailto:admin@aeromitra.com">admin@aeromitra.com</a>
+                <a href="mailto:info@aeromitraa.com">info@aeromitraa.com</a>
               </li>
             </ul>
           </motion.div>

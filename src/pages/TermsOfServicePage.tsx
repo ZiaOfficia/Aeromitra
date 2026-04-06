@@ -243,7 +243,7 @@ export const TermsOfServicePage = () => {
               Aeromitra Support Team
             </h3>
             <p className="mb-1">
-              <strong>Email:</strong> info@aeromitra.com
+              <strong>Email:</strong> info@aeromitraa.com
             </p>
             <p className="mb-1">
               <strong>Phone:</strong> +1 (347) 686-4562

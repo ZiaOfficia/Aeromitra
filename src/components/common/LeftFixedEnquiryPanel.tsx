@@ -138,7 +138,7 @@ export const LeftFixedEnquiryPanel = () => {
           <div className="mt-auto pt-6 border-t border-gray-100 space-y-3">
             <div className="flex items-center space-x-3 text-sm text-gray-600">
               <Mail size={16} className="text-primary shrink-0" />
-              <span>admin@aeromitra.com</span>
+              <span>info@aeromitraa.com</span>
             </div>
             <div className="flex items-center space-x-3 text-sm text-gray-600">
               <Clock size={16} className="text-primary shrink-0" />

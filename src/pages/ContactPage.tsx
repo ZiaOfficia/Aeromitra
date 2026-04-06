@@ -105,9 +105,9 @@ export const ContactPage = () => {
             </div>
             <div className="space-y-8">
               {[
-                { icon: <Phone size={24} />, label: "Phone", value: "+91 9999228597", href: "tel:+919999228597" },
-                { icon: <Mail size={24} />, label: "Email", value: "admin@aeromitra.com", href: "mailto:admin@aeromitra.com" },
-                { icon: <MapPin size={24} />, label: "Location", value: "Delhi, India", href: null },
+                { icon: <Phone size={24} />, label: "Phone", value: "+91 9005527666 / +91 9076524305", href: "tel:+919005527666" },
+                { icon: <Mail size={24} />, label: "Email", value: "info@aeromitraa.com", href: "mailto:info@aeromitraa.com" },
+                { icon: <MapPin size={24} />, label: "Location", value: "34 A, 2nd Floor, Ramanand Trade Centre, Above Woodland Showroom, Kapurthala, Aliganj, Lucknow 226024", href: null },
                 { icon: <Clock size={24} />, label: "Office Hours", value: "Mon – Sat: 9:30 AM – 6:30 PM", href: null },
               ].map(({ icon, label, value, href }) => (
                 <motion.div
@@ -260,29 +260,29 @@ export const ContactPage = () => {
                 label: "Delhi — Head Office",
                 name: "Aero Mitra Aviation Pvt. Ltd.",
                 address: "4th floor Phoolwari Building, 1, Block B 7, Arjun Nagar, Safdarjung Enclave, New Delhi 110029",
-                phone: "+91 9999228597",
-                email: "info@aeromitra.com",
+                phone: "+91 9005527666",
+                email: "info@aeromitraa.com",
               },
               {
                 label: "Delhi — Secondary",
                 name: "Aero Mitra Aviation Pvt. Ltd.",
                 address: "F-624, 2nd floor, near Anytime Fitness, Ramphal Chowk Rd, Block-H, Palam Village, New Delhi 110045",
-                phone: "+91 9999228597",
-                email: "info@aeromitra.com",
+                phone: "+91 9005527666",
+                email: "info@aeromitraa.com",
               },
               {
                 label: "Lucknow Campus",
                 name: "Aero Mitra Aviation Pvt. Ltd.",
-                address: "Kapoorthala, Aliganj, Lucknow",
-                phone: "+91 9999228599",
-                email: "info@aeromitra.com",
+                address: "34 A, 2nd Floor, Ramanand Trade Centre, Above Woodland Showroom, Kapurthala, Aliganj, Lucknow 226024",
+                phone: "+91 9005527666",
+                email: "info@aeromitraa.com",
               },
               {
                 label: "USA Campus",
                 name: "Kingsky Flight Academy Pvt. Ltd.",
                 address: "3131 Flightline Dr. – Suite 304, Lakeland, FL 33811",
                 phone: "+1 (954) 643-3459",
-                email: "info@aeromitra.com",
+                email: "info@aeromitraa.com",
               },
             ].map((campus, i) => (
               <motion.div
@@ -351,18 +351,18 @@ export const ContactPage = () => {
           <div className="space-y-4 mb-6">
             <div className="flex items-start gap-4">
               <MapPin className="text-primary mt-1 shrink-0" size={20} />
-              <p className="text-gray-700 leading-relaxed">Delhi, India</p>
+              <p className="text-gray-700 leading-relaxed">34 A, 2nd Floor, Ramanand Trade Centre, Above Woodland Showroom, Kapurthala, Aliganj, Lucknow 226024</p>
             </div>
             <div className="flex items-center gap-4">
               <Phone className="text-primary shrink-0" size={20} />
-              <a href="tel:+919999228597" className="text-gray-700 hover:text-primary transition-colors">
-                +91 9999228597
+              <a href="tel:+919005527666" className="text-gray-700 hover:text-primary transition-colors">
+                +91 9005527666
               </a>
             </div>
             <div className="flex items-center gap-4">
               <Mail className="text-primary shrink-0" size={20} />
-              <a href="mailto:admin@aeromitra.com" className="text-gray-700 hover:text-primary transition-colors">
-                admin@aeromitra.com
+              <a href="mailto:info@aeromitraa.com" className="text-gray-700 hover:text-primary transition-colors">
+                info@aeromitraa.com
               </a>
             </div>
           </div>
