@@ -63,54 +63,54 @@ export const Footer = () => {
             </h5>
             <ul className="text-xs space-y-4 uppercase tracking-widest text-gray-400">
               <li>
-                <a href="/" className="hover:text-primary transition-colors">
+                <Link to="/" className="hover:text-primary transition-colors">
                   Home
-                </a>
+                </Link>
               </li>
               <li>
-                <a
-                  href="/about"
+                <Link
+                  to="/about"
                   className="hover:text-primary transition-colors"
                 >
                   About Us
-                </a>
+                </Link>
               </li>
               <li>
-                <a
-                  href="/services"
+                <Link
+                  to="/services"
                   className="hover:text-primary transition-colors"
                 >
                   Pilot Training
-                </a>
+                </Link>
               </li>
               <li>
-                <a
-                  href="/gallery"
+                <Link
+                  to="/gallery"
                   className="hover:text-primary transition-colors"
                 >
                   Gallery
-                </a>
+                </Link>
               </li>
               <li>
-                <a
-                  href="/portfolio"
+                <Link
+                  to="/accommodations"
                   className="hover:text-primary transition-colors"
                 >
                   Accommodations
-                </a>
+                </Link>
               </li>
               <li>
-                <a href="/faq" className="hover:text-primary transition-colors">
+                <Link to="/faq" className="hover:text-primary transition-colors">
                   FAQ
-                </a>
+                </Link>
               </li>
               <li>
-                <a
-                  href="/contact"
+                <Link
+                  to="/contact"
                   className="hover:text-primary transition-colors"
                 >
                   Contact Us
-                </a>
+                </Link>
               </li>
             </ul>
           </motion.div>
@@ -229,7 +229,7 @@ export const Footer = () => {
               </li>
               <li>
                 <Link
-                  to="/services/tuition-financing"
+                  to="/tuition-financing"
                   className="hover:text-primary transition-colors"
                 >
                   Tuition Financing
