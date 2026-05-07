@@ -1,15 +1,16 @@
 import { getImageUrl } from "../../utils/imageUtils";
 import { motion } from "framer-motion";
-import { Instagram, Heart, MessageCircle } from "lucide-react";
+import { Instagram } from "lucide-react";
 import { getOptimizedImage } from "../../utils/imageUtils";
 
+const INSTAGRAM_URL = "https://www.instagram.com/aeromitraaviation/";
+
 const posts = [
-  { id: 1, image: getImageUrl("3.png"), likes: 245, comments: 12 },
-  { id: 2, image: getImageUrl("4.png"), likes: 189, comments: 8 },
-  { id: 3, image: getImageUrl("5.png"), likes: 312, comments: 24 },
-  { id: 4, image: getImageUrl("6.png"), likes: 156, comments: 5 },
-  { id: 5, image: getImageUrl("7.png"), likes: 278, comments: 18 },
-  { id: 6, image: getImageUrl("8.png"), likes: 198, comments: 9 },
+  { id: 1, image: getImageUrl("24-05-13-AF_EDUCATION-1024x683.jpg") },
+  { id: 2, image: getImageUrl("24-05-13-AF_EDUCATION-25-1.jpg") },
+  { id: 3, image: getImageUrl("24-05-13-AF_EDUCATION-27.jpg") },
+  { id: 4, image: getImageUrl("24-05-13-AF_EDUCATION-28-1.jpg") },
+  { id: 5, image: getImageUrl("24-05-13-AF_EDUCATION-30.jpg") },
 ];
 
 export const InstagramFeed = () => {
@@ -47,9 +48,9 @@ export const InstagramFeed = () => {
             transition={{ delay: 0.2 }}
             className="mt-6 md:mt-0 flex flex-col items-start md:items-end gap-2"
           >
-            <p className="text-gray-400 font-light text-base">@aeromitra</p>
+            <p className="text-gray-400 font-light text-base">@aeromitraaviation</p>
             <a
-              href="https://www.instagram.com/aeromitra/"
+              href={INSTAGRAM_URL}
               target="_blank"
               rel="noopener noreferrer"
               className="inline-block px-6 py-2.5 bg-primary text-white text-[10px] font-bold uppercase tracking-widest hover:bg-stone-900 transition-colors duration-300"
@@ -63,7 +64,7 @@ export const InstagramFeed = () => {
         <div className="grid grid-cols-2 md:grid-cols-4 gap-2 auto-rows-[180px]">
           {/* Large featured post */}
           <motion.a
-            href="https://www.instagram.com/aeromitra/"
+            href={INSTAGRAM_URL}
             target="_blank"
             rel="noopener noreferrer"
             initial={{ opacity: 0, scale: 0.95 }}
@@ -76,18 +77,11 @@ export const InstagramFeed = () => {
               loading="lazy"
               decoding="async"
               src={getOptimizedImage(posts[0].image, 800)}
-              alt="Instagram Post 1"
+              alt="Aeromitra Aviation Academy"
               className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
             />
-            <div className="absolute inset-0 bg-black/40 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center gap-6 text-white">
-              <div className="flex items-center gap-2">
-                <Heart className="w-6 h-6 fill-white" />
-                <span className="font-bold text-lg">{posts[0].likes}</span>
-              </div>
-              <div className="flex items-center gap-2">
-                <MessageCircle className="w-6 h-6 fill-white" />
-                <span className="font-bold text-lg">{posts[0].comments}</span>
-              </div>
+            <div className="absolute inset-0 bg-black/40 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
+              <Instagram className="w-10 h-10 text-white" />
             </div>
           </motion.a>
 
@@ -95,7 +89,7 @@ export const InstagramFeed = () => {
           {posts.slice(1).map((post, idx) => (
             <motion.a
               key={post.id}
-              href="https://www.instagram.com/aeromitra/"
+              href={INSTAGRAM_URL}
               target="_blank"
               rel="noopener noreferrer"
               initial={{ opacity: 0, scale: 0.9 }}
@@ -108,18 +102,11 @@ export const InstagramFeed = () => {
                 loading="lazy"
                 decoding="async"
                 src={getOptimizedImage(post.image, 400)}
-                alt={`Instagram Post ${post.id}`}
+                alt={`Aeromitra Aviation Academy`}
                 className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
               />
-              <div className="absolute inset-0 bg-black/40 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center gap-4 text-white">
-                <div className="flex items-center gap-1">
-                  <Heart className="w-4 h-4 fill-white" />
-                  <span className="font-bold text-sm">{post.likes}</span>
-                </div>
-                <div className="flex items-center gap-1">
-                  <MessageCircle className="w-4 h-4 fill-white" />
-                  <span className="font-bold text-sm">{post.comments}</span>
-                </div>
+              <div className="absolute inset-0 bg-black/40 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
+                <Instagram className="w-6 h-6 text-white" />
               </div>
             </motion.a>
           ))}

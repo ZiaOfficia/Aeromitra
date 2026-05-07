@@ -7,7 +7,6 @@ import { ContactSection } from "../components/sections/ContactSection";
 import { LeftFixedEnquiryPanel } from "../components/common/LeftFixedEnquiryPanel";
 import { HorizontalEnquiryForm } from "../components/common/HorizontalEnquiryForm";
 import { IntroSection } from "../components/sections/IntroSection";
-import { PortfolioSection } from "../components/sections/PortfolioSection";
 import { ShortsVideoSection } from "../components/sections/ShortsVideoSection";
 import { WhyChooseSection } from "../components/sections/WhyChooseSection";
 import { TestimonialsSection } from "../components/sections/TestimonialsSection";
@@ -34,7 +33,6 @@ export const HomePage = () => {
       <IntroSection />
       <FeaturedInStrip />
 
-      <PortfolioSection />
       <ShortsVideoSection />
 
       <HorizontalEnquiryForm />

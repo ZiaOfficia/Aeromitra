@@ -5,7 +5,6 @@ import { servicesData } from "../data/servicesData";
 import {
   ServiceAccordionNav,
   ServiceTestimonialCard,
-  ServiceGalleryGrid,
 } from "../components/services";
 import { FAQSection } from "../components/sections/FAQSection";
 import { Button } from "../components/common/Button";
@@ -219,21 +218,6 @@ export const ServiceDetailPage = () => {
               />
             </motion.div>
           </div>
-        </div>
-      </section>
-
-      {/* Real Success Gallery - Moved after Overview */}
-      <section className="py-12 px-6 bg-stone-50">
-        <div className="max-w-7xl mx-auto">
-          <div className="text-center mb-12">
-            <h2 className="text-3xl md:text-4xl font-display text-gray-900 mb-3">
-              Real Success Gallery
-            </h2>
-            <p className="text-gray-500 font-light">
-              Milestones we've had the honor of being part of.
-            </p>
-          </div>
-          <ServiceGalleryGrid images={service.portfolioImages} />
         </div>
       </section>
 

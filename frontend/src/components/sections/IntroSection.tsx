@@ -1,10 +1,7 @@
 import { introContent } from "../../data/content";
-import { Button } from "../common/Button";
-import { useNavigate } from "react-router-dom";
 import { motion } from "framer-motion";
 
 export const IntroSection = () => {
-  const navigate = useNavigate();
   return (
     <section className="py-28 bg-white overflow-hidden">
       <div className="max-w-7xl mx-auto px-6">
@@ -38,11 +35,6 @@ export const IntroSection = () => {
                 {paragraph}
               </p>
             ))}
-            <div className="mt-8">
-              <Button onClick={() => navigate("/portfolio")}>
-                View Our Work
-              </Button>
-            </div>
           </motion.div>
         </div>
       </div>

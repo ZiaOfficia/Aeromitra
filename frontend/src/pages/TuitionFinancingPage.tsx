@@ -39,7 +39,7 @@ export const TuitionFinancingPage = () => {
           <img
             loading="lazy"
             decoding="async"
-            src={getImageUrl("DGCA-Ground-School-in-Vishakhapatnam.jpg")}
+            src={getImageUrl("DGCA-Pariksha-1024x733.jpeg")}
             alt="Tuition Financing"
             className="w-full h-full object-cover opacity-40"
           />
