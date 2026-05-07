@@ -44,7 +44,7 @@ export const ContactPage = () => {
     <div className="min-h-screen pt-24 pb-12 bg-stone-50">
       <SEO
         title="Contact Us — Aeromitra Aviation Academy"
-        description="Get in touch with Aeromitra Aviation Academy. Enroll in CPL, PPL, DGCA Ground Classes, Cabin Crew, and more. Located in Delhi, India."
+        description="Get in touch with Aeromitra Aviation Academy. Enroll in CPL, PPL, DGCA Ground Classes, Cabin Crew, and more. Located in Lucknow, India."
       />
 
       {/* Hero Section */}

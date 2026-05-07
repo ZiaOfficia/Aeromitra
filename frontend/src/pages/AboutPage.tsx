@@ -33,10 +33,10 @@ const containerVariants: Variants = {
 };
 
 const heroImages = [
-  getImageUrl("Affordable-Flight-Schools-1024x733.jpeg"),
-  getImageUrl("Affordable-Flight-Schools.jpeg"),
-  getImageUrl("aircraft-rest-hangar-lined-up-like-steel-birds-300x168.webp"),
+  getImageUrl("24-05-13-AF_EDUCATION-1024x683.jpg"),
+  getImageUrl("24-05-13-AF_EDUCATION-25-1.jpg"),
   getImageUrl("aircraft-rest-hangar-lined-up-like-steel-birds-1024x574.webp"),
+  getImageUrl("WhatsApp-Image-2025-12-24-at-10.07.07-1-scaled-e1766570042224.jpeg"),
 ];
 
 export const AboutPage = () => {
@@ -160,7 +160,7 @@ export const AboutPage = () => {
             <img loading="lazy" decoding="async"
               alt="About Aeromitra"
               className="w-full h-100 object-cover grayscale-20"
-              src={getImageUrl("Adventure-Flight-Education-Bangalore.jpeg")}
+              src={getImageUrl("24-05-13-AF_EDUCATION-28-1.jpg")}
             />
           </div>
 
@@ -224,7 +224,7 @@ export const AboutPage = () => {
             <img loading="lazy" decoding="async"
               alt="About Aeromitra"
               className="w-full h-full object-cover grayscale-20 opacity-90"
-              src={getImageUrl("aerial-view-doctor-writing-patient-daily-report-checklist-scaled.webp")}
+              src={getImageUrl("low-cost-flight-training-1024x733.jpeg")}
             />
           </motion.div>
         </div>
@@ -242,7 +242,7 @@ export const AboutPage = () => {
             className="w-full lg:w-2/3 h-[500px] lg:h-full relative z-0"
           >
             <img loading="lazy" decoding="async"
-              src={getImageUrl("aerial-view-doctor-writing-patient-daily-report-checklist-scaled.webp")}
+              src={getImageUrl("low-cost-flight-training-1024x733.jpeg")}
               alt="Consultation"
               className="w-full h-full object-cover shadow-2xl grayscale-20"
             />
@@ -300,7 +300,7 @@ export const AboutPage = () => {
               className="mb-8 relative"
             >
               <img loading="lazy" decoding="async"
-                src={getImageUrl("Best-Pilot-Training-Institute-in-India.jpg")}
+                src={getImageUrl("portrait-airplane-captain-preparing-fly-aircraft-cockpit-using-control-panel-dashboard-with-switch-buttons-aviator-pilot-flying-plane-with-power-command-navigation-1024x576.jpg")}
                 alt="Chief Flight Instructor"
                 className="w-full h-full object-cover filter transition-all duration-1000 ease-out"
               />
@@ -328,7 +328,7 @@ export const AboutPage = () => {
               className="mb-8 relative"
             >
               <img loading="lazy" decoding="async"
-                src={getImageUrl("Aero-Mitra-Aviation-2.png")}
+                src={getImageUrl("24-05-13-AF_EDUCATION-23-1024x683.jpg")}
                 alt="Head of Ground School"
                 className="w-full h-full object-cover filter transition-all duration-1000 ease-out"
               />

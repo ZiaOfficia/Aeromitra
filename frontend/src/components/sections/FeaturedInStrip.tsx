@@ -13,16 +13,6 @@ const items = [
     className: "h-10 w-auto object-contain brightness-0 invert opacity-70 hover:opacity-100 transition-all duration-500",
   },
   {
-    src: getImageUrl("24-05-13-AF_EDUCATION-20-300x200.jpg"),
-    alt: "Pilot Training India",
-    className: "h-20 w-auto object-contain grayscale hover:grayscale-0 transition-all duration-500 rounded-sm opacity-70 hover:opacity-100",
-  },
-  {
-    src: getImageUrl("24-05-13-AF_EDUCATION-23-1.jpg"),
-    alt: "Aviation Academy",
-    className: "h-20 w-auto object-contain grayscale hover:grayscale-0 transition-all duration-500 rounded-sm opacity-70 hover:opacity-100",
-  },
-  {
     src: getImageUrl("24-05-13-AF_EDUCATION-23-1024x683.jpg"),
     alt: "CPL Training",
     className: "h-20 w-auto object-contain grayscale hover:grayscale-0 transition-all duration-500 rounded-sm opacity-70 hover:opacity-100",
@@ -36,11 +26,6 @@ const items = [
     src: getImageUrl("24-05-13-AF_EDUCATION-25-1.jpg"),
     alt: "Aeromitra Aviation",
     className: "h-24 w-auto object-contain grayscale hover:grayscale-0 transition-all duration-500 opacity-70 hover:opacity-100",
-  },
-  {
-    src: getImageUrl("24-05-13-AF_EDUCATION-26-1-300x200.jpg"),
-    alt: "DGCA Ground School",
-    className: "h-20 w-auto object-contain grayscale hover:grayscale-0 transition-all duration-500 rounded-sm opacity-70 hover:opacity-100",
   },
   {
     src: getImageUrl("24-05-13-AF_EDUCATION-26.jpg"),

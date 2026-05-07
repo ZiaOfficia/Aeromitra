@@ -38,12 +38,12 @@ export const Navbar = () => {
       name: "Pilot Training",
       hasSub: true,
       subItems: [
-        { name: "USA", href: "/brochures/pilot-training-usa.pdf" },
-        { name: "South Africa", href: "/brochures/pilot-training-sa.pdf" },
-        { name: "Greece", href: "/brochures/pilot-training-greece.pdf" },
+        { name: "USA", href: "/pdfs/USA.pdf" },
+        { name: "South Africa", href: "/pdfs/SA.pdf" },
+        { name: "Greece", href: "/pdfs/Greece.pdf" },
       ],
     },
-    { name: "Cabin Crew", href: "/cabin-crew.pdf", hasSub: false },
+    { name: "Cabin Crew", href: "/pdfs/cabincrew.pdf", hasSub: false },
   ];
 
   const navLinks = [
@@ -382,9 +382,9 @@ export const Navbar = () => {
                         className="bg-white/5 rounded-lg overflow-hidden ml-3 border border-white/10"
                       >
                         {[
-                          { name: "USA", href: "/brochures/pilot-training-usa.pdf" },
-                          { name: "South Africa", href: "/brochures/pilot-training-sa.pdf" },
-                          { name: "Greece", href: "/brochures/pilot-training-greece.pdf" },
+                          { name: "USA", href: "/pdfs/USA.pdf" },
+                          { name: "South Africa", href: "/pdfs/SA.pdf" },
+                          { name: "Greece", href: "/pdfs/Greece.pdf" },
                         ].map((sub) => (
                           <a
                             key={sub.name}
@@ -401,7 +401,7 @@ export const Navbar = () => {
                     )}
                     {/* Other Courses */}
                     <a
-                      href="/cabin-crew.pdf"
+                      href="/pdfs/cabincrew.pdf"
                       download
                       className="flex items-center justify-between px-3 py-2.5 text-xs font-bold uppercase tracking-widest text-white/70 hover:text-[#c4a44a] transition-colors"
                       onClick={() => setIsMobileMenuOpen(false)}

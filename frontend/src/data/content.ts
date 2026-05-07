@@ -44,10 +44,10 @@ export const heroSlides = [
 ];
 
 export const introContent = {
-  heading: "Best Aviation Academy in Delhi, India",
+  heading: "Best Aviation Academy in Lucknow, India",
   text: [
     "At Aeromitra Aviation Academy (AMA), we are passionate about turning your dream of flying into a rewarding career. Our academy offers world-class pilot training, DGCA ground classes, and aviation career programs designed to prepare you for success in the skies.",
-    "Located in Delhi, India, we work with aspiring pilots, aviation enthusiasts, and career changers to deliver training that is rigorous, practical, and aligned with DGCA standards. Turn your dream into your career and live your life thousands of feet in the sky.",
+    "Located in Lucknow, India, we work with aspiring pilots, aviation enthusiasts, and career changers to deliver training that is rigorous, practical, and aligned with DGCA standards. Turn your dream into your career and live your life thousands of feet in the sky.",
   ],
 };
 
@@ -196,7 +196,7 @@ export const faqs = [
   {
     question: "Does Aeromitra offer accommodation for outstation students?",
     answer:
-      "Yes, Aeromitra provides accommodation assistance for students coming from outside Delhi. Please visit our Accommodations page or contact us directly to learn about available options and facilities.",
+      "Yes, Aeromitra provides accommodation assistance for students coming from outside Lucknow. Please visit our Accommodations page or contact us directly to learn about available options and facilities.",
   },
 ];
 
@@ -211,43 +211,25 @@ export const shortVideos = [
   {
     id: 1,
     title: "",
-    videoUrl: "/images/videos/aeromitra-reel-1.mp4",
+    videoUrl: "/videos/1stvideo.mp4",
     thumbnail: getImageUrl("1.png"),
   },
   {
     id: 2,
     title: "",
-    videoUrl: "/images/videos/aeromitra-reel-2.mp4",
+    videoUrl: "/videos/2ndvideo.mp4",
     thumbnail: getImageUrl("2.png"),
   },
   {
     id: 3,
     title: "",
-    videoUrl: "/images/videos/aeromitra-reel-3.mp4",
+    videoUrl: "/videos/3rdvideo.mp4",
     thumbnail: getImageUrl("3.png"),
   },
   {
     id: 4,
     title: "",
-    videoUrl: "/images/videos/aeromitra-reel-4.mp4",
+    videoUrl: "/videos/4thvideo.mp4",
     thumbnail: getImageUrl("4.png"),
-  },
-  {
-    id: 5,
-    title: "",
-    videoUrl: "/images/videos/aeromitra-reel-5.mp4",
-    thumbnail: getAccommodationImageUrl("flyafe-min.png"),
-  },
-  {
-    id: 6,
-    title: "",
-    videoUrl: "/images/videos/aeromitra-reel-6.mp4",
-    thumbnail: getImageUrl("aircraft-rest-hangar-lined-up-like-steel-birds-scaled.webp"),
-  },
-  {
-    id: 7,
-    title: "",
-    videoUrl: "/images/videos/aeromitra-reel-7.mp4",
-    thumbnail: getImageUrl("Best-Pilot-Training-Institute-in-India.jpg"),
   },
 ];

@@ -90,7 +90,7 @@ export const ServicesPage = () => {
         "Meteorology & Weather Analysis",
         "Technical General & Specific",
       ],
-      image: getImageUrl("DGCA-Ground-School-in-Bhubaneswar-1024x733.jpg"),
+      image: getImageUrl("24-05-13-AF_EDUCATION-1024x683.jpg"),
     },
     {
       id: "student-pilot-license",
@@ -104,7 +104,7 @@ export const ServicesPage = () => {
         "Solo Flight Preparation",
         "DGCA Medical & Documentation Support",
       ],
-      image: getImageUrl("DGCA-Ground-School-in-Bhubaneswar-1024x733.jpg"),
+      image: getImageUrl("24-05-13-AF_EDUCATION-1024x683.jpg"),
     },
     {
       id: "type-rating",
@@ -118,7 +118,7 @@ export const ServicesPage = () => {
         "Line Training & OPC Preparation",
         "DGCA Type Rating Skill Test",
       ],
-      image: getImageUrl("DGCA-Ground-School-in-Ranchi.jpg"),
+      image: getImageUrl("24-05-13-AF_EDUCATION-27.jpg"),
     },
     {
       id: "flight-dispatcher",
@@ -132,7 +132,7 @@ export const ServicesPage = () => {
         "Air Regulations & NOTAM",
         "Emergency Handling & Diversions",
       ],
-      image: getImageUrl("DGCA-Ground-School-in-Ranchi.jpg"),
+      image: getImageUrl("24-05-13-AF_EDUCATION-27.jpg"),
     },
     {
       id: "cabin-crew-training",
@@ -146,7 +146,7 @@ export const ServicesPage = () => {
         "Professional Grooming & Presentation",
         "Mock Airline Interview Preparation",
       ],
-      image: getImageUrl("DGCA-Ground-School-in-Thiruvananthapuram.jpg"),
+      image: getImageUrl("24-05-13-AF_EDUCATION-32-1.jpg"),
     },
     {
       id: "tuition-financing",
@@ -160,7 +160,7 @@ export const ServicesPage = () => {
         "Scholarship Programs for Eligible Students",
         "Transparent, No-Hidden-Charge Fee Structure",
       ],
-      image: getImageUrl("DGCA-Ground-School-in-Thiruvananthapuram.jpg"),
+      image: getImageUrl("24-05-13-AF_EDUCATION-32-1.jpg"),
     },
   ];
 
@@ -178,7 +178,7 @@ export const ServicesPage = () => {
       <section className="relative h-[60vh] md:h-[70vh] flex items-center justify-center overflow-hidden">
         <div className="absolute inset-0">
           <img loading="lazy" decoding="async"
-            src={getOptimizedImage(getImageUrl("DGCA-Ground-School-in-Vishakhapatnam.jpg"), 1920)}
+            src={getOptimizedImage(getImageUrl("DGCA-CPL-Ground-Classes-in-Patna-1024x733.jpeg"), 1920)}
             alt="Aviation Training at Aeromitra"
             className="w-full h-full object-cover"
           />

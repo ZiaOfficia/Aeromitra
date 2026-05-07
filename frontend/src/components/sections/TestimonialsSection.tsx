@@ -21,7 +21,7 @@ export const TestimonialsSection = () => {
       link: "#",
     },
     {
-      image: getImageUrl("Adventure-Flight-Education-Bangalore-1024x733.jpeg"),
+      image: getImageUrl("24-05-13-AF_EDUCATION-30.jpg"),
       quote:
         "Aeromitra Aviation Academy exceeded all my expectations. From the initial counselling session to the final flight test, the team's professionalism and expertise shone through every step. I couldn't be happier with the results!",
       author: "Judi — Type Rating Graduate",

@@ -40,14 +40,14 @@ const videoGallery = [
     id: "UITURVxnqn0",
     title: "Mock Check Ride — Pilot Exam Preparation",
     thumbnail:
-      getImageUrl("best-aviation-academy-in-Delhi-1024x733.jpeg"),
+      getImageUrl("DGCA-CPL-Ground-Classes-in-Delhi.jpeg"),
     videoLength: "0:33",
   },
 ];
 
 const imageGallery = [
   getImageUrl("24-05-13-AF_EDUCATION.jpg"),
-  getImageUrl("24-05-13-AF_EDUCATION-1.jpg"),
+  getImageUrl("24-05-13-AF_EDUCATION-23-1024x683.jpg"),
   getImageUrl("24-05-13-AF_EDUCATION-23.jpg"),
   getImageUrl("24-05-13-AF_EDUCATION-25-1.jpg"),
   getImageUrl("24-05-13-AF_EDUCATION-26.jpg"),
