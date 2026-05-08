@@ -1,13 +1,12 @@
-import { Star, Crown, Palette, Gem, Landmark } from "lucide-react";
+import { Star, Crown, Palette, Landmark } from "lucide-react";
 import { motion } from "framer-motion";
 
 export const StatsSection = () => {
   const stats = [
-    { icon: Star, value: "4", label: "Years Experience" },
-    { icon: Crown, value: "10+", label: "Simulators" },
-    { icon: Palette, value: "6+", label: "Aircraft" },
-    { icon: Gem, value: "32+", label: "Countries" },
-    { icon: Landmark, value: "1000+", label: "Students Trained" },
+    { icon: Star, value: "10+", label: "Years Experience" },
+    { icon: Crown, value: "6+", label: "Simulators" },
+    { icon: Palette, value: "32+", label: "Aircraft" },
+{ icon: Landmark, value: "400+", label: "Students Trained" },
   ];
 
   return (
